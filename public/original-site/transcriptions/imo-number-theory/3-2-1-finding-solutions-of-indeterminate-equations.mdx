@@ -1,0 +1,983 @@
+---
+title: "3.2.1 Finding solutions of indeterminate equations"
+source_page: 156
+source: "IMO Problems, Theorems, and Methods: Number Theory"
+---
+
+# 3.2.1 Finding solutions of indeterminate equations
+Problem 3.1 (IMO 2-1, proposed by Bulgaria). Determine all three-
+digit numbers N having the property that N is divisible by 11, and N
+11 is
+equal to the sum of the squares of the digits of N.
+Solution. Let the three-digit number N be $abc = 100a + 10b + c$ with
+a (= 0. The given conditions are equivalent to 11|a − b + c and 100a +
+$$
+10b + c = 11(a2
++b2
++c2
+$$
+). As none of a, b, c can exceed 9, we will discuss
+the following two cases.
+(i) a−b+c = 0, which leads to a2
++(a+c)2
+$$
++c2
+$$
+= 10a+c and a+c $\le$  9.
+If a + c > 5, then a2
++ (a + c)2
+$$
++ c2
+$$
+= 2a(a + c) + 2c2
+> 10a + c, a
+contradiction. So a + c $\le$  5.
+Note that a2
++ (a + c)2
+$$
++ c2
+$$
+is even, so c is even, and then c can be
+0, 2, 4. By checking these three numbers, we can easily find that the only
+solution is $c = 0.$ Then $a = 5$, and the original three-digit number is 550
+in this case.
+(ii) a − b + c = 11, which leads to a2
++ (a + c − 11)2
+$$
++ c2
+= 10a + c - 10
+$$
+and a + c $\ge$  11. If a + c > 11, then
+$$
+a2
+$$
++ (a + c − 11)2
+$$
++ c2
++ 10
+\ge a2
+$$
++ 1 + (12 − a)2
++ 10
+$$
+= 2a2
+- 24a + 155
+= 2
+\rceil
+$$
+a −
+17
+2
+2
+$$
++ 10a +
+21
+2
+> 10a + c,
+$$
+a contradiction. So a + c = 11.
+Now that a2
++ (11 − a)2
+= 9a + 1, the solution is $a = 8.$ Then $c = 3$,
+and the original three-digit number is 803 in this case.
+In summary, the only two numbers satisfying the given conditions are
+550 and 803.
+Remark. For number theory problems discussing decimal digits of inte-
+gers, we usually write the integers into decimal representation and turn the
+problem into a discussion on some kind of indeterminate equation. Then
+in this problem, we could obtain two solutions by inequality scaling and
+congruence constraints.
+Score Situation This particular problem saw the following distribution of scores
+among contestants: 3 contestants scored 8 points, no contestant scored 7 points,
+2 contestants scored 6 points, no contestant scored 5 points, no contestant scored 4 points,
+no contestant scored 3 points, 1 contestant scored 2 points, no contestant scored 1 point,
+and 4 contestants scored 0 point. The average score of this problem is 3.800, indicating that
+it was relatively straightforward.
+Among the top five teams in the team scores, the Czechoslovakia team achieved a total
+score of 257 points, the Hungary team achieved a total score of 248 points, the Romania
+team achieved a total score of 248 points, the Bulgaria team achieved a total score of 175
+points, and the German Democratic Republic team achieved a total score of 38 points.
+The gold medal cutoﬀ for this IMO was set at 40 points (with 4 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 37 points (with 4 contestants earning silver
+medals), and the bronze medal cutoﬀ was 33 points (with 4 contestants earning bronze
+medals).
+In this IMO, no contestant achieved a perfect score of 44 points.
+Problem 3.2 (IMO 4-1, proposed by Poland). Find the smallest nat-
+ural number n which has the following properties:
+(a) Its decimal representation has 6 as the last digit.
+(b) If the last digit 6 is erased and placed in front of the remaining dig-
+its, then the resulting number is four times as large as the original
+number n.
+Solution 1. Suppose $n = 10N + 6$, where 10k−1
+$$
+\le N < 10k
+$$
+with k $\in$  N∗
+.
+Then by the condition,
+$$
+4(10N + 6) = 6 \cdot  10k
++ N,
+i.e.,
+39N = 6(10k
+- 4).
+Hence 13\mid10k
+$$
+− 4. The least positive integer satisfying (−3)k
+$$
+≡ 4(mod13)
+$$
+is $k = 5.$ Then
+$$
+N =
+2(10k
+- 4)
+13
+= 15384,
+$$
+so the desired number is $n = 153846.$
+Solution 2. Suppose $n = akak-1$ ···a26. Then by the condition,
+$$
+6akak-1 \cdots a2 = 4 \cdot  akak-1 \cdots a26.
+$$
+Since the last digit of n is 6, then $a2 = 4.$ Again by $a2 = 4$ we get $a3 = 8.$
+The digits can be obtained by a successive multiplication until 6 first occurs
+in a digit of 4n. By this method, we can successively get $a4 = 3$, a5 = 5,
+and $a6 = 1.$ So the smallest value of n is 153846.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 14 contestants scored 6 points, 1 contestant scored 5 points, no contestant
+scored 4 points, no contestant scored 3 points, 1 contestant scored 2 points, 1 contestant
+scored 1 point, and no contestant scored 0 point. The average score of this problem is 5.412,
+indicating that it was simple.
+Among the top five teams in the team scores, the Hungary team achieved a total score
+of 289 points, the Soviet Union team achieved a total score of 263 points, the Romania team
+achieved a total score of 257 points, the Czechoslovakia team achieved a total score of 212
+points, and the Poland team achieved a total score of 212 points.
+The gold medal cutoﬀ for this IMO was set at 41 points (with 4 contes-
+tants earning gold medals), the silver medal cutoﬀ was 34 points (with 12 con-
+testants earning silver medals), and the bronze medal cutoﬀ was 29 points (with
+15 contestants earning bronze medals).
+In this IMO, only one contestant achieved a perfect score of 46 points, namely Iosif
+Bernstein from the Soviet Union.
+Problem 3.3 (IMO 19-5, proposed by the German Democratic
+Republic). Let a and b be positive integers. When a2
+$$
++ b2
+$$
+is divided by
+a + b, the quotient is q and the remainder is r. Find all pairs (a,b) such
+that q2
+$$
++ r = 1977.
+$$
+Solution. Since r is the remainder, we know 0 $\le$  $r < a + b.$ Then q2
+$$
+\le
+1977, so q \le 44.
+$$
+If q $\le$  43, then
+$$
+r = 1977- q2
+\ge 1977 - 432
+= 128 > 2(q + 1).
+Therefore,
+1
+2
+$$
+(a + b)2
+$$
+\le a2
++ b2
+$$
+= q(a + b) + r
+< q(a + b) + (a + b)
+<
+r
+2
+(a + b)
+<
+1
+2
+(a + b)2
+,
+a contradiction. Hence, it must be $q = 44$, which implies $r = 1977 -
+442$
+$$
+=41.
+$$
+Next, we substitute 44 and 41 for q and r to get the equation of a and b:
+$$
+a2
++ b2
+$$
+= 44(a + b) + 41.
+Equivalently,
+(a − 22)2
++ (b − 22)2
+$$
+= 1009.
+$$
+By checking all the square numbers less than 1009, we can find the only
+way to write 1009 as the sum of two square numbers is that 1009 = 152
++
+282
+. As a result, all pairs (a,b) satisfying the given conditions are (a,b) =
+(7,50),(37,50),(50,7),(50,37).
+Remark. As we have emphasized above, for problems that are essentially
+indeterminate equations, common methods include congruence analysis and
+inequality scaling. When we saw a “remainder”, we chose to utilize its
+relation with the divisor to take certain scaling techniques. Then we found
+that q must be 44, and the rest is not diﬃcult.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 11 contestants scored 7 points, 5 contestants scored 6 points, 1 contestant
+scored 5 points, 1 contestant scored 4 points, 1 contestant scored 3 points, 1 contestant
+scored 2 points, 7 contestants scored 1 point, and 10 contestants scored 0 point. The average
+score of this problem is 3.459, indicating that it was relatively straightforward.
+Among the top five teams in the team scores, the United States team achieved a total
+score of 202 points, the Soviet Union team achieved a total score of 192 points, the Hungary
+team achieved a total score of 190 points, the United Kingdom team achieved a total score
+of 190 points, and the Netherlands team achieved a total score of 185 points.
+The gold medal cutoﬀ for this IMO was set at 34 points (with 13 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 24 points (with 29 contestants earning silver
+medals), and the bronze medal cutoﬀ was 17 points (with 35 contestants earning bronze
+medals).
+In this IMO, a total of five contestants achieved a perfect score of 40 points.
+Problem 3.4 (IMO 22-3, proposed by the Netherlands). Determine
+the maximum value of m2
+$$
++ n2
+$$
+, where m and n are integers satisfying
+m,n $\in$  \{1,2,…,1981\} and (n2
+$$
+- mn - m2
+)2
+= 1.
+$$
+Solution. If a solution satisfies $m = n$, then m4
+$$
+= n4
+$$
+= 1, and it can only
+be $m = n$ = 1.
+Now we consider those solutions when m (= n. Since n(n − m) = m2
+±
+1 $\ge$  0, we have n(n − m) > 0, so $n > m.$ Observe that
+$$
+m2
+- m(n - m) - (n - m)2
+= m2
++ mn - n2
+= ∓1,
+(n + m)2
+- n(n + m) - n2
+= m2
++ mn - n2
+= ∓1.
+$$
+It means that (n − m,m) and (n,n + m) are also solutions to the original
+equation.
+Then for any solution where m and n are not equal, by (m,n) $\to$ 
+(n − m,m) we can find a sequence of solutions while m, n get smaller and
+smaller, until the sequence terminates at $m = n$, which has been proved to
+be (m,n) = (1,1). Note that this construction of the sequence is reversible,
+in other words, we can run it backwards from (1,1) by (m,n) $\to$  (n,n + m)
+to get all the solutions.
+Therefore, the sequence of solutions is unique, and the two numbers in
+every solution (m,n) are some consecutive terms of the Fibonacci sequence:
+1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,….
+We can see that the largest such pair not exceeding 1981 is 987 and 1597,
+so the maximum value is m2
+$$
++ n2
+= 9872
++ 15972
+= 3524578.
+$$
+Remark. There are two points worth our attention. One is that the
+sequence of solutions in fact comes from Vieta’s formula if we treat
+$$
+n2
+- mn - m2
+$$
+= ±1 as a quadratic equation of m and n respectively.
+This method of using Vieta’s formula is quite common when dealing with
+quadratic indeterminate equations. Another point is that two consecutive
+terms of the Fibonacci sequence \{Fn\}n$\ge$ 0 satisfy
+$$
+F2
+n+1 - FnFn+1 - F2
+n = ±1,
+$$
+which are exactly all the solutions to the original problem.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 32 contestants scored 7 points, 2 contestants scored 6 points, 3 contestants
+scored 5 points, no contestant scored 4 points, 2 contestants scored 3 points, 3 contestants
+scored 2 points, 3 contestants scored 1 point, and 6 contestants scored 0 point. The average
+score of this problem is 5.216, indicating that it was simple.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The United States team scored 45 points (with a total team score of 314 points), the Germany
+team scored 43 points (with a total team score of 312 points), the United Kingdom team
+scored 45 points (with a total team score of 301 points), the Austria team scored 36 points
+(with a total team score of 290 points), and the Bulgaria team scored 36 points (with a total
+team score of 287 points).
+The gold medal cutoﬀ for this IMO was set at 41 points (with 36 contes-
+tants earning gold medals), the silver medal cutoﬀ was 34 points (with 37 con-
+testants earning silver medals), and the bronze medal cutoﬀ was 26 points (with
+30 contestants earning bronze medals).
+In this IMO, a total of 26 contestants achieved a perfect score of 42 points.
+Problem 3.5 (IMO 38-5, proposed by Czech Republic). Find all
+pairs (a,b) of integers a,b $\ge$  1 that satisfy the equation ab2
+$$
+= ba
+.
+$$
+Solution. For a solution, if either a or b is equal to 1, then obviously
+(a,b) = (1,1).
+Now suppose a,b $\ge$  2. Let $t = b2$
+$a > 0.$ Substituting into the given
+condition, we get aat
+$$
+= ba
+$$
+, so $b = at$
+, and
+$at = b2$
+$$
+= a2t
+, t = a2t-1
+.
+$$
+Assume t $\ge$  1. Then 2t − 1 $\ge$  1, and thus
+$$
+t = a2t-1
+\ge (1 + 1)2t-1
+\ge 1 + (2t - 1) > t,
+$$
+a contradiction. Hence 0 < $t < 1.$
+Let a rational number $k = 1$
+$t = a$
+$b2 > 1.$ Then for $b = at$
+we know $a = bk$
+.
+$$
+Since bkb2
+= bbk
+,
+k = bk-2
+. (∗)
+$$
+Note that bk−2
+$$
+= k > 1, so k > 2. Suppose k = p
+$$
+q , where p, q are coprime
+positive integers. Then $p > 2q.$ By (∗),
+$$
+\rceil
+p
+q
+q
+= kq
+= bp-2q
+$$
+is an integer, which implies $q\mid p$, and together with (p,q) = 1 we know $q = 1$,
+i.e., k is an integer greater than 2.
+If $k = 3$, then $b = 3$, and (a,b) = (27,3), a solution.
+If $k = 4$, then $b = 2$, and (a,b) = (16,2), also a solution.
+However, if k $\ge$  5, then by (∗),
+$$
+k \ge 2k-2
+= (1 + 1)k-2
+\ge 1 + k - 2 +
+(k - 2)(k - 3)
+2
+> k,
+$$
+which is a contradiction.
+As a conclusion, all the desired pairs are (a,b) = (1,1),(16,2),(27,3).
+Remark. Again we used the scaling technique in this solution, since we
+usually can obtain valuable information from scaling for non-homogeneous
+indeterminate equations. In fact, this problem also has other solutions
+which focus more on congruence analysis. Specifically, we can check the
+greatest common divisor of a and b to obtain equation (∗).
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 152 contestants scored 7 points, 14 contestants scored 6 points, 19 contes-
+tants scored 5 points, 21 contestants scored 4 points, 31 contestants scored 3 points, 36
+contestants scored 2 points, 51 contestants scored 1 point, and 136 contestants scored
+0 point. The average score of this problem is 3.354, indicating that it was relatively
+straightforward.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 41 points (with a total team score of 223 points), the Hungary team
+scored 42 points (with a total team score of 219 points), the Iran team scored 42 points (with
+a total team score of 217 points), the Russia team scored 42 points (with a total team score
+of 202 points), and the United States team scored 38 points (with a total team score of 202
+points).
+The gold medal cutoﬀ for this IMO was set at 35 points (with 39 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 25 points (with 70 contestants earning silver
+medals), and the bronze medal cutoﬀ was 15 points (with 122 contestants earning bronze
+medals).
+In this IMO, a total of four contestants achieved a perfect score of 42 points.
+Problem 3.6 (IMO 44-2, proposed by Bulgaria). Find all pairs (a,b)
+of positive integers such that a2
+2ab2−b3+1 is a positive integer.
+Solution 1. Let (a, b) be a pair of positive integers satisfying the condition.
+$$
+Since k = a2
+$$
+2ab2−b3+1 > 0, we have 2ab2
+$$
+- b3
+$$
++ 1 > 0 or $a > b$
+2 − 1
+2b2 , and
+hence a $\ge$  b
+2. Using this, we infer from k $\ge$  1, or a2
+$$
+\ge b2
+$$
+(2a − b) + 1, that
+$$
+a2
+> b2
+(2a - b) \ge 0.
+$$
+Hence $a > b$ or 2a = b. (1)
+Now consider the two solutions a1, a2 of the equation
+$$
+a2
+- 2kb2
+$$
+a + k(b3
+$$
+- 1) = 0 (2)
+$$
+for any fixed positive integers k and b, and assume that one of them is
+an integer. Then the other is also an integer because a1 + a2 = 2kb2
+. We
+may assume that a1 $\ge$  a2, and we have a1 $\ge$  $kb2
+> 0.$ Furthermore, since
+$$
+a1a2 = k(b3
+- 1),
+0 \le a2 =
+k(b3
+- 1)
+a1
+\le
+k(b3
+- 1)
+kb2
+< b.
+$$
+Together with (1), we conclude that $a2 = 0$ or $a2 = b$
+2 (in the latter case b
+must be even).
+If $a2 = 0$, then b3
+− 1 = 0, and hence $a1 = 2k$ and $b = 1.$
+If $a2 = b$
+2, then $k = b$
+4
+2
+and $a1 = b4$
+2 − b
+2.
+Therefore, the only solutions are
+(a,b) = (2l,1),(l,2l),(8l4
+$$
+- l,2l)
+$$
+for some positive integer l. All of these pairs satisfy the given condition.
+Solution 2. If $b = 1$, then it follows from the given condition that a must
+be even.
+Let a2
+2ab2−b3+1 = k. If $b > 1$, then there are two solutions to the equation
+(2) and one of them is a positive integer. Thus the discriminant Δ of the
+equation (2) is a perfect square, that is, Δ = 4k2
+$$
+b4
+-4k(b3
+$$
+− 1) is a perfect
+square.
+Note that, if b $\ge$  2, then
+$$
+(2kb2
+- b - 1)2
+< \Delta < (2kb2
+- b + 1)2
+. (3)
+$$
+The proof is given as follows:
+$$
+\Delta - (2kb2
+- b - 1)2
+= 4kb2
+- b2
+- 2b + 4k - 1
+= (4k - 1)(b2
++ 1) - 2b
+\ge 2(4k - 1)b - 2b > 0,
+(2kb2
+- b + 1)2
+- \Delta = 4kb2
+- 4k + (b - 1)2
+= 4k(b2
+- 1) - (b - 1)2
+> (4k - 1)(b2
+- 1) > 0.
+$$
+This completes the proof of (3).
+Since Δ is a perfect square, it follows from (3) that
+$$
+\Delta = 4k2
+b4
+- 4k(b3
+- 1) = (2kb2
+- b)2
+.
+$$
+Then $b2
+= 4k$, and hence b must be even. Let $b = 2l.$ We have $k = l2$
+.
+Together with (2), we obtain $a = l$ or 8l4
+− l.
+Therefore, the only solutions are
+(a,b) = (2l,1),(l,2l),(8l4
+$$
+- l,2l)
+$$
+for some positive integer l. All of these pairs satisfy the given condition.
+Remark. Note that we can obtain a quadratic equation of a after sim-
+ple transformation. Then it is common to use the discriminant or Vieta’s
+formula. Fortunately, both methods can reach the final solution.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 67 contestants scored 7 points, 1 contestant scored 6 points, 20 contestants
+scored 5 points, no contestant scored 4 points, 93 contestants scored 3 points, 40 con-
+testants scored 2 points, 119 contestants scored 1 point, and 117 contestants scored 0
+point. The average score of this problem is 2.304, indicating that it had a certain level of
+diﬃculty.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Bulgaria team scored 34 points (with a total team score of 227 points), the China team
+scored 40 points (with a total team score of 211 points), the United States team scored 36
+points (with a total team score of 188 points), the Vietnam team scored 38 points (with a total
+team score of 172 points), and the Russia team scored 32 points (with a total team score of
+167 points).
+The gold medal cutoﬀ for this IMO was set at 29 points (with 37 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 19 points (with 69 contestants earning silver
+medals), and the bronze medal cutoﬀ was 13 points (with 104 contestants earning bronze
+medals).
+In this IMO, only three contestants achieved a perfect score of 42 points, namely Bao
+Lê Hùng Viê .t and Tro .ng Canh Nguyen from Vietnam, and Yunhao Fu from China.
+Problem 3.7 (IMO 47-4, proposed by the United States). Deter-
+mine all pairs (x,y) of integers such that
+$$
+1 + 2x
++ 22x+1
+= y2
+.
+$$
+Solution. Evidently, for any solution (x,y), we have x $\ge$  0, and (x,−y)
+is also a solution. When $x = 0$, obviously the only two solutions are (0,2)
+and (0,−2).
+Next we consider the solutions (x,y) where x,y > 0. Then the original
+equation is equivalent to
+$$
+2x
+(1 + 2x+1
+) = (y - 1)(y + 1).
+$$
+Hence, y−1 and y+1 are both even; moreover, only one of them is divisible
+by 4. Consequently, x $\ge$  3, and one of y − 1 and y + 1 is divisible by 2x−1
+$$
+but not 2x
+.
+$$
+If $y = 2x-1$
+m + 1, where m is odd, then
+$$
+1 + 2x+1
+= 2x-2
+m2
++ m,
+$$
+so that
+$$
+1 - m = 2x-2
+(m2
+- 8).
+Therefore, m2
+$$
+< 8, which leads to $m = 1$, implying that the equality does
+not hold.
+$$
+Otherwise, y = 2x-1
+$$
+m − 1, where m is odd, and then
+$$
+1 + 2x+1
+= 2x-2
+m2
+- m,
+$$
+so that
+$$
+1 + m = 2x-2
+(m2
+- 8) \ge 2(m2
+- 8),
+i.e.,
+2m2
+- m - 17 \le 0.
+$$
+Together with $m2
+> 8$ we know that the only odd number satisfying these
+two inequalities is $m = 3$, and the corresponding solution is $x = 4$ and
+$$
+y = 23.
+$$
+Thus we have the complete list of solutions (x,y) = (0,2),(0,−2),
+(4,23),(4,−23).
+Remark. For such an indeterminate equation, it is common to discuss the
+divisibility of factors after using the formula for the diﬀerence of squares.
+This method is also widely used in the analysis of Pythagorean triples.
+Then using the obtained conclusions, we can write the forms of y and get
+the final solution after some discussion.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 248 contestants scored 7 points, 68 contestants scored 6 points, 7 contestants
+scored 5 points, 6 contestant scored 4 points, 38 contestant scored 3 points, 59 contestants
+scored 2 points, 54 contestants scored 1 point, and 18 contestants scored 0 point. The
+average score of this problem is 4.998, indicating that it was simple.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 41 points (with a total team score of 214 points), the Russia team
+scored 42 points (with a total team score of 174 points), the South Korea team scored 42
+points (with a total team score of 170 points), the Germany team scored 42 points (with a
+total team score of 157 points), and the United States team scored 41 points (with a total
+team score of 154 points).
+The gold medal cutoﬀ for this IMO was set at 28 points (with 42 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 19 points (with 89 contestants earning silver
+medals), and the bronze medal cutoﬀ was 15 points (with 122 contestants earning bronze
+medals).
+In this IMO, only three contestants achieved a perfect score of 42 points, namely
+Zhiyu Liu from China, Iurie Boreico from Moldova and Alexander Magazinov from
+Russia.
+Problem 3.8 (IMO 56-2, proposed by Serbia). Determine all triples
+(a,b,c) of positive integers such that each of the numbers
+ab − c, bc − a, ca − b
+is a power of 2 (a power of 2 is an integer of the form 2n
+, where n is a
+non-negative integer).
+Solution. Let (a,b,c) be such a triple. Then $a = 1$ would imply that both
+b − c and c − b are powers of 2, which is impossible. So a $\ge$  2; similarly,
+b $\ge$  2 and c $\ge$  2. We discuss two cases.
+Case 1. At least two of a, b, and c are the same.
+Without loss of generality, let $a = b.$ Then ac − b = a(c − 1) is a power
+of 2, so are both a and c − 1. Let $a = 2s$
+and $c = 1 + 2t$
+, where s $\ge$  1,
+t $\ge$  0. Then ab − c = 22s
+$$
+- 2t
+$$
+− 1 is a power of 2. When $t > 0$, the integer
+$$
+22s
+- 2t
+$$
+− 1 is odd , so 22s
+$$
+- 2t
+$$
+− 1 = 1. Then 2t
+≡ 2(mod4), so $t = 1$ and
+$s = 1$, a = b = 2, and $c = 3.$ When $t = 0$, the integer 22s
+− 2 is a power of
+2, so we must have $s = 1$ and $a = b$ = $c = 2.$ It is easy to verify that both
+triples (2, 2, 2) and (2, 2, 3) satisfy our requirement.
+Case 2. a, b, and c are pairwise distinct.
+Without loss of generality, suppose 2 $\le$  $a < b$ < c. By our assumption,
+there are non-negative integers $\alpha$ , $\beta$ , and $\gamma$  such that
+bc − a = 2$\alpha$ 
+, (1)
+$$
+ca - b = 2\beta
+, (2)
+ab - c = 2\gamma
+. (3)
+$$
+It is easy to see that $\alpha$  > $\beta$  > $\gamma$  $\ge$  0. We discuss two sub-cases based on
+the value of a.
+Case 2.1. $a = 2.$
+We first prove that $\gamma$  = 0. Otherwise, by (3), c is even; and by (2), b is
+even; thus, the left hand side of (1), bc−a ≡ 2(mod4); yet 2$\alpha$ 
+$$
+≡ 0(mod4),
+$$
+a contradiction.
+So $\gamma$  = 0, and (3) becomes $c = 2b - 1.$ Combining with (2), we get
+$$
+3b-2 = 2\beta
+$$
+. Take modulo 3 we see that $\beta$  is even. If $\beta$  = 2, then $b = 2$ = a,
+which contradicts our assumption in this case. If $\beta$  = 4, we get $b = 6$ and
+$c = 11$; and it is easy to verify that (2, 6, 11) is a triple that satisfies our
+requirement. If $\beta$  $\ge$  6, then $b = 1$
+$$
+3(2\beta
++ 2).
+Substituting into (1) gives
+9 \times 2\alpha
+$$
+= 9(bc − a)
+$$
+= 9b(2b - 1) - 18
+= (3b - 2)(6b + 1) - 16
+= 2\beta
+(2\beta+1
++ 5) - 16.
+$$
+Since $\alpha$  > $\beta$  $\ge$  6, we have 27
+|9 · 2$\alpha$ ; however the right hand side of the
+above only divides 24
+but not 25
+, a contradiction.
+Case 2.2. a $\ge$  3.
+Adding (1) and (2), we get
+(a + b)(c − 1) = 2$\alpha$ 
+$$
++ 2\beta
+.
+$$
+Subtracting (2) from (1), we get
+(b − a)(c + 1) = 2$\alpha$ 
+$$
+- 2\beta
+.
+$$
+One of c + 1 and c − 1 is not a multiple of 4, so 2$\beta$ −1
+|a + b or 2$\beta$ −1
+|b − a.
+From
+$$
+2\beta
+= ac - b \ge 3c - b > 2c
+$$
+we get $b < c$ < 2$\beta$ −1
+, so 0 < b−a < 2$\beta$ −1
+, and it is impossible for 2$\beta$ −1
+|b−a.
+$$
+Therefore 2\beta-1
+$$
+|a+b, and since $a+b < 2b$ < 2$\beta$ 
+, we must have a+b = 2$\beta$ −1
+.
+Substituting into (2) gives
+$$
+ac - b = 2\beta
+$$
+= 2(a + b),
+i.e., a(c − 2) = 3b. When a $\ge$  4, we have b $\ge$  5, and
+a(c − 2) $\ge$  4(c − 2) $\ge$  4(b − 1) > 3b,
+a contradiction. So $a = 3$ and c − 2 = b. Therefore b = 2$\beta$ −1
+− 3 and
+$$
+c = 2\beta-1
+$$
+− 1. Substituting into (3) leads to
+$$
+2\gamma
+= ab - c = 3(2\beta-1
+- 3) - (2\beta-1
+- 1) = 2\beta
+- 8,
+$$
+which implies $\beta$  = 4, b = 5, and $c = 7.$ It is easy to verify that (3, 5, 7)
+satisfies our requirement.
+So there are 16 such triples — (2, 2, 2), the 3 permutations of (2, 2, 3),
+the 6 permutations of (2, 6, 11), and the 6 permutations of (3, 5, 7).
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 31 contestants scored 7 points, 14 contestants scored 6 points, 13 contestants
+scored 5 points, 8 contestants scored 4 points, 27 contestants scored 3 points, 77 contestants
+scored 2 points, 151 contestants scored 1 point, and 256 contestants scored 0 point. The
+average score of this problem is 1.359, indicating that it was relatively challenging.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The United States team scored 32 points (with a total team score of 185 points), the China
+team scored 36 points (with a total team score of 181 points), the South Korea team scored
+15 points (with a total team score of 161 points), the North Korea team scored 25 points
+(with a total team score of 156 points), and the Vietnam team scored 21 points (with a total
+team score of 151 points).
+The gold medal cutoﬀ for this IMO was set at 26 points (with 39 contestants earning
+gold medals), the silver medal cutoﬀ was 19 points (with 100 contestants earning silver
+medals), and the bronze medal cutoﬀ was 14 points (with 143 contestants earning bronze
+medals).
+In this IMO, only one contestant achieved a perfect score of 42 points, namely Zhuo Qun
+Alex Song from Canada.
+Problem 3.9 (IMO 60-4, proposed by El Salvador). Find all pairs
+(k,n) of positive integers such that
+$$
+k! = (2n
+- 1)(2n
+- 2)(2n
+- 4)\cdots (2n
+- 2n-1
+).
+$$
+Solution. Denote the expression on the right side as Rn. Then
+$$
+v2(Rn) =
+n-1
+i=0
+v2(2n
+- 2i
+) =
+n-1
+i=0
+i =
+1
+2
+n(n - 1).
+$$
+It is well known that v2(k!) = k − S2(k), where S2(k) denotes the sum of
+digits in the binary representation of k. Hence
+$$
+k - S2(k) =
+1
+2
+n(n - 1),
+$$
+and $k = 1$
+$$
+2n(n - 1) + S2(k) \ge 1
+2n(n - 1) + 1.
+$$
+Checking $n = 1$,2,3,4 directly, we get two solutions (k,n) =
+(1,1),(3,2). For n $\ge$  5, we claim that
+$$
+\rceil
+1
+2
+n(n - 1) + 1 ! > 2n2
+,
+while Rn \le (2n
+)n
+= 2n2
+$$
+, so the equation has no solution.
+For $n = 5$, we directly verify that 11! = 39916800 > 225
+$$
+= 33554432.
+$$
+For $n > 5$,
+$$
+\rceil
+1
+2
+n(n - 1) + 1 ! = 11! \cdot
+1
+2 n(n-1)+1
+)
+i=12
+i > 225
+\cdot  8
+1
+2 n(n-1)-10
+= 225+3
+2 n(n-1)-30
+\ge 2
+3
+2 n(n-1)-5
+\ge 2n2
+.
+$$
+In summary, (k,n) = (1,1),(3,2) are the only pairs that satisfy the
+equation.
+Remark. The diﬀerence in form between the two sides of the given equa-
+tion is significant, so it is natural to consider inequality scaling in order to
+estimate the range of k and n. The most essential constraint of the size
+relation between k and n is that the exponent of 2 on the right hand side is
+significantly large. By analyzing the power of 2, we can give a lower bound
+of k relative to n. Then the last step is to prove that this k will make the
+overall left hand side larger than the right hand side.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 257 contestants scored 7 points, 47 contestants scored 6 points, 19 contestants
+scored 5 points, 13 contestants scored 4 points, 7 contestants scored 3 points, 4 contestants
+scored 2 points, 63 contestants scored 1 point, and 211 contestants scored 0 point. The
+average score of this problem is 3.736, indicating that it was relatively straightforward.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The United States team scored 42 points (with a total team score of 227 points), the China
+team scored 41 points (with a total team score of 227 points), the South Korea team scored
+42 points (with a total team score of 226 points), the North Korea team scored 42 points
+(with a total team score of 187 points), and the Thailand team scored 42 points (with a total
+team score of 185 points).
+The gold medal cutoﬀ for this IMO was set at 31 points (with 52 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 24 points (with 94 contestants earning silver
+medals), and the bronze medal cutoﬀ was 17 points (with 156 contestants earning bronze
+medals).
+In this IMO, a total of 6 contestants achieved a perfect score of 42 points.
+Problem 3.10 (IMO 63-5, proposed by Belgium). Find all triples
+(a,b,p) of positive integers with p prime and
+ap
+$$
+= b! + p.
+$$
+Solution. There are only two such triples: (2, 2, 2) and (3, 4, 3). It is
+straightforward to check them. We shall prove that no other triples exist.
+Clearly, a > 1. Consider three situations as follows.
+(i) $a < p.$ If a $\le$  b, then a|(ap
+− b!), contradicting the assumption 1 <
+$a < p$; if $a > b$, then b! $\le$  a! < ap
+− p, the second inequality only
+requiring $p > a$ > 1.
+(ii) $a > p.$ Then b! = ap
+− p > pp
+− p $\ge$  p!, b > p, and $ap
+= b$! + p is a
+multiple of p. As b! = ap
+−p, we have p b, and $b < 2p.$ If $a < p2$
+, then
+a
+p divides ap
+,b!, and hence divides p as well, contradicting 1 < a
+$p < p$;
+if a $\ge$  p2
+, then it is contradicting ap
+$$
+\ge (p2
+)p
+> (2p - 1)! + p \ge b! + p.
+$$
+(iii) $a = p.$ Then b! = pp
+− p. Try $p = 2$,3,5 to get the two triples (2,2,2)
+and (3, 4, 3). Now assume p $\ge$  7. From b! = pp
+− p > p!, it follows
+b $\ge$  p + 1, and further
+$$
+v2((p + 1)!) \le v2(b!) = v2(pp-1
+- 1) = 2v2(p - 1) + v2(p + 1) - 1
+= v2
+\rceil
+p - 1
+2
+\cdot  (p - 1) \cdot  (p + 1) .
+Since p-1
+$$
+2 ,(p−1),(p+1) are distinct factors of (p+1)! and p+1 $\ge$  8, there
+are four or more even numbers among 1,2,…,p + 1, which is impossible.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 171 contestants scored 7 points, 49 contestants scored 6 points, 35 contestants
+scored 5 points, 15 contestants scored 4 points, 48 contestants scored 3 points, 44 contestants
+scored 2 points, 115 contestants scored 1 point, and 112 contestants scored 0 point. The
+average score of this problem is 3.520, indicating that it was relatively straightforward.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 42 points (with a total team score of 252 points), the South Korea
+team scored 41 points (with a total team score of 208 points), the United States team scored
+39 points (with a total team score of 207 points), the Vietnam team scored 38 points (with
+a total team score of 196 points), and the Romania team scored 42 points (with a total team
+score of 194 points).
+The gold medal cutoﬀ for this IMO was set at 34 points (with 44 contestants earning
+gold medals), the silver medal cutoﬀ was 29 points (with 101 contestants earning silver
+medals), and the bronze medal cutoﬀ was 23 points (with 140 contestants earning bronze
+medals).
+In this IMO, a total of 10 contestants achieved a perfect score of 42 points.

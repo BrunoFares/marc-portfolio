@@ -1,0 +1,1322 @@
+---
+title: "1.2.1 Discussion on divisiblility"
+source_page: 31
+source: "IMO Problems, Theorems, and Methods: Number Theory"
+---
+
+# 1.2.1 Discussion on divisiblility
+Problem 1.1 (IMO 1-1, proposed by Poland). Prove that the fraction
+$$
+21n+4
+$$
+14n+3 is irreducible for every natural number n.
+Proof 1. Let d be the greatest common factor of 21n + 4 and 14n + 3.
+Then
+$$
+d = gcd(21n + 4,14n + 3) = gcd(7n + 1,14n + 3) = gcd(7n + 1,1) = 1.
+$$
+Hence the fraction 21n+4
+14n+3 is irreducible.
+Proof 2. Since 3(14n + 3) − 2(21n + 4) = 1, the numerator is relatively
+prime to the denominator. Then the fraction 21n+4
+14n+3 is irreducible.
+Remark. As the first problem of the first IMO, it does not look diﬃcult
+from today’s perspective. However, the discussion on properties of common
+divisors and coprime numbers was the foundation of several diﬃcult number
+theory problems in later IMOs.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 4 contestants scored 5 points, no contestant scored 4 points, no contestant
+scored 3 points, 1 contestant scored 2 points, 3 contestants scored 1 point, and 1 contestant
+scored 0 point. The average score of this problem is 2.778, indicating that it had a certain
+level of diﬃculty.
+Among the top five teams in the team scores, the Romania team achieved a total score
+of 249 points, the Hungary team achieved a total score of 233 points, the Czechoslovakia
+team achieved a total score of 192 points, the Bulgaria team achieved a total score of 131
+points, and the Poland team achieved a total score of 122 points.
+The gold medal cutoﬀ for this IMO was set at 37 points (with 3 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 36 points (with 3 contestants earning silver
+medals), and the bronze medal cutoﬀ was 33 points (with 5 contestants earning bronze
+medals).
+In this IMO, only one contestant achieved a perfect score of 40 points, namely Bohuslav
+Diviš from Czechoslovakia.
+Problem 1.2 (IMO 9-3, proposed by the United Kingdom). Let k,
+m, and n be natural numbers such that m + k + 1 is a prime greater than
+n + 1. Let $Cs = s(s + 1).$ Prove that the product
+(Cm+1 − Ck)(Cm+2 − Ck)···(Cm+n − Ck)
+is divisible by the product C1C2 ···Cn.
+Proof. For natural numbers s and t,
+$$
+Cs - Ct = s2
++ s - t2
+- t = (s - t)(s + t + 1).
+$$
+Hence, the product
+(Cm+1 − Ck)(Cm+2 − Ck) · · · (Cm+n − Ck)
+$$
+= (m - k + 1)(m - k + 2) \cdot  \cdot  \cdot  (m - k + n)
+\cdot (m + k + 2)(m + k + 3) \cdot  \cdot  \cdot  (m + k + n + 1).
+$$
+Also we can easily find that the product C1C2 · · · $Cn = n$! · (n + 1)!.
+Note that the product of any n consecutive integers is divisible by n!.
+Then
+n!|(m − k + 1)(m − k + 2)···(m − k + n),
+(n + 1)!|(m + k + 1)(m + k + 2) · · · (m + k + n + 1).
+We are told that m+k +1 is a prime greater than n+1, so it is relatively
+prime to (n+1)!. Then (m+k+2)(m+k+3)···(m+k+n+1) is divisible
+by (n + 1)!. As a result,
+(m − k + 1)(m − k + 2)···(m − k + n) ·
+(m + k + 2)(m + k + 3)···(m + k + n + 1)
+is divisible by n! · (n + 1)!.
+Remark. In this proof, we used the conclusion that the product of n con-
+secutive integers is divisible by n!, which is quite useful when dealing with
+binomial coeﬃcients. Interestingly, this conclusion itself can be proven by
+the definition of binomial coeﬃcients. Of course, it is also feasible to prove
+this problem by discussing the power exponent of each prime in the facto-
+rials. This skill will be shown in future problems.
+Score Situation This particular problem saw the following distribution of scores among con-
+testants: 12 contestants scored 8 points, no contestant scored 7 points, 1 contestant scored
+6 points, no contestant scored 5 points, 2 contestants scored 4 points, 2 contestants scored
+3 points, 3 contestant scored 2 points, 1 contestant scored 1 point, and 16 contestants
+scored 0 point. The average score of this problem is 3.324, indicating that it was relatively
+straightforward.
+Among the top five teams in the team scores, the Soviet Union team achieved a total
+score of 275 points, the German Democratic Republic team achieved a total score of 257
+points, the Hungary team achieved a total score of 251 points, the United Kingdom team
+achieved a total score of 231 points, and the Romania team achieved a total score of 214
+points.
+The gold medal cutoﬀ for this IMO was set at 38 points (with 11 contestants earning gold
+medals), the silver medal cutoﬀ was 30 points (with 14 contestants earning silver medals),
+and the bronze medal cutoﬀ was 22 points (with 26 contestants earning bronze medals).
+In this IMO, a total of five contestants achieved a perfect score of 42 points.
+Problem 1.3 (IMO 14-3, proposed by the United Kingdom). Let
+m and n be arbitrary non-negative integers. Prove that
+$$
+(2m)!(2n)!
+m!n!(m + n)!
+$$
+is an integer (0! = 1).
+Proof 1. We first prove a lemma.
+Lemma. For any non-negative real x and y, the inequality [x] + [y] +
+$$
+[x + y] \le [2x] + [2y] holds.
+$$
+Proof of the lemma. Let \{$x\} = x - [x]$ and \{$y\} = y - [y].$ Then
+$$
+[x] + [y] + [x + y] = 2[x] + 2[y] + [\{x\} + \{y\}],
+[2x] + [2y] = 2[x] + 2[y] + [2\{x\}] + [2\{y\}],
+$$
+so it suﬃces to prove the inequality for 0 $\le$  x,y < 1.
+When 0 $\le$  $x+y < 1$, we have [x]+[y]+[x + y] = 0 $\le$  [2x]+[2y]. When
+1 $\le$  x + y < 2, at least one of x and y is not less than 1
+2, which means
+[2x]+[2y] $\ge$  1, and then [x]+[y]+[x + y] = 1 $\le$  [2x]+[2y]. The lemma is
+proved.
+Back to the original problem, to show that (2m)!(2n)!
+m!n!(m+n)! is an integer, we
+show that for any prime p,
+$$
+vp((2m)!) + vp((2n)!) \ge vp(m!) + vp(n!) + vp((m + n)!). (∗)
+$$
+In this inequality,
+$$
+vp ((2m)!) + vp ((2n)!) =
+\infty \nmid
+i=1
+\lfloor
+2m
+pi
+\rfloor
++
+\lfloor
+2n
+pi
+\rfloor
+,
+vp (m!) + vp (n!) + vp ((m + n)!) =
+\infty \nmid
+i=1
+\lfloor
+m
+pi
+\rfloor
++
+\lfloor
+n
+pi
+\rfloor
++
+\lfloor
+m + n
+pi
+\rfloor
+.
+$$
+By the lemma,
+$$
+\lceil
+2m
+pi
+\rceil
++
+\lceil
+2n
+pi
+\rceil
+\ge
+\lceil
+m
+pi
+\rceil
++
+\lceil
+n
+pi
+\rceil
++
+\lceil
+m+n
+pi
+\rceil
+$$
+for any i $\in$  N∗
+. Then
+$$
+\infty \nmid
+i=1
+\lfloor
+2m
+pi
+\rfloor
++
+\lfloor
+2n
+pi
+\rfloor
+\ge
+\infty \nmid
+i=1
+\lfloor
+m
+pi
+\rfloor
++
+\lfloor
+n
+pi
+\rfloor
++
+\lfloor
+m + n
+pi
+\rfloor
+.
+$$
+Hence, (∗) is proved and therefore (2m)!(2n)!
+m!n!(m+n)! is an integer.
+Proof 2. To prove the given expression is an integer, let f(m,n) =
+$$
+(2m)!(2n)!
+$$
+m!n!(m+n)!. For any non-negative integer m, f(m,0) = (2m)!
+$$
+m!m! = Cm
+$$
+2m is
+an integer. For some non-negative integer n, if f(m,n) is an integer for
+any non-negative integer m, then
+$$
+f (m,n + 1) =
+(2m)!(2n + 2)!
+m!(n + 1)!(m + n + 1)!
+=
+(2m)!(2n)!
+m!n!(m + n)!
+\cdot
+4n + 2
+m + n + 1
+=
+(2m)!(2n)!
+m!n!(m + n)!
+\cdot
+\lfloor
+4 -
+(2m + 2)(2m + 1)
+(m + 1)(m + n + 1)
+\rfloor
+= 4 \cdot
+(2m)!(2n)!
+m!n!(m + n)!
+-
+(2m + 2)!(2n)!
+(m + 1)!n!(m + 1 + n)!
+= 4f(m,n) - f(m + 1,n),
+$$
+which shows that f(m,n + 1) is an integer for any non-negative m. By
+mathematical induction, the given expression f(m,n) is an integer for any
+non-negative m,n.
+Remark. We provided a straightforward proof first. When dealing with
+factorials and divisibility problems, the first thing we can try is to study
+the power of prime factors. On the other hand, the product and quotient
+of factorials lead us to think of the binomial coeﬃcients. Then similarly to
+the recurrence relation of binomial coeﬃcients, we can get the recurrence
+formula in the second proof.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 10 contestants scored 7 points, no contestant scored 6 points, no contestant
+scored 5 points, no contestant scored 4 points, 1 contestant scored 3 points, 1 contestant
+scored 2 points, 2 contestants scored 1 point, and 19 contestants scored 0 point. The average
+score of this problem is 2.333, indicating that it had a certain level of diﬃculty.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Soviet Union team scored 35 points (with a total team score of 270 points), the Hungary
+team scored 43 points (with a total team score of 263 points), the German Democratic
+Republic team scored 45 points (with a total team score of 239 points), the Romania team
+scored 47 points (with a total team score of 208 points), and the United Kingdom team
+scored 21 points (with a total team score of 179 points).
+The gold medal cutoﬀ for this IMO was set at 40 points (with 8 contestants earning gold
+medals), the silver medal cutoﬀ was 30 points (with 16 contestants earning silver medals),
+and the bronze medal cutoﬀ was 19 points (with 30 contestants earning bronze medals).
+In this IMO, a total of eight contestants achieved a perfect score of 40 points.
+Problem 1.4 (IMO 19-3, proposed by the Netherlands). Let n be a
+given $integer >2$, and let Vn be the set of integers 1+kn, where $k = 1$,2,….
+A number m $\in$  Vn is called indecomposable in Vn if there do not exist
+numbers p,q $\in$  Vn such that $pq = m.$ Prove that there exists a number
+r $\in$  Vn that can be expressed as the product of elements indecomposable in
+Vn in more than one way (products which diﬀer only in the order of their
+factors will be considered the same).
+Proof. Let $a = n-1$, b = 2n−1, and $r = a2$
+$$
+b2
+$$
+. Then a2
+$$
+,b2
+$$
+,ab,r $\in$  Vn, for
+$$
+a2
+≡ b2
+≡ ab ≡ a2
+b2
+$$
+≡ 1(mod n). On the other hand, a2
+is indecomposable
+in Vn because $a2
+< (n + 1)$2
+.
+Furthermore, ab
+$$
+a2 = b
+$$
+$a = 2n-1$
+$$
+n-1 = 2 + 1
+$$
+n−1 is not an integer for $n > 2$, so
+$$
+a2
+$$
+is not a divisor of ab.
+Now we have at least two distinct factorings of r into indecomposables:
+$$
+one contains a2
+, using r = a2
+\cdot b2
+$$
+and then factoring b2
+into indecomposables;
+the other one does not contain a2
+$$
+, using r = (ab)2
+$$
+and then factoring ab
+into indecomposables.
+Remark. A considerable number of high school math problems have
+a background in higher mathematics, especially those number theory
+problems. This problem from the 19th IMO is one example. For high school
+students without the knowledge of abstract algebra (including groups and
+rings), the key to this problem is to check some simple cases and try to
+$$
+find such forms a2
+\cdot  b2
+$$
+= ab · ab so that we can factor a number in two
+ways.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 11 contestants scored 7 points, 8 contestants scored 6 points, no contestant
+scored 5 points, no contestant scored 4 points, 1 contestant scored 3 points, no contestant
+scored 2 points, no contestant scored 1 point, and 17 contestants scored 0 point. The average
+score of this problem is 3.459, indicating that it was relatively straightforward.
+Among the top five teams in the team scores, the United States team achieved a total
+score of 202 points, the Soviet Union team achieved a total score of 192 points, the Hungary
+team achieved a total score of 190 points, the United Kingdom team achieved a total score
+of 190 points, and the Netherlands team achieved a total score of 185 points.
+The gold medal cutoﬀ for this IMO was set at 34 points (with 13 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 24 points (with 29 contestants earning silver
+medals), and the bronze medal cutoﬀ was 17 points (with 35 contestants earning bronze
+medals).
+In this IMO, a total of five contestants achieved a perfect score of 40 points.
+Problem 1.5 (IMO 21-1, proposed by Germany). Let p and q be
+natural numbers such that
+p
+q
+$$
+= 1 -
+1
+2
++
+1
+3
+- \cdots  -
+1
+1318
++
+1
+1319
+.
+$$
+Prove that p is divisible by 1979.
+Proof.
+p
+q
+$$
+= 1 -
+1
+2
++
+1
+3
+- \cdots  -
+1
+1318
++
+1
+1319
+= 1 +
+1
+2
++
+1
+3
++ \cdots  +
+1
+1318
++
+1
+1319
+- 2
+1
+2
++
+1
+4
++ \cdots  +
+1
+1318
+= 1 +
+1
+2
++
+1
+3
++ \cdots  +
+1
+1318
++
+1
+1319
+- 1 +
+1
+2
++ \cdots  +
+1
+659
+=
+1
+660
++
+1
+661
++ \cdots  +
+1
+1318
++
+1
+1319
+=
+1
+660
++
+1
+1319
++
+1
+661
++
+1
+1318
+\cdots  +
+1
+989
++
+1
+990
+= 1979
+1
+660 \times 1319
++
+1
+661 \times 1318
++
+1
+989 \times 990
+=
+1979N
+1319!
+.
+$$
+Now, 1979|p · 1319!, and since 1979 is a prime (we can get this from
+checking the primes not larger than 43), we have (1979, 1319!) = 1.
+Then 1979|p.
+Remark. Here, the most important part is the identity
+$$
+(2n
+k=1 (-1)k-1
+\cdot  1
+k =
+(2n
+k=n+1
+1
+k.
+$$
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 39 contestants scored 6 points, 1 contestant scored 5 points, 1 contestant
+scored 4 points, 2 contestants scored 3 points, 7 contestants scored 2 points, 11 contestants
+scored 1 point, and 105 contestants scored 0 point. The average score of this problem is
+1.651, indicating that it was relatively challenging.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Soviet Union team scored 36 points (with a total team score of 267 points), the Romania
+team scored 31 points (with a total team score of 240 points), the Germany team scored 36
+points (with a total team score of 235 points), the United Kingdom team scored 10 points
+(with a total team score of 218 points), and the United States team scored 9 points (with a
+total team score of 199 points).
+The gold medal cutoﬀ for this IMO was set at 37 points (with 8 contestants earning gold
+medals), the silver medal cutoﬀ was 29 points (with 32 contestants earning silver medals),
+and the bronze medal cutoﬀ was 20 points (with 42 contestants earning bronze medals).
+In this IMO, a total of four contestants achieved a perfect score of 40 points.
+Problem 1.6 (IMO 22-4, proposed by Belgium). (a) For which values
+of $n > 2$ is there a set of n consecutive positive integers such that the largest
+number in the set is a divisor of the least common multiple of the remaining
+n − 1 numbers?
+(b) For which values of $n > 2$ is there exactly one set having the stated
+property?
+Solution. Let the n consecutive positive integers be m − n + 1,m − n +
+2,…,m.
+For $n = 3$, the condition m|(m − 1)(m − 2) implies m|2, which is in
+contradiction to m $\ge$  $n = 3.$
+For $n = 4$, from m|(m − 1)(m − 2)(m − 3), one has m|6. Since m $\ge$ 
+$n = 4$, it follows that $m = 6.$ We have exactly one set of 4 consecutive
+positive integers: 3,4,5,6.
+Suppose $n > 4.$ For (n − 1)(n − 2) > n − 1, we can let $m =
+(n - 1)$(n − 2). Now (n − 1)|m − (n − 1) and (n − 2)|m − (n − 2). Since
+(m − (n − 1),m − (n − 2)) = 1, we know that $m = (n - 1)$(n − 2) divides
+the least common multiple of m − n + 1 and m − n + 2.
+We can also let $m = (n - 2)$(n − 3) because (n − 2)(n − 3) > n − 1.
+Similarly, we have that $m = (n - 2)$(n − 3) divides the least common mul-
+tiple of m − n + 2 and m − n + 3.
+Thus for $n > 4$ we can find more than one admissible sequence of n
+consecutive positive integers. The answers to (a) and (b) are n $\ge$  4 and
+$$
+n = 4, respectively.
+$$
+Remark. For many problems, we can study some simple cases first. In
+this solution, such strategy is beneficial to the contradiction for $n = 3$, the
+proof of unique existence for $n = 4$, and the construction for $n > 4.$
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 37 contestants scored 7 points, 4 contestants scored 6 points, 4 contestants
+scored 5 points, 3 contestants scored 4 points, 1 contestant scored 3 points, 1 contestant
+scored 2 points, no contestant scored 1 point, and 1 contestant scored 0 point. The average
+score of this problem is 6.275, indicating that it was simple.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The United States team scored 56 points (with a total team score of 314 points), the Germany
+team scored 54 points (with a total team score of 312 points), the United Kingdom team
+scored 54 points (with a total team score of 301 points), the Austria team scored 51 points
+(with a total team score of 290 points), and the Bulgaria team scored 50 points (with a total
+team score of 287 points).
+The gold medal cutoﬀ for this IMO was set at 41 points (with 36 contestants earning gold
+medals), the silver medal cutoﬀ was 34 points (with 37 contestants earning silver medals),
+and the bronze medal cutoﬀ was 26 points (with 30 contestants earning bronze medals).
+In this IMO, a total of 26 contestants achieved a perfect score of 42 points.
+Problem 1.7 (IMO 25-2, proposed by the Netherlands). Find one
+pair of positive integers a and b such that:
+(i) ab(a + b) is not divisible by 7;
+(ii) (a + b)7
+$$
+- a7
+- b7
+$$
+is divisible by 77
+.
+Justify your answer.
+Solution. Since
+(a + b)7
+$$
+- a7
+- b7
+= 7a6
+b + 21a5
+b2
++ 35a4
+b3
++ 35a3
+b4
++ 21a2
+b5
++ 7ab6
+$$
+= 7ab(a + b) a4
+$$
++ 2a3
+b + 3a2
+b2
++ 2ab3
++ b4
+)
+$$
+= 7ab(a + b) a2
+$$
++ ab + b2
+)2
+,
+$$
+and ab(a + b) is not divisible by 7, then (ii) holds if and only if
+73
+$$
+\mida2
++ ab + b2
+$$
+. Now that 73
+$$
+= 343 = 18\times19+1 = 182
+$$
++18+1, so we can
+let $a = 18$ and $b = 1$, which also satisfies (i). Summarizing, (a,b) = (18,1)
+is a solution.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 66 contestants scored 7 points, 3 contestants scored 6 points, 6 contestants
+scored 5 points, 7 contestants scored 4 points, 8 contestants scored 3 points, 8 contestants
+scored 2 points, 39 contestants scored 1 point, and 55 contestants scored 0 point. The
+average score of this problem is 3.214, indicating that it was relatively straightforward.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Soviet Union team scored 35 points (with a total team score of 235 points), the Bulgaria
+team scored 34 points (with a total team score of 203 points), the Romania team scored 33
+points (with a total team score of 199 points), the Hungary team scored 42 points (with a
+total team score of 195 points), and the United States team scored 37 points (with a total
+team score of 195 points).
+The gold medal cutoﬀ for this IMO was set at 40 points (with 14 contestants earning gold
+medals), the silver medal cutoﬀ was 26 points (with 35 contestants earning silver medals),
+and the bronze medal cutoﬀ was 17 points (with 49 contestants earning bronze medals).
+In this IMO, a total of eight contestants achieved a perfect score of 42 points.
+Problem 1.8 (IMO 25-6, proposed by Poland). Let a, b, c, and d
+be odd integers such that 0 < $a < b$ < $c < d$ and $ad = bc.$ Prove that if
+a + d = 2k
+and b + c = 2m
+for some integers k and m, then $a = 1.$
+Proof. Since $ad = bc$,
+a((a + d) − (b + c)) = a2
++ ad − ab − ac
+$$
+= a2
++ bc - ab - ac
+$$
+= (a − b)(a − c) > 0,
+so a + d > b + c. Then 2k
+$$
+> 2m
+$$
+with $k > m.$
+Since a(2k
+− a) = ad = $bc = b(2m
+- b)$, we have
+$$
+2m
+b - 2k-m
+$$
+a
+)
+$$
+= b2
+- a2
+$$
+= (b + a)(b − a),
+and then 2m
+|(b + a)(b − a). We observe that (b + a)−(b − a) = 2a, and a
+is odd, which means 2a is not divisible by 4, so at least one of b+a and b−a
+is not divisible by 4. Hence 2m−1
+|b + a or 2m−1
+|b − a. Since 0 < b − a <
+b < 1
+$$
+2(b + c) = 2m-1
+$$
+, then 2m−1
+|b + a. However, 0 < b + a < b + c = 2m
+,
+so b + a = 2m−1
+, from which $b = 2m-1
+- a$ and $c = 2m-1
++ a.$
+$$
+Now ad = bc = (2m-1
+$$
+− a)(2m−1
++ a) = 2m
+$$
+- a2
+$$
+, which leads to
+a(a + d) = 2m
+. Therefore, a|2m
+. For a is odd, a = 1.
+Remark. When it comes to the power of 2, or the power of other prime
+numbers, such as p$\alpha$ 
+, a common approach is to rearrange all the prime
+factors to one side of the equality and consider whether we have p$\alpha$ 
+|n
+or n|p$\alpha$ 
+. For instance, in solving problem 1.8 we used 2m
+$$
+(b - 2k-m
+$$
+$a) =
+(b + a)$(b − a) and a(a + d) = 2m
+to obtain 2m
+|(b + a)(b − a) and a|2m
+,
+and then we got the desired conclusion.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 25 contestants scored 7 points, 3 contestants scored 6 points, 3 contestants
+scored 5 points, 5 contestants scored 4 points, 6 contestants scored 3 points, 9 contestants
+scored 2 points, 18 contestants scored 1 point, and 123 contestants scored 0 point. The
+average score of this problem is 1.469, indicating that it was relatively challenging.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Soviet Union team scored 42 points (with a total team score of 235 points), the Bulgaria
+team scored 30 points (with a total team score of 203 points), the Romania team scored 21
+points (with a total team score of 199 points), the United States team scored 21 points (with
+a total team score of 195 points), and the Hungary team scored 15 points (with a total team
+score of 195 points).
+The gold medal cutoﬀ for this IMO was set at 40 points (with 14 contestants earning gold
+medals), the silver medal cutoﬀ was 26 points (with 35 contestants earning silver medals),
+and the bronze medal cutoﬀ was 17 points (with 49 contestants earning bronze medals).
+In this IMO, a total of eight contestants achieved a perfect score of 42 points.
+Problem 1.9 (IMO 33-1, proposed by New Zealand). Find all inte-
+gers a, b, and c with 1 < $a < b$ < c such that (a − 1)(b − 1)(c − 1) is a
+divisor of abc − 1.
+Solution. Let $x = a - 1$, y = b − 1, and $z = c - 1.$ Then $x < y$ < z are
+positive integers and their product xyz is a divisor of
+$$
+(x + 1)(y + 1)(z + 1) - 1 = xyz + xy + yz + zx + x + y + z.
+$$
+We have xyz | (xy + yz + zx + x + y + z). If x $\ge$  3, then y $\ge$  4 and z $\ge$  5.
+Hence
+$$
+1 \le
+xy + yz + zx + x + y + z
+xyz
+=
+1
+x
++
+1
+y
++
+1
+z
++
+1
+xy
++
+1
+yz
++
+1
+zx
+\le
+1
+3
++
+1
+4
++
+1
+5
++
+1
+12
++
+1
+20
++
+1
+15
+=
+59
+60
+< 1,
+$$
+which is a contradiction. So, x $\le$  2.
+If $x = 1$, then yz |y + yz + z + 1 + y + z, that is yz|2y + 2z + 1. So y
+and z are both odd. Now that 2z $\le$  yz $\le$  2y + 2z + 1 < 4z, so 2 $\le$  $y < 4.$
+Since y is odd, y = 3. We also have 3z |2z + 7, from which z |7, and then
+$$
+z = 7.
+$$
+If $x = 2$, then 2yz |2y+yz+2z+2+y+z, namely 2yz |yz+3y+3z+2.
+So y and z are both even. Hence, y $\ge$  4 and z $\ge$  y + 2. Now that
+$$
+2yz \le yz + 3y + 3z + 2
+\le yz + 3(z - 2) + 3z + 2
+< yz + 6z,
+$$
+so 2 = $x < y$ < 6. The fact that y is even implies $y = 4.$ We have
+8z |7z + 14, in other words z |14. Then since z is even and $z > y$ = 4,
+we know $z = 14.$
+Now, we can see that (x,y,z) = (1,3,7),(2,4,14) both satisfy the given
+condition, so the solution is (a,b,c) = (2,4,8),(3,5,15).
+Remark. For problems concerning divisions of integers, we usually want
+the divisors in a simpler form such as x, y or p, q. This is why we let
+$x = a - 1$, y = b − 1, and $z = c - 1$ at first. Moreover, since the coeﬃcient
+of the highest order term in the expression of the dividend is less than that
+in the divisor, we know that for larger x, y, z, the dividend will be less than
+the divisor. Therefore we only had to discuss those smaller cases.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 131 contestants scored 7 points, 18 contestants scored 6 points, 20 contestants
+scored 5 points, 14 contestants scored 4 points, 14 contestants scored 3 points, 11 contestants
+scored 2 points, 32 contestants scored 1 point, and 110 contestants scored 0 point. The
+average score of this problem is 3.649, indicating that it was relatively straightforward.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 41 points (with a total team score of 240 points), the United States
+team scored 37 points (with a total team score of 181 points), the Romania team scored 38
+points (with a total team score of 177 points), the Commonwealth of Independent States
+team scored 41 points (with a total team score of 176 points), and the United Kingdom team
+scored 42 points (with a total team score of 168 points).
+The gold medal cutoﬀ for this IMO was set at 32 points (with 26 contestants earning gold
+medals), the silver medal cutoﬀ was 24 points (with 55 contestants earning silver medals),
+and the bronze medal cutoﬀ was 14 points (with 74 contestants earning bronze medals).
+In this IMO, a total of four contestants achieved a perfect score of 42 points.
+Problem 1.10 (IMO 35-4, proposed by Australia). Determine all
+ordered pairs (m, n) of positive integers such that
+$$
+n3
++ 1
+mn - 1
+$$
+is an integer.
+Solution. Since mn−1|(mn)3
+−1 for any positive integers m, n, and m,
+$$
+n satisfy mn - 1\midn3
+$$
++ 1, we have mn − 1|(mn)3
+$$
++ n3
+= n3
+(m3
++ 1).
+$$
+We observe that (mn−1,n) = 1, so mn−1|m3
++1, which implies that
+$$
+mn-1\midn3
+$$
++1 is equivalent to mn−1|m3
++1. Thus by symmetry we can
+$$
+assume m \ge n.
+$$
+When $n = 1$, the condition becomes mn − 1 = m − 1 is a divisor of
+13
++ 1 = 2, so $m = 2$ or 3.
+When n $\ge$  2, if $m = n$, then the condition becomes n2
+$$
+-1\midn3
+$$
++1, that
+is n − 1|n2
+− n + 1, from which n − 1|1, so $n = 2$ and $m = 2.$
+If $m > n$, then m $\ge$  n + 1. Now from the condition,
+$$
+mn - 1\midn3
+$$
++ mn − (mn − 1). Then
+$$
+mn - 1\midn3
++ mn = n(n2
++ m).
+$$
+Using (mn − 1,n) = 1, we conclude that mn − 1|n2
++ m.
+On the other hand,
+$$
+2(mn - 1) \ge n(n + 1) + mn - 2 = n2
++ mn + n - 2 > n2
++ m,
+$$
+which indicates that mn − 1 = n2
+$$
++ m. Hence (m - n - 1)(n - 1) = 2.
+$$
+Now we have that
+)
+$$
+m - n - 1 = 1,
+n - 1 = 2,
+$$
+or
+)
+$$
+m - n - 1 = 2,
+n - 1 = 1.
+$$
+The solution is $m = 5$, n = 3 or $m = 5$, n = 2.
+Consequently,
+$$
+(m,n) = (2,1),(3,1),(1,2),(1,3),(2,2),(5,2),(5,3),(2,5),(3,5).
+$$
+We can see these pairs (m, n) all satisfy the given condition.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 101 contestants scored 7 points, 11 contestants scored 6 points, 20 contestants
+scored 5 points, 19 contestants scored 4 points, 43 contestants scored 3 points, 70 contestants
+scored 2 points, 69 contestants scored 1 point, and 52 contestants scored 0 point. The
+average score of this problem is 3.343, indicating that it was relatively straightforward.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The United States team scored 42 points (with a total team score of 252 points), the China
+team scored 42 points (with a total team score of 229 points), the Russia team scored 42
+points (with a total team score of 224 points), the Bulgaria team scored 34 points (with a
+total team score of 223 points), and the Hungary team scored 37 points (with a total team
+score of 221 points).
+The gold medal cutoﬀ for this IMO was set at 40 points (with 30 contestants earning gold
+medals), the silver medal cutoﬀ was 30 points (with 64 contestants earning silver medals),
+and the bronze medal cutoﬀ was 19 points (with 98 contestants earning bronze medals).
+In this IMO, a total of 22 contestants achieved a perfect score of 42 points.
+Problem 1.11 (IMO 39-4, proposed by the United Kingdom).
+Determine all pairs (a,b) of positive integers such that ab2
++ b + 7 divides
+$$
+a2
+$$
+b + a + b.
+Solution. By the given condition, ab2
+$$
++b+7\midb(a2
+$$
+b + a + b). Then ab2
++
+b + 7|a(ab2
+$$
++ b + 7) + b2
+$$
+− 7a, and hence ab2
+$$
++ b + 7\midb2
+- 7a.
+$$
+If b2
+− 7a > 0, then b2
+$$
+- 7a \ge ab2
++ b + 7 > b2
+$$
+, which is impossible.
+If b2
+− 7a = 0, then $a = 7k2$
+and $b = 7k$, where k is a positive integer.
+It is easy to check that every such pair (a,b) satisfies the given condition.
+If b2
+$$
+- 7a < 0, since ab2
++ b + 7 \le 7a - b2
+$$
+< 7a, then b2
+$$
+< 7, so b = 1
+$$
+or 2.
+When $b = 1$, we have a + 8|a2
++ a + 1 = (a + 8)(a − 7) + 57. Then
+a + 8|57, from which $a = 11$ or 49.
+When $b = 2$, we obtain 4a + 9|2a2
++ a + 2. Then
+$$
+4a + 9\mid2(2a2
+$$
++ a + 2) = a(4a + 9) + 4 − 7a.
+$$
+Hence, 4a+9\mid7a-4. However, 7a-4 < 2(4a + 9). Thus, 7a-4 = 4a+9,
+$$
+so $a = 13$
+3 , and this subcase yields no solution.
+Summarizing, we see that the solution is
+(a,b) = (11,1),(49,1),(7k2
+$$
+,7k), k \in N∗
+.
+$$
+Remark. When discussing divisibility problems, two useful methods are
+factor analysis and scaling. Due to the lack of a good starting point for
+discussing factors in this problem, and also noting the irregularity of the
+degrees, we attempted to impose size constraints on a and b, leading to a
+small number of cases.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 142 contestants scored 7 points, 23 contestants scored 6 points, 10 contestants
+scored 5 points, 20 contestants scored 4 points, 38 contestants scored 3 points, 14 contestants
+scored 2 points, 47 contestants scored 1 point, and 125 contestants scored 0 point. The
+average score of this problem is 3.463, indicating that it was relatively straightforward.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Iran team scored 36 points (with a total team score of 211 points), the Bulgaria team
+scored 35 points (with a total team score of 195 points), the Hungary team scored 40 points
+(with a total team score of 186 points), the United States team scored 39 points (with a
+total team score of 186 points), and the Chinese Taiwan team scored 36 points (with a total
+team score of 184 points).
+The gold medal cutoﬀ for this IMO was set at 31 points (with 37 contestants earning gold
+medals), the silver medal cutoﬀ was 24 points (with 66 contestants earning silver medals),
+and the bronze medal cutoﬀ was 14 points (with 102 contestants earning bronze medals).
+In this IMO, only one contestant achieved a perfect score of 42 points, namely Omid
+Amini from Iran.
+Problem 1.12 (IMO 43-3, proposed by Romania). Find all pairs of
+integers $m >2$ and $n >2$ such that there are infinitely many positive integers
+k for which kn
+$$
++ k2
+- 1 divides km
++ k - 1.
+$$
+Solution. First, we prove a lemma.
+Lemma. Suppose f(x) and g(x) are polynomials with rational coeﬃcients
+and g(x) $\ne$  0. If there exist infinitely many positive integers a such that
+f(a)
+g(a) is an integer, then f(x) is divisible by g(x).
+Proof of the Lemma. Suppose $f(x) = q(x)g(x) + r(x)$, where q(x) and
+r(x) are both polynomials with rational coeﬃcients and the degree of r(x)
+is less than the degree of g(x). Let d be the common denominator of the
+coeﬃcients of q(x). Then d · q(a) is an integer for any integer a.
+In this proposition, if f(a)
+$g(a) = q(a)+$ r(a)
+g(a) is an integer, then d· r(a)
+g(a) is an
+integer. We also observe that
+lim
+a$\to$ $\infty$ 
+d ·
+r(a)
+g(a)
+$$
+= 0.
+$$
+Hence there exists a positive integer A such that for ∀$a > A$, both g(a) $\ne$  0
+and |d · r(a)
+$g(a)\mid < 1$ are valid.
+Now, if there exist infinitely many positive integers a such that f(a)
+g(a) is
+an integer, then in these integers there exist infinitely many $a > A$ such
+that $r(a) = 0.$ This implies that $r(x) = 0$, which is equivalent to $g\mid f$. The
+lemma is proved.
+Back to the original problem, we observe that
+$$
+a5
+$$
++ a − 1
+$$
+a3 + a2 - 1
+= a2
+$$
+− a + 1.
+Thus, (m,n) = (5,3) is a solution. We next prove that this is the unique
+solution.
+By the lemma,
+(xn
+$$
++ x2
+- 1)\mid(xm
++ x - 1).
+$$
+Then n $\le$  m, and
+(xn
+$$
++ x2
+- 1)\mid(x + 1)(xm
++ x - 1) - (xn
++ x2
+- 1).
+Since
+(x + 1)(xm
++ x - 1) - (xn
++ x2
+- 1) = xn
+(xm-n+1
++ xm-n
+- 1),
+so
+xn
++ x2
+- 1
+)
+\mid(xm-n+1
++ xm-n
+- 1).
+$$
+Then n $\le$  m − n + 1, from which m − n $\ge$  n − 1 $\ge$  2.
+$$
+Since 0n
++02
+$$
+−1 = −1 and 1n
++12
+−1 = 1, there exists $\alpha$  $\in$  (0,1) such
+that $\alpha$ n
+$$
++ \alpha2
+- 1 = 0. Furthermore, \alpham-n+1
++ \alpham-n
+- 1 = 0. However,
+$$
+from n $\le$  m−n+1 and m−n $\ge$  2 we have $\alpha$ n
+$$
+\ge \alpham-n+1
+$$
+and $\alpha$ 2
+$$
+\ge \alpham-n
+.
+Thus, \alpham-n+1
++\alpham-n
+-1 \le \alphan
++\alpha2
+$$
+−1 = 0. Hence, the above inequalities
+should actually be equalities, which means $n = m - n + 1$ and m − n = 2.
+The solution is (m,n) = (5,3).
+Remark. The lemma is relatively common and not diﬃcult to prove.
+Compared to the lemma, the rest part of the solution involves an estimation
+of degrees and discussion on zeros of polynomials, which may actually be
+more diﬃcult. This solution implies that number theory problems may not
+necessarily be limited to the range of integers. When it comes to polyno-
+mials, examining zeros in the range of real numbers can be helpful.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 14 contestants scored 7 points, 2 contestants scored 6 points, 4 contestants
+scored 5 points, no contestant scored 4 points, 2 contestants scored 3 points, 1 contestant
+scored 2 points, 145 contestants scored 1 point, and 311 contestants scored 0 point. The
+average score of this problem is 0.591, indicating that it was extremely diﬃcult.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 24 points (with a total team score of 212 points), the Russia team
+scored 16 points (with a total team score of 204 points), the United States team scored 10
+points (with a total team score of 171 points), the Bulgaria team scored 11 points (with a
+total team score of 167 points), and the Vietnam team scored 18 points (with a total team
+score of 166 points).
+The gold medal cutoﬀ for this IMO was set at 29 points (with 39 contestants earning gold
+medals), the silver medal cutoﬀ was 23 points (with 73 contestants earning silver medals),
+and the bronze medal cutoﬀ was 14 points (with 120 contestants earning bronze medals).
+In this IMO, only three contestants achieved a perfect score of 42 points, namely Yunhao
+Fu and Botong Wang from China, and Andrei Khaliavine from Russia.
+Problem 1.13 (IMO 43-4, proposed by Romania). The positive divi-
+sors of an integer $n > 1$ are $d1 < d2$ < ··· < dk, so that $d1 = 1$ and $dk = n.$
+Let $D = d1d2 + d2d3$ + ··· + dk−1dk. Show that $D < n2$
+and find all n for
+which D divides n2
+.
+Proof. We observe that if d is a divisor of n, then n
+d is also a divisor of n.
+Thus for all 1 $\le$  i $\le$  k, we have didk+1−i = n. Therefore,
+$$
+D = d1d2 + d2d3 + \cdots  + dk-1dk
+=
+n2
+dkdk-1
++
+n2
+dk-1dk-2
++ \cdots  +
+n2
+d2d1
+= n2 1
+d1d2
++
+1
+d2d3
++ \cdots  +
+1
+dk-1dk
+\le n2
+\lfloor
+1
+d1
+-
+1
+d2
++
+1
+d2
+-
+1
+d3
++ \cdots  +
+1
+dk-1
+-
+1
+dk
+\rfloor
+= n2 1
+d1
+-
+1
+dk
+<
+n2
+d1
+= n2
+.
+$$
+To find all n for which D divides n2
+, let p be the smallest prime factor
+of n. Then $d2 = p$ and dk−1 = n
+p . If $n = p$, then $k = 2$, D = p = n,
+and D|n2
+. If n $\ne$  p, then n is a composite number with $k > 2.$ We have
+$$
+D > dk-1dk = n
+p \cdot n = n2
+$$
+p . If D|n2
+, then n2
+D is also a divisor of n2
+. However,
+$$
+1 < n2
+$$
+$D < p$, which is a contradiction to the fact that p is the smallest prime
+factor of n and n2
+.
+$$
+Consequently, D divides n2
+$$
+if and only if n is a prime.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 176 contestants scored 7 points, 20 contestants scored 6 points, 9 contes-
+tants scored 5 points, 70 contestants scored 4 points, 38 contestants scored 3 points, 15
+contestants scored 2 points, 45 contestants scored 1 point, and 106 contestants scored
+0 point. The average score of this problem is 3.896, indicating that it was relatively
+straightforward.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 42 points (with a total team score of 212 points), the Russia team
+scored 42 points (with a total team score of 204 points), the United States team scored 24
+points (with a total team score of 171 points), the Bulgaria team scored 34 points (with a
+total team score of 167 points), and the Vietnam team scored 35 points (with a total team
+score of 166 points).
+The gold medal cutoﬀ for this IMO was set at 29 points (with 39 contestants earning gold
+medals), the silver medal cutoﬀ was 23 points (with 73 contestants earning silver medals),
+and the bronze medal cutoﬀ was 14 points (with 120 contestants earning bronze medals).
+In this IMO, only three contestants achieved a perfect score of 42 points, namely Yunhao
+Fu and Botong Wang from China, and Andrei Khaliavine from Russia.
+Problem 1.14 (IMO 50-1, proposed by Australia). Let n be a pos-
+itive integer and let a1,a2,…,ak(k $\ge$  2) be distinct integers in the set
+\{1,…,n\} such that n divides ai(ai+1 − 1) for $i = 1$,…,k − 1. Prove that
+$$
+n does not divide ak(a1 - 1).
+$$
+Proof. We first prove by induction that n|a1(am − 1) for any integer 2 $\le$ 
+$$
+m \le k.
+$$
+If $m = 2$, we have n|a1(a2 − 1) by assumption. Suppose that
+n|a1(am − 1) for some 2 $\le$  m $\le$  k − 1; then
+$$
+n\mida1(am - 1)(am+1 - 1).
+$$
+By assumption, n|am (am+1 − 1), so n|a1am (am+1 − 1), and therefore
+$$
+n\mid(a1am(am+1 - 1) - a1(am - 1)(am+1 - 1)),
+$$
+i.e., n|a1(am+1 − 1). By the method of induction, n|a1(am − 1) holds for
+every integer 2 $\le$  m $\le$  k. In particular, n|a1(ak − 1).
+Since a1(ak − 1) − ak(a1 − 1) = ak − a1 is not divisible by n (because
+a1 and ak are distinct elements in \{1,…,n\}), we conclude that ak(a1 −1)
+is not divisible by n.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 324 contestants scored 7 points, 21 contestants scored 6 points, 16 contestants
+scored 5 points, 17 contestants scored 4 points, 20 contestants scored 3 points, 28 contestants
+scored 2 points, 56 contestants scored 1 point, and 83 contestants scored 0 point. The
+average score of this problem is 4.804, indicating that it was simple.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 42 points (with a total team score of 221 points), the Japan team
+scored 42 points (with a total team score of 212 points), the Russia team scored 42 points
+(with a total team score of 203 points), the South Korea team scored 42 points (with a total
+team score of 188 points), and the North Korea team scored 42 points (with a total team
+score of 183 points).
+The gold medal cutoﬀ for this IMO was set at 32 points (with 49 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 24 points (with 98 contestants earning silver
+medals), and the bronze medal cutoﬀ was 14 points (with 135 contestants earning bronze
+medals).
+In this IMO, only two contestants achieved a perfect score of 42 points, namely Dongyi
+Wei from China and Makoto Soejima from Japan.
+Problem 1.15 (IMO 64-1, proposed by Colombia). Determine
+all composite integers $n > 1$ that satisfy the following property: if
+d1,d2,…,dk are all the positive divisors of n with $l = d1$ < d2 < ··· <
+$dk = n$, then di divides di+1 + di+2 for every 1 $\le$  i $\le$  k − 2.
+Solution. All composite integers n satisfying the given property are those
+$$
+n = p\alpha
+$$
+, where p is a prime number and integer $\alpha$  $\ge$  2.
+First, for such n, we have $di = pi-1$
+(i = 1,2,…,$\alpha$ +1). Then evidently
+di |di+1 +di+2. Otherwise we assume that $p < q$ are the smallest two prime
+factors of n. Suppose that for some positive integer t, there is $pt
+< q$ < pt+1
+.
+Then $dj = pj-1$
+for $j = 1$,2,…,t + 1 and $dt+2 = q.$
+If t $\ge$  2, then $dt = pt-1$
+$$
+, dt+1 = pt
+$$
+, and $dt+2 = q$, so dt+1 + dt+2 is not
+divisible by dt, a contradiction. Therefore $t = 1.$ Now, d2 = p and $d3 = q$,
+$$
+so dk-2 = n
+$$
+q and dk−1 = n
+p . Since dk−2 |dk−1 + dk, we have n
+q | n
+p + n.
+Hence, $p\mid q$ + pq, also a contradiction. Summarizing, n does not have two
+distinct prime factors and must be p$\alpha$ 
+, where p is a prime number and
+$$
+integer \alpha \ge 2.
+$$
+Remark. Similar to Problem 1.13, we considered those pairs of factors (
+p, n
+p
+)
+and
+(
+q, n
+q
+)
+to obtain the contradiction. In fact the key point is to
+find the form of n satisfying the given condition.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 474 contestants scored 7 points, 8 contestants scored 6 points, 6 contestants
+scored 5 points, 9 contestants scored 4 points, 9 contestants scored 3 points, 67 contestants
+scored 2 points, 19 contestants scored 1 point, and 26 contestants scored 0 point. The
+average score of this problem is 5.845, indicating that it was simple.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 42 points (with a total team score of 240 points), the United States
+team scored 42 points (with a total team score of 222 points), the South Korea team scored
+42 points (with a total team score of 215 points), the Romania team scored 42 points (with
+a total team score of 208 points), and the Canada team scored 42 points (with a total team
+score of 183 points).
+The gold medal cutoﬀ for this IMO was set at 32 points (with 54 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 25 points (with 90 contestants earning silver
+medals), and the bronze medal cutoﬀ was 18 points (with 170 contestants earning bronze
+medals).
+In this IMO, a total of five contestants achieved a perfect score of 42 points.

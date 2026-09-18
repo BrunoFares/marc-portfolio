@@ -1,0 +1,999 @@
+---
+title: "1.2.2 Prime numbers, prime factors, and coprime numbers"
+source_page: 49
+source: "IMO Problems, Theorems, and Methods: Number Theory"
+---
+
+# 1.2.2 Prime numbers, prime factors, and coprime numbers
+Problem 1.16 (IMO 11-1, proposed by the German Democratic
+Republic). Prove that there are infinitely many natural numbers a with
+the following property: the number $z = n4
++a$ is not prime for any natura1
+number n.
+Proof. Let $a = 4m4$
+, where m is a positive integer greater than 1. Then
+$$
+n4
+$$
++ a = n4
+$$
++ 4m4
+= n2
++ 2m2
+)2
+- 4m2
+n2
+= (n2
++ 2m2
++ 2mn)(n2
++ 2m2
+- 2mn).
+$$
+Note that
+$$
+n2
++ 2m2
++ 2mn > n2
++ 2m2
+- 2mn
+= (n - m)2
++ m2
+> 1,
+$$
+and hence $z = n4
++a$ can be written as the product of two positive integers
+greater than 1. So z is not prime, and there are infinitely many a with the
+required property.
+Remark. The key to this problem is the factorization of x4
+$$
++4y4
+$$
+. For those
+who are not familiar with this factorization, the form of a can be decided
+by the method of undetermined coeﬃcients. Specifically, if we want that
+$$
+x4
+$$
++ a = (x2
+$$
++ sx + t)(x2
++ s\rfloor
+x + t\rfloor
+$$
+), then it should be s + s⌋
+$$
+= 0, t = t\rfloor
+,
+s2
+$$
+= 2t, and $t2
+= a.$ Now we let s = −s⌋
+= 2m and $t = t$⌋
+$$
+= 2m2
+$$
+. Then
+$a = 4m4$
+.
+Score Situation This particular problem saw the following distribution of scores among con-
+testants: 45 contestants scored 5 points, 3 contestants scored 4 points, 6 contestants scored
+3 points, 7 contestants scored 2 points, 17 contestants scored 1 point, and 34 contestants
+scored 0 point. The average score of this problem is 2.544, indicating that it had a certain
+level of diﬃculty.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Hungary team scored 28 points (with a total team score of 247 points), the German
+Democratic Republic team scored 38 points (with a total team score of 240 points), the
+Soviet Union team scored 30 points (with a total team score of 231 points), the Romania
+team scored 33 points (with a total team score of 219 points), and the United Kingdom team
+scored 20 points (with a total team score of 193 points).
+The gold medal cutoﬀ for this IMO was set at 40 points (with 3 contestants earning gold
+medals), the silver medal cutoﬀ was 30 points (with 20 contestants earning silver medals),
+and the bronze medal cutoﬀ was 24 points (with 21 contestants earning bronze medals).
+In this IMO, only three contestants achieved a perfect score of 40 points, namely Tibor
+Fiala from Hungary, Vladimir Drinfeld from the Soviet Union and Simon Phillips Norton from
+the United Kingdom.
+Problem 1.17 (IMO 24-3, proposed by Germany). Let a, b, and c
+be positive integers, no two of which have a common divisor greater than
+1. Show that 2abc − ab − bc − ca is the largest integer which cannot be
+expressed in the form xbc + yca + zab, where x, y, and z are non-negative
+integers.
+Proof 1. First, we prove that 2abc − ab − bc − ca cannot be expressed in
+the form xbc + yca + zab. Assume that non-negative integers x,y,z $\ge$  0
+satisfy the expression 2abc − ab − bc − ca = xbc + yca + zab. Then
+$$
+2abc = bc(x + 1) + ca(y + 1) + ab(z + 1),
+$$
+from which a|bc(x + 1). Since (a,bc) = 1, then $a\mid x$+1, and since $x+1 > 0$,
+we have x + 1 $\ge$  a. Similarly, y + 1 $\ge$  b and z + 1 $\ge$  c. This leads to the
+contradiction that
+$$
+2abc = bc(x + 1) + ca(y + 1) + ab(z + 1) \ge 3abc.
+$$
+Now we show that for every positive integer $n > 2abc - ab - bc - ca$, it
+is expressible in the form xbc + yca + zab, where x, y, z are non-negative
+integers.
+As (ab,c) = 1, by Bézout’s theorem, the equation abz + cw = n has a
+solution (z,w), where z and w are integers. Then the pairs of integers in
+the form (z + c,w − ab) and (z − c,w + ab) are also solutions. So we can
+choose an integer z such that 0 $\le$  $z < c.$
+Now,
+$$
+cw = n - abz
+> 2abc - ab - bc - ca - abz
+\ge 2abc - ab - bc - ca - ab(c - 1)
+= abc - bc - ca,
+$$
+and thus $w > ab - a - b.$
+As (a,b) = 1, by Bézout’s theorem, the equation ay + bx = w has a
+solution (x,y), where x and y are integers. Similarly, we can choose y in
+the form (x + a,y − b) and (x − a,y + b) such that 0 $\le$  $y < b.$
+Now,
+$$
+bx = w - ay
+$$
+> ab − a − b − ay
+$\ge$  ab − a − b − a(b − 1)
+$$
+= -b.
+$$
+Thus, bx > −b, and we know that x > −1 is an non-negative integer.
+Then x, y, z are non-negative integers satisfying
+$$
+xbc + yca + zab = (xb + ya)c + zab = abz + cw = n.
+$$
+Finally, we conclude that 2abc − ab − bc − ca is the largest integer which
+cannot be expressed in the form xbc + yca + zab, where x, y, and z are
+non-negative integers.
+Proof 2. We use the same method to prove that 2abc−ab−bc−ca cannot
+be expressed in the form xbc+yca+zab. However we will prove the other
+half of the problem by a new method.
+First,
+$$
+2abc - ab - bc - ca = abc 2 -
+1
+$$
+a
+−
+1
+b
+−
+1
+c
+$$
+\ge abc 2 -
+1
+1
+-
+1
+2
+-
+1
+3
+> 0.
+$$
+If $n ≡ 0(mod$ abc), then we can suppose $n = tabc$, where t is a non-negative
+integer. Let $x = at$ and $y = z$ = 0.
+If n $\nmid$ ≡ 0(mod abc), since (bc,a) = 1, (ca,b) = 1, and (ab,c) = 1, then
+there exsit 0 < $x0 < a$, 0 < $y0 < b$, and 0 < $z0 < c$, such that
+$bcx0 ≡ n(mod$ a),
+$$
+cay0 ≡ n(mod b),
+abz0 ≡ n(mod c).
+$$
+Now, let $m = x0bc+y0ca+z0ab.$ Since no two of a, b, c have a common
+divisor greater than 1, so $m ≡ 0(mod$ abc), and thus we can suppose $n =
+m + kabc$, where k is an integer. Observe that
+$$
+n > 2abc - ab - bc - ca,
+$$
+m $\le$  bc(a − 1) + ca(b − 1) + ab(c − 1) = 3abc − ab − bc − ca.
+Hence, k $\ge$  0. Then let $x = x0 + ka$, y = y0, and $z = z0.$ We have
+$n = xbc + yca + zab$, with non-negative integers x, y, and z.
+Remark. These two proofs are from two natural ideas. In the first proof,
+we started from a simpler case of two numbers, then we used the same
+approach to complete the proof for three numbers in the original problem.
+If we want, this conclusion can be extended to the case of n numbers.
+The second proof uses congruence methods, which will be the main focus
+of the next chapter. In this proof, we first found the condition x, y, z
+must satisfy, modulo a, b, c. It is natural for us to select the smallest non-
+negative integers satisfying this congruence condition, then we make some
+adjustments to obtain the desired n.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 12 contestants scored 7 points, 2 contestants scored 6 points, 2 contestants
+scored 5 points, 8 contestants scored 4 points, no contestant scored 3 points, 2 contestants
+scored 2 points, 1 contestant scored 1 point, and 13 contestants scored 0 point. The average
+score of this problem is 3.575, indicating that it was relatively straightforward.
+Among the top five teams in the team scores, the Germany team achieved a total score
+of 212 points, the United States team achieved a total score of 171 points, the Hungary team
+achieved a total score of 170 points, the Soviet Union team achieved a total score of 169
+points, and the Romania team achieved a total score of 161 points.
+The gold medal cutoﬀ for this IMO was set at 38 points (with 9 contestants earning gold
+medals), the silver medal cutoﬀ was 26 points (with 27 contestants earning silver medals),
+and the bronze medal cutoﬀ was 15 points (with 57 contestants earning bronze medals).
+In this IMO, a total of four contestants achieved a perfect score of 42 points.
+Problem 1.18 (IMO 32-2, proposed by Romania). Let $n > 6$ be
+an integer and a1,a2,…,ak be all the natural numbers less than n and
+relatively prime to n. If a2 − a1 = a3 − a2 = ··· = ak − ak−1 > 0, prove
+that n must be either a prime number or a power of 2.
+Proof 1. Evidently, a1 = 1, ak = n − 1. Let a2 − a1 = a3 − a2 = ··· =
+$$
+ak - ak-1 = d.
+$$
+If $a2 = 2$, then $d = 1.$ This means that n is relatively prime to all the
+positive integers less than n, and hence n is a prime number.
+If $a2 = 3$, then $d = 2.$ This means that n is relatively prime to all the
+positive odd numbers less than n, and hence n is a power of 2.
+If $a2 > 3$, then $a2 = 1+d$ is the least prime number that cannot divide
+n. We have 2|n and 3|n. Since n − 1 = $ak = 1 + (k - 1)$d, so
+$$
+(k - 1)d = n - 2 ≡ 1(mod 3),
+$$
+and hence (3,d) = 1. On the other hand, (3,1 + d) = (3,a2) = 1, so
+$d ≡ 1(mod$ 3) and 3|1 + 2d.
+If 1+2d < n, then (a3,n) = (1 + 2d,n) $\ge$  3, and we have a contradiction.
+If 1 + 2d $\ge$  n, then in all the positive integers less than n, there are
+only two numbers, 1 and n−1, relatively prime to n. Now suppose $n = 2m$
+(m > 3). If m is even, then (m + 1,n) = 1; if m is odd, then (m + 2,n) = 1,
+a contradiction.
+As a conclusion, a suitable n must be either a prime number or a power
+of 2.
+Proof 2. Again let a2 − a1 = a3 − a2 = ··· = ak − ak−1 = d. We discuss
+in two conditions.
+If n has a factor which is a perfect square, say $n = a2$
+· b
+(a > 1), then (ab − 1,n) = 1 and (ab + 1,n) = 1. Since 1 $\le$  ab − 1 <
+ab + 1 < n and (ab,n) = ab > 1, so ab − 1 and ab + 1 are two
+adjacent terms which are less than n and relatively prime to n. Thus,
+d = (ab + 1) − (ab − 1) = 2. Now that $a1 = 1$, and then n is relatively
+prime to all the positive odd numbers less than n. Hence n is a power of 2.
+Now we discuss the case if n does not have such a factor which is a
+perfect square.
+If n is odd, then $a1 = 1$ and $a2 = 2$, so $d = 1.$ And n is relatively prime
+to all the positive integers less than n, from which n is a prime number.
+If n is even, then suppose $n = 2m(m$ > 3). Since n does not have
+such a factor which is a perfect square, m is odd. Then (m − 2,2m) = 1,
+(m + 2,2m) = 1, (m − 1,2m) = 2, (m + 1,2m) = 2, and (m,2m) = m.
+Since 1 < m − 2 < m + 2 < 2m = n, so m − 2 and m + 2 are two
+adjacent terms which are less than n and relatively prime to n. Thus
+$d = (m + 2) - (m - 2)$ = 4. Now that $a1 = 1$, a2 = 5, and $ak = n - 1$ > 5.
+Then there exists a3 and $a3 = 9.$ However, for $a2 = 5$ we know n is not
+divisible by 3, which is a contradiction to (a3,n) = (9,n) $\ge$  3.
+As a conclusion, a suitable n must be either a prime number or a power
+of 2.
+Remark. We proved the problem by two methods from diﬀerent perspec-
+tives a and n, respectively. The analysis of the common diﬀerence in the
+first proof is relatively straightforward while the discussion in the second
+proof on whether n has a perfect square factor seems a little special. How-
+ever, both proofs originate from a common problem-solving method, which
+is to find clues from simple cases.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 130 contestants scored 7 points, 16 contestants scored 6 points, 6 contestants
+scored 5 points, 31 contestants scored 4 points, 27 contestants scored 3 points, 21 contestants
+scored 2 points, 34 contestants scored 1 point, and 47 contestants scored 0 point. The
+average score of this problem is 4.221, indicating that it was simple.
+Among the top five teams in the team scores, the scores of this problem are as fol-
+lows: The Soviet Union team scored 42 points (with a total team score of 241 points),
+the China team scored 42 points (with a total team score of 231 points), the Romania team
+scored 42 points (with a total team score of 225 points), the Germany team scored 41 points
+(with a total team score of 222 points), and the United States team scored 42 points (with
+a total team score of 212 points).
+The gold medal cutoﬀ for this IMO was set at 39 points (with 20 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 31 points (with 51 contestants earning silver
+medals), and the bronze medal cutoﬀ was 19 points (with 84 contestants earning bronze
+medals).
+In this IMO, a total of nine contestants achieved a perfect score of 42 points.
+Problem 1.19 (IMO 35-6, proposed by Finland). Show that there
+exists a set A of positive integers with the following property: For any
+infinite set S of primes there exist two positive integers m $\in$  A and n / $\in$  A
+each of which is a product of k distinct elements of S for some k $\ge$  2.
+Proof. Let all prime numbers be $p1 = 2$,p2 = 3,p3 = 5,…, successively.
+For $i = 1$,2,…, let
+$$
+Ai = \{pipj1 pj2 \cdots pji \midi < j1 < j2 < \cdots  < ji\},
+$$
+A =
+$\infty$  
+$$
+i=1
+Ai.
+$$
+For any infinite set S of primes, suppose the prime numbers in S are $ps1 <
+ps2$ < ···, successively. Then letting $k = s1 + 1$, we have
+$$
+m = ps1ps2 \cdots psk
+$$
+$\in$  As1 ⊂ A,
+$$
+n = ps2ps3 \cdots psk+1
+$$
+/ $\in$  A.
+Hence, the set A satisfies the given condition.
+Remark. This proof seems concise, however the construction itself is not
+easy to find because S is highly uncertain. We note that no matter S
+contains what primes, there always exists a unique least prime number.
+Based on this important feature, S could be classified, then we reached this
+proof.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 88 contestants scored 7 points, 3 contestants scored 6 points, 8 contestants
+scored 5 points, 4 contestants scored 4 points, 7 contestants scored 3 points, 30 contestants
+scored 2 points, 34 contestants scored 1 point, and 211 contestants scored 0 point. The
+average score of this problem is 2.091, indicating that it had a certain level of diﬃculty.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The United States team scored 42 points (with a total team score of 252 points), the China
+team scored 21 points (with a total team score of 229 points), the Russia team scored 31
+points (with a total team score of 224 points), the Bulgaria team scored 28 points (with a
+total team score of 223 points), and the Hungary team scored 34 points (with a total team
+score of 221 points).
+The gold medal cutoﬀ for this IMO was set at 40 points (with 30 contestants earning gold
+medals), the silver medal cutoﬀ was 30 points (with 64 contestants earning silver medals),
+and the bronze medal cutoﬀ was 19 points (with 98 contestants earning bronze medals).
+In this IMO, a total of 22 contestants achieved a perfect score of 42 points.
+Problem 1.20 (IMO 39-3, proposed by Byelorussia). For any posi-
+tive integer n, let d(n) denote the number of positive divisors of n (including
+1 and n itself). Determine all positive integers k such that d(n2
+)
+$d(n) = k$ for
+some n.
+Solution. When $n = 1$, we have d(n2
+)
+$d(n) = 1$, so $k = 1$ is one of the solutions.
+When $n > 1$, we factor n into the product of prime numbers: n = p$\alpha$ 1
+1
+$$
+p\alpha2
+2 \cdots p\alpham
+$$
+m . Then
+$$
+d(n2
+)
+d(n)
+=
+(2\alpha1 + 1)(2\alpha2 + 1)\cdots (2\alpham + 1)
+(\alpha1 + 1)(\alpha2 + 1)\cdots (\alpham + 1)
+=
+(2\beta1 - 1)(2\beta2 - 1)\cdots (2\betam - 1)
+\beta1\beta2 \cdots \betam
+,
+$$
+where $\beta$ j = $\alpha$ j + 1, j = 1,2,…,m.
+Therefore, the problem is equivalent to determining all positive integers
+k that can be expressed in the form:
+$$
+k =
+(2\beta1 - 1)(2\beta2 - 1)\cdots (2\betam - 1)
+\beta1\beta2 \cdots \betam
+,
+$$
+where m is a positive integer, $\beta$ j (j = 1,2,…,m) are positive integers
+greater than 1. We define these integers k as “expressible.” Evidently, the
+“expressible” integers must be odd. Now by mathematical induction we
+will prove that all the odd numbers greater than 1 are “expressible”.
+$$
+First, 3 = 9
+5 \times 5
+3 = (2\times5-1)(2\times3-1)
+$$
+5×3 , so 3 is “expressible”.
+For every positive odd number, there exists one and only one way to
+express the number as 2t+1
+$$
+s + 2t
+$$
+− 1, where s is a non-negative integer
+and t is a positive integer (we can write the number in binary. Then from
+right to left, all the consecutive 1s together form 2t
+− 1, and the rest is
+$$
+2t+1
+$$
+s). Now assume all the positive odd numbers less than 2t+1
+$$
+s + 2t
+- 1
+$$
+are “expressible,” and we will prove that 2t+1
+$$
+s+2t
+$$
+−1 is also “expressible”
+Let $\beta$ 1 = (2t
+− 1)(2s + 1) and $\beta$ j+1 = 2$\beta$ j − 1, j = 1,2,…,t − 1. Then
+$$
+\betat - 1 = 2t-1
+(\beta1 - 1),
+2\betat - 1 = 2t
+(\beta1 - 1) + 1
+= 2t
+2t
+- 1
+)
+(2s + 1) - 2t
++ 1
+= 2t
+- 1
+)
+(2t+1
+s + 2t
+- 1).
+Hence,
+$$
+A =
+$$
+(2\beta1 - 1)(2\beta2 - 1)\cdots (2\betat - 1)
+\beta1\beta2 \cdots \betat
+=
+2\betat - 1
+\beta1
+=
+2t+1
+s + 2t
+- 1
+2s + 1
+.
+$$
+If $s = 0$, then $A = 2t+1$
+$$
+s + 2t
+$$
+− 1 is “expressible.” Otherwise, 2s + 1 <
+$$
+2t+1
+s+2t
+$$
+−1, and with the assumption of the induction hypothesis we know
+2s+1 is “expressible.” Suppose it can be expressed as B. Then 2t+1
+$$
+s+2t
+-1
+$$
+can be expressed as AB. Hence by mathematical induction we know that
+all the odd numbers greater than 1 are “expressible.” The solutions are all
+the odd numbers.
+Remark. The formula for the number (or sum) of positive factors from the
+prime factorization is useful. In this problem, the form 2t+1
+$$
+s+2t
+-1 seems
+$$
+tricky. Actually, it is derived from the desire to reduce the fraction, i.e., to
+make 2$\beta$ j − 1 equal to $\beta$ j+1. This leads to 2$\beta$ t − 1 = 2t
+($\beta$ 1 − 1) + 1, and
+together with the assumption of the induction hypothesis we wanted to find
+a relatively small positive integer r such that r · (2t
+$$
+(\beta1 - 1) + 1) = n \cdot  \beta1.
+$$
+Then we got the form 2t+1
+$$
+s + 2t
+- 1.
+$$
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 30 contestants scored 7 points, 5 contestants scored 6 points, 1 contestant
+scored 5 points, 3 contestants scored 4 points, 20 contestants scored 3 points, 152 contestants
+scored 2 points, 117 contestants scored 1 point, and 91 contestants scored 0 point. The
+average score of this problem is 1.761, indicating that it was relatively challenging.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Iran team scored 18 points (with a total team score of 211 points), the Bulgaria team
+scored 15 points (with a total team score of 195 points), the Hungary team scored 25 points
+(with a total team score of 186 points), the United States team scored 34 points (with a
+total team score of 186 points), and the Chinese Taiwan team scored 21 points (with a total
+team score of 184 points).
+The gold medal cutoﬀ for this IMO was set at 31 points (with 37 contestants earning gold
+medals), the silver medal cutoﬀ was 24 points (with 66 contestants earning silver medals),
+and the bronze medal cutoﬀ was 14 points (with 102 contestants earning bronze medals).
+In this IMO, only one contestant achieved a perfect score of 42 points, namely Omid
+Amini from Iran.
+Problem 1.21 (IMO 42-6, proposed by Bulgaria). Let a, b, c, d be
+integers with $a > b$ > $c > d$ > 0. Suppose that
+ac + bd = (b + d + a − c)(b + d − a + c).
+Prove that ab + cd is not prime.
+Proof 1. By the given condition,
+$$
+ac + bd = (b + d)2
+$$
+− (a − c)2
+$$
+= b2
++ d2
+- (a2
++ c2
+) + 2(ac + bd),
+so a2
+- ac + c2
+= b2
++ bd + d2
+$$
+, and then
+$$
+(ac + bd)(b2
++ bd + d2
+) = ac(b2
++ bd + d2
+) + bd(a2
+- ac + c2
+)
+= (ab + cd)(ad + bc).
+$$
+Assume ab + cd is prime. Since
+ab + cd − (ac + bd) = (a − d)(b − c) > 0,
+we know $ac+bd < ab+cd.$ Thus ac+bd is relatively prime to ab+cd, thus
+we must have ac + bd|ad + bc. However,
+ac + bd − (ad + bc) = (a − b)(c − d) > 0,
+and so ac + bd > ad + bc, which is a contradiction. As a result, ab + cd is
+not prime.
+Proof 2. Assume ab + cd is prime. Since
+ab + cd = (a + d)c + (b − c)a = m(a + d,b − c)
+for some m $\in$  N∗
+, we see that $m = 1$ or (a + d,b − c) = 1.
+If $m = 1$, then
+(a + d,b − c) = ab + cd
+> ab + cd − (a − b + c + d)
+= (a + d)(c − 1) + (b − c)(a + 1)
+$\ge$  (a + d,b − c),
+which is a contradiction.
+If (a + d,b − c) = 1, then since
+(a + d)b − (b − c)a = ac + bd = (b + d + a − c)(b + d − a + c),
+we know
+(a + d)(a − c − d) = (b − c)(b + d + c).
+Therefore, a − c − d > 0, and there exists k $\in$  N∗
+such that
+a − c − d = k(b − c),
+b + d + c = k(a + d).
+By adding these two equalities together, we have
+a + b = k(a + b − c + d),
+i.e., k(c − d) = (k − 1)(a + b).
+If $k = 1$, then $c = d$, a contradiction. If $k > 1$, then
+$$
+2 \ge
+k
+k - 1
+=
+$$
+a + b
+c − d
+>
+a + b
+$c
+> 2$,
+also a contradiction. Summarizing, we see that ab + cd is not prime.
+Proof 3. By ac +bd = (b+ d+ a− c)(b +d −a +c) = (b +d)2
+− (a− c)2
+,
+we know
+$$
+a2
+- ac + c2
+= b2
++ bd + d2
+.
+$$
+So, we can construct a convex quadrilateral ABCD, such that $AB = a$,
+AD = c, CB = d, CD = b, and ∠$BAD = 60$◦
+and ∠$BCD = 120$◦
+. Then
+ABCD is a cyclic quadrilateral, and
+$$
+BD2
+= a2
+- ac + c2
+. (1)
+$$
+Let ∠ABC = $\alpha$ . Then ∠$ADC = 180$◦
+− $\alpha$ . For ABC and ADC,
+by the law of cosines,
+$$
+AC2
+= a2
++ d2
+- 2adcos\alpha = b2
++ c2
+- 2bccos(180◦
+- \alpha)
+= b2
++ c2
++ 2bccos\alpha,
+$$
+which leads to 2cos$\alpha$  = a2
+$$
++d2
+-b2
+-c2
+ad+bc . Therefore,
+AC2
+= a2
++ d2
+- ad \cdot
+a2
++ d2
+- b2
+- c2
+ad + bc
+=
+(a2
++ d2
+)(ad + bc) - ad(a2
++ d2
+- b2
+- c2
+)
+ad + bc
+=
+(a2
++ d2
+)bc + ad(b2
++ c2
+)
+ad + bc
+=
+(ab + cd)(ac + bd)
+ad + bc
+. (2)
+$$
+In cyclic quadrilateral ABCD, by Ptolemy’s theorem, AC ·$BD = a$·b+
+c · d, i.e.,
+$$
+AC2
+\cdot  BD2
+= (ab + cd)2
+. (3)
+$$
+Substituting equality (1) and equality (2) into equality (3), we reach
+$$
+(a2
+- ac + c2
+)(ac + bd) = (ab + cd)(ad + bc).
+Hence,
+ac + bd\mid(ab + cd)(ad + bc).
+$$
+The last part of the proof is the same as in the first proof.
+Remark. We proved the conclusion by contradiction in three ways. It is
+worth mentioning that two solutions (a,b,c,d) satisfying the given condition
+are (21,18,14,1) and (65,50,34,11).
+Moreover, in the third proof, we constructed a cyclic quadrilateral
+ABCD to help us. We can find the following conclusions: if positive integers
+a,b,c,d satisfy a2
+$$
+- ac + c2
+= b2
++ bd + d2
+$$
+= M, then
+(ab + cd)(ad + bc)
+ac + bd
+$$
+= M.
+$$
+Also we can observe that if ac + bd $\ne$  0, then
+(ab + cd)(ad + bc)
+ac + bd
+$$
+=
+(a2
++ c2
+)bd + (b2
++ d2
+)ac
+ac + bd
+=
+(a2
+- ac + c2
+)bd + (b2
++ bd + d2
+)ac
+ac + bd
+=
+Mbd + Mac
+ac + bd
+= M.
+$$
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 27 contestants scored 7 points, 3 contestants scored 6 points, 9 contestants
+scored 5 points, 10 contestants scored 4 points, 8 contestants scored 3 points, 16 contestants
+scored 2 points, 20 contestants scored 1 point, and 380 contestants scored 0 point. The
+average score of this problem is 0.778, indicating that it was extremely diﬃcult.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 36 points (with a total team score of 225 points), the Russia team
+scored 21 points (with a total team score of 196 points), the United States team scored 21
+points (with a total team score of 196 points), the Bulgaria team scored 36 points (with a
+total team score of 185 points), the South Korea team scored 11 points (with a total team
+score of 185 points).
+The gold medal cutoﬀ for this IMO was set at 30 points (with 39 contestants earning gold
+medals), the silver medal cutoﬀ was 20 points (with 81 contestants earning silver medals),
+and the bronze medal cutoﬀ was 11 points (with 122 contestants earning bronze medals).
+In this IMO, a total of four contestants achieved a perfect score of 42 points.
+Problem 1.22 (IMO 59-5, proposed by Mongolia). Let a1,a2,… be
+an infinite sequence of positive integers. Suppose that there is an integer
+$N > 1$ such that, for each n $\ge$  N, the number
+$$
+a1
+a2
++
+a2
+a3
++ \cdots  +
+$$
+an−1
+an
++
+an
+$$
+a1
+$$
+is an integer. Prove that there is a positive integer M such that $am = am+1$
+for all m $\ge$  M.
+Proof. By the given condition, for integer n $\ge$  N,
+$$
+a1
+a2
++
+a2
+a3
++ \cdots  +
+$$
+an
+an+1
++
+an+1
+$$
+a1
+-
+a1
+a2
++
+a2
+a3
++ \cdots  +
+$$
+an−1
+an
++
+an
+$$
+a1
+=
+$$
+an
+an+1
++
+an+1
+$$
+a1
+-
+$$
+an
+$$
+a1
+$$
+is an integer. Then a1an
+an+1
++an+1−an is an integer for n $\ge$  N, i.e., an+1 |a1an.
+By induction, an |aNan−N
+1 for $n > N.$ Let P be the set of all the prime
+factors of a1aN . Then P is a finite set. For $n > N$, the prime factors of
+an are all in P, because an |a1an−N
+N .
+In order to prove that \{an\}n$\ge$ 1 is a constant in the end, we only need
+to prove that \{vp(an)\}n$\ge$ 1 is a constant in the end for every prime p $\in$  P.
+Let p $\in$  P and n $\ge$  N. Then one and only one of the following two
+statements is true:
+(1) vp(an+1) $\le$  vp(an);
+(2) $vp(an+1) > vp(an)$ and $vp(an+1) = vp(a1).$
+In fact, if $vp(an+1) > vp(an)$, then vp
+(
+an
+an+1
+)
+< 0 and vp
+(
+an
+$$
+a1
+)
+<
+vp
+(
+$$
+an+1
+$$
+a1
+)
+$$
+. We know that vp
+(
+an
+an+1
++ an+1
+$$
+a1
+$$
+− an
+$$
+a1
+)
+\ge 0.
+$$
+Combining it with vp
+(
+an
+an+1
+)
+< 0, we get that the minimum value
+in vp
+(
+an
+an+1
+)
+,vp
+(
+an
+$$
+a1
+)
+,vp
+(
+$$
+an+1
+$$
+a1
+)
+$$
+appears at least twice, so vp
+(
+an
+an+1
+)
+$$
+=
+vp
+(
+$$
+an
+$$
+a1
+)
+.
+$$
+That is, vp(an+1) = vp(a1). Next, we will prove
+(3) If $vp(an) = vp(a1)$, where $n > N$ and p $\in$  P, then $vp(an+1) = vp(a1).$
+Assuming vp(an+1) $\ne$  vp(a1), from (1) and (2) we get $vp(an+1) <
+vp(an)$ = vp(a1). Hence,
+vp
+an
+$an+1
+> 0$, vp
+an
+$$
+a1
+= 0, vp
+$$
+an+1
+$$
+a1
+< 0.
+Therefore,
+vp
+$$
+an
+an+1
++
+an+1
+$$
+a1
+-
+$$
+an
+$$
+a1
+= vp
+$$
+an+1
+$$
+a1
+< 0,
+$$
+contradicting to the fact that an
+an+1
++ an+1
+$$
+a1
+$$
+− an
+$$
+a1
+$$
+is an integer.
+For any p $\in$  P, we have the following two cases:
+Case 1: vp(an+1) $\le$  vp(an) for any $n > N.$ Then \{vp(an)\}n$\ge$ N is a
+monotonic non-increasing sequence of non-negative integers, so it will be a
+constant in the end.
+Case 2: There exists n0 $\ge$  N such that $vp(an0+1) > vp(an0$ ). From (2) we
+have $vp(an0+1) > vp(a1).$ Then from (3) and by induction, vp(an) = vp(a1)
+for any n $\ge$  n0. Therefore, \{vp(an)\} is a constant in the end.
+Remark. For problems concerning divisibility of integers, discussing the
+power exponent of prime factors is a useful skill, which has appeared many
+times above. In this proof, we applied the following idea repeatedly: if
+multiple fractions add up to an integer, then it is impossible that only
+one term has a unique minimum negative power exponent for some prime
+factor (i.e., it cannot happen that some prime number only appears in the
+denominator of one fraction).
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 172 contestants scored 7 points, 11 contestants scored 6 points, 8 contestants
+scored 5 points, 6 contestants scored 4 points, 7 contestants scored 3 points, 31 contestants
+scored 2 points, 184 contestants scored 1 point, and 175 contestants scored 0 point. The
+average score of this problem is 2.695, indicating that it had a certain level of diﬃculty.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The United States team scored 42 points (with a total team score of 212 points), the Russia
+team scored 41 points (with a total team score of 201 points), the China team scored 42 points
+(with a total team score of 199 points), the Ukraine team scored 42 points (with a total team
+score of 186 points), and the Thailand team scored 42 points (with a total team score of
+183 points).
+The gold medal cutoﬀ for this IMO was set at 31 points (with 48 contestants earning gold
+medals), the silver medal cutoﬀ was 25 points (with 98 contestants earning silver medals),
+and the bronze medal cutoﬀ was 16 points (with 143 contestants earning bronze medals).
+In this IMO, only two contestants achieved a perfect score of 42 points, namely Agnijo
+Banerjee from the United Kingdom and James Lin from the United States.
+Problem 1.23 (IMO 61-5, proposed by Estonia). A deck of $n > 1$
+cards is given. A positive integer is written on each card. The deck has the
+property that the arithmetic mean of the numbers on each pair of cards is
+also the geometric mean of the numbers on some collection of one or more
+cards.
+For which n does it follow that the numbers on the cards are all equal?
+Solution. For all $n > 1$, it is necessary that all cards have the same
+number.
+Equivalently, we prove the following proposition: if a1 $\le$  a2 $\le$  ··· $\le$  an
+are positive integers that are not all equal, then there are two numbers,
+whose arithmetic mean does not equal the geometric mean of one or more
+numbers among them.
+Let $d = gcd(a1$,…,an). If $d > 1$, then we may replace a1,a2,…,an
+with a1
+$$
+d , a2
+$$
+d ,…, an
+d . Thus, all the arithmetic and geometric means are
+divided by d, so the proposition remains equivalent. Hence, we may assume
+that a1,a2,…,an are coprime.
+Since a1,a2,…,an are not all equal, an $\ge$  2. Let p be a prime factor
+of an. Then there exists some 1 $\le$  k $\le$  n − 1 such that p $\nmid$  ak. Among
+such k we choose the maximal one. Then we prove that an+ak
+2 is not the
+geometric mean of any part of a1,a2,…,an.
+Assume for contradiction that there exist 1 $\le$  i1 < ··· < im $\le$  n such
+that m
+$\sqrt{ai1}$ ai2 ···$aim = ak+an$
+2 , so that
+$$
+2m
+$$
+ai1 ai2 ···$aim = (ak + an)$m
+.
+If $im > k$, then p|aim, p $\nmid$  ak+an, so the left-hand side of the above equality
+is divisible by p while the right-hand side is not, a contradiction.
+If im $\le$  k, then since $ak < an$ we have
+m
+$$
+\sqrt{ai1} ai2 \cdots aim \le aim \le ak <
+$$
+ak + an
+2
+,
+which is also a contradiction. Therefore, the proposition is proven.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 223 contestants scored 7 points, 4 contestants scored 6 points, 9 contestants
+scored 5 points, 1 contestant scored 4 points, 2 contestants scored 3 points, no contestant
+scored 2 points, 83 contestants scored 1 point, and 294 contestants scored 0 point. The
+average score of this problem is 2.797, indicating that it had a certain level of diﬃculty.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 42 points (with a total team score of 215 points), the Russia team
+scored 36 points (with a total team score of 185 points), the United States team scored 42
+points (with a total team score of 183 points), the South Korea team scored 36 points (with
+a total team score of 175 points), and the Thailand team scored 36 points (with a total team
+score of 174 points).
+The gold medal cutoﬀ for this IMO was set at 31 points (with 49 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 24 points (with 112 contestants earning
+silver medals), and the bronze medal cutoﬀ was 15 points (with 155 contestants earning
+bronze medals).
+In this IMO, only one contestant achieved a perfect score of 42 points, namely Jinmin Li
+from China.

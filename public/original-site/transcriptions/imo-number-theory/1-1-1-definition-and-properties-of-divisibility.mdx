@@ -1,0 +1,46 @@
+---
+title: "1.1.1 Definition and properties of divisibility"
+source_page: 24
+source: "IMO Problems, Theorems, and Methods: Number Theory"
+---
+
+# 1.1.1 Definition and properties of divisibility
+(1) Definition of divisibility
+For any integers a, b (a $\ne$  0), if there exists an integer q such that $b = aq$,
+then b is divisible by a, or we say a divides b. This is written as $a\mid b$.
+Otherwise, we define b as not divisible by a, or a does not divide b, written
+as a $\nmid$  b.
+(2) Transitivity of divisibility
+If $a\mid b$ and $b\mid c$, then $a\mid c$.
+(3) Definition of primes
+For any positive integer $n > 1$, if n has no positive divisors except 1 and
+n itself, then n is a prime number (or a prime); otherwise, we call n a
+composite number.
+(4) Properties of primes
+(i) The smallest prime number is 2, and 2 is the only prime number which
+is even.
+(ii) There are infinitely many prime numbers.
+(ii) Suppose n is a positive integer greater than 1. If n is not divisible by
+any prime number p which is greater than 1 and less than
+$\sqrt{n}$, then n
+is a prime number.
+(5) Greatest common divisor
+Suppose a and b are two integers which are not both zero, d is a non-
+zero integer. If $d\mid a$ and $d\mid b$, then d is a common divisor of a and b. It is
+trivial that the set of common divisors of a and b has a maximum, which
+is defined as the greatest common divisor (GCD), or the highest common
+factor (HCF) of a and b, denoted as (a,b). If (a,b) = 1, then we say a is
+coprime to b, or a is relatively prime to b.
+(6) Least common multiple
+Suppose a, b, and c are three non-zero integers. If $a\mid c$ and $b\mid c$, then c is a
+common multiple of a and b. Among all the positive multiples of a and b,
+the least one is defined as the least common multiple of a and b, denoted
+as [a,b].
+(7) The Euclidean algorithm
+For non-zero integers a and b with |a| $\le$  |b|, we can use the Euclidean
+algorithm to compute the greatest common divisor of a and b.
+By division, let $b = aq1 +r1$, where q1,r1 are integers and 0 $\le$  r1 < |a|.
+If $r1 = 0$, then b is divisible by a. Otherwise we divide a by r1, denoted
+as $a = r1q + r2$, 0 $\le$  $r2 < r1.$ Repeating this process gives successively
+$r1 > r2$ > ···, until some $rk+1 = 0.$ Now the greatest common divisor of a
+and b is rk.

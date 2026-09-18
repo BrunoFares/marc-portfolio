@@ -1,0 +1,294 @@
+---
+title: "2.2.4 Maximum or minimum value problems"
+source_page: 137
+source: "IMO Problems, Theorems, and Methods: Number Theory"
+---
+
+# 2.2.4 Maximum or minimum value problems
+Problem 2.23 (IMO 20-1, proposed by Cuba). Two natural num-
+bers m and n satisfy 1 $\le$  $m < n.$ In their decimal representations, the
+last three digits of 1978m
+are equal, respectively, to the last three digits of
+$$
+1978n
+$$
+. Find m and n such that m + n has its least value.
+Solution. The given condition is equivalent to
+$$
+1978n
+- 1978m
+= 1978m
+(1978n-m
+- 1) ≡ 0(mod 103
+).
+Since (2,1978n-m
+- 1) = 1, (5,1978m
+$$
+) = 1, then
+$$
+1978m
+≡ 0(mod 8), (1)
+1978n-m
+≡ 1(mod 125). (2)
+$$
+By equation (1) we know m $\ge$  3. Note that 1978 ≡ 3(mod 5). Then by
+$$
+equation (2), 3n-m
+$$
+≡ 1(mod 5), and hence 4|n−m. Let n−m = 4k,k $\in$  N∗
+.
+Then
+$$
+1978n-m
+≡ (-22)4k
+≡ (-16)2k
+≡ 6k
+≡ 1(mod 125).
+$$
+We can find that 6k
+$$
+- 1 = (5 + 1)k
+- 1 ≡ 52
+\cdot  k(k-1)
+2 + 5k(mod 125). Thus
+25\mid5 \cdot
+k(k - 1)
+2
++ k,
+i.e.,
+25\mid
+k(5k - 3)
+2
+.
+$$
+Since (25,5k−3) = 1, so 25|k. Hence 100|n−m, which implies n−m $\ge$  100.
+Summarizing, we find that $m+n = 2m+(n-m)$ $\ge$  2×3+100 = 106.
+For $m = 3$, we have $n = 103$, and by the congruence equations above we
+know this pair of m and n satisfies the given condition, so the least value
+we want is 106.
+Remark. In this solution, we can also use the fact that the smallest n−m
+must be a factor of ϕ(125) = 100. Then combined with 4|n − m we know
+n−m must be one of 4, 20, or 100. Of course, there are many other methods
+discussing congruence modulo 125, and it is even feasible to find the order
+of 1978 modulo 5, 25, and 125 by enumeration.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 27 contestant scored 6 points, 4 contestants scored 5 points, 2 contestants
+scored 4 points, 3 contestants scored 3 points, 4 contestants scored 2 points, 6 contestants
+scored 1 point, and 2 contestants scored 0 point. The average score of this problem is 4.438,
+indicating that it was simple.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Romania team scored 46 points (with a total team score of 237 points), the United
+States team scored 44 points (with a total team score of 225 points), the United Kingdom
+team scored 43 points (with a total team score of 201 points), the Vietnam team scored 45
+points (with a total team score of 200 points), and the Czechoslovakia team scored 41 points
+(with a total team score of 195 points).
+The gold medal cutoﬀ for this IMO was set at 35 points (with 5 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 27 points (with 20 contestants earning silver
+medals), and the bronze medal cutoﬀ was 22 points (with 38 contestants earning bronze
+medals).
+In this IMO, only one contestant achieved a perfect score of 40 points, namely Mark
+Kleiman from the United States.
+Problem 2.24 (IMO 37-4, proposed by Russia). Two positive inte-
+gers a and b are such that the numbers 15a + 16b and 6a − 15b are both
+squares of positive integers. What is the least possible value that can be
+taken on by the smaller of these two squares?
+Solution. Suppose positive integers x and y satisfy
+$$
+15a + 16b = x2
+,16a - 15b = y2
+.
+$$
+By squaring these two equalities and adding them up, we have
+$$
+x4
++ y4
+= (152
++ 162
+)(a2
++ b2
+) = 481(a2
++ b2
+).
+Thus, 481\midx4
++ y4
+$$
+. We will show that both x and y are divisible by 481 =
+13 × 37.
+Assume for the contrary that 13 $\nmid$  x. Since x4
+$$
++ y4
+$$
+≡ 0(mod 13), it
+holds that 13 $\nmid$  y. By Fermat’s little theorem,
+$$
+1 ≡ x12
+≡ (x4
+)3
+≡ (-y4
+)3
+≡ -y12
+≡ -1(mod 13),
+$$
+a contradiction. So 13|x and 13|y.
+Similarly, assume that 37 $\nmid$  x. Since x4
+$$
++ y4
+$$
+≡ 0(mod 37), it holds that
+37 $\nmid$  y. By Fermat’s little theorem,
+$$
+1 ≡ x36
+≡ (x4
+)9
+≡ (-y4
+)9
+≡ -y36
+≡ -1(mod 37),
+$$
+also a contradiction. So 37|x and 37|y.
+Therefore, we conclude that 481|x, 481|y, and x,y $\ge$  481.
+On the other hand, take $a = 481$ × 31 and $b = 481.$ Then 15a + 16b =
+$$
+16a-15b = 4812
+$$
+. Thus the minimum value we looked for is 4812
+$$
+= 231361.
+$$
+Remark. Besides this solution, there are other ways to prove that 481|x
+and 481|y. These methods are similar so we will not list them. As we
+can see, Fermat’s little theorem is quite useful when discussing an inte-
+ger modulo a prime number. In fact, for any odd prime number p, let
+p−1 = st, where t is an odd number. Then like what we have done in this
+solution, we can prove xs
++ ys
+≡ 0(mod p) ⇔ $p\mid x$,$p\mid y$ by Fermat’s little
+theorem.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 86 contestants scored 7 points, 6 contestants scored 6 points, 7 contestants
+scored 5 points, 11 contestants scored 4 points, 17 contestants scored 3 points, 11 contestants
+scored 2 points, 109 contestants scored 1 point, and 177 contestants scored 0 point. The
+average score of this problem is 2.120, indicating that it had a certain level of diﬃculty.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Romania team scored 42 points (with a total team score of 187 points), the United
+States team scored 35 points (with a total team score of 185 points), the Hungary team
+scored 36 points (with a total team score of 167 points), the Russia team scored 36 points
+(with a total team score of 162 points), and the United Kingdom team scored 39 points (with
+a total team score of 161 points).
+The gold medal cutoﬀ for this IMO was set at 28 points (with 35 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 20 points (with 66 contestants earning silver
+medals), and the bronze medal cutoﬀ was 12 points (with 99 contestants earning bronze
+medals).
+In this IMO, only one contestant achieved a perfect score of 42 points, namely Ciprian
+Manolescu from Romania.
+Problem 2.25 (IMO 57-4, proposed by Luxembourg). A set of pos-
+tive integers is called fragrant if it contains at least two elements and each
+of its elements has a prime factor in common with at least one of the other
+elements. Let $P(n) = n2
++n+1.$ What is the least possible positive integer
+value of b such that there exists a non-negative integer a for which the set
+\{P(a + 1),P(a + 2),…,P(a + b)\}
+is fragrant?
+Solution. The minimum value of b is 6.
+We first prove some facts.
+$$
+(i) (P(n),P(n + 1)) = 1.
+$$
+This is because
+$$
+(P(n),P(n + 1)) = (n2
++ n + 1,(n + 1)2
++ (n + 1) + 1)
+= (n2
++ n + 1,2n + 2)
+= (n2
++ n + 1,n + 1) = 1.
+$$
+$$
+(ii) (P(n),P(n + 2)) = 7 when n ≡ 2(mod 7); otherwise,
+(P(n),P(n + 2)) = 1.
+$$
+Observe that
+$$
+(P(n),P(n + 2)) = (n2
++ n + 1,4n + 6)
+= (n2
++ n + 1,2n + 3)
+= (4n2
++ 4n + 4,2n + 3)
+= (7,2n + 3).
+$$
+Only when 7|2n + 3, i.e., n ≡ 2 (mod 7), we have (P(n),P(n + 2)) = 7;
+$$
+otherwise, (P(n),P(n + 2)) = 1.
+$$
+$$
+(iii) (P(n),P(n + 3)) = 3 when n ≡ 1 (mod 3); otherwise, (P(n),
+P(n + 3)) = 1.
+$$
+By checking modulo 9, when $n ≡ 1$ (mod 3), we have 3|n2
++ n + 1,
+$$
+9 \nmid n2
+$$
++ n + 1, and 9|6n + 12. So,
+$$
+(P(n),P(n + 3)) = (n2
++ n + 1,6n + 12)
+= (n2
++ n + 1,n + 2)
+= (3,n + 2).
+$$
+$$
+(iv) (P(n),P(n + 4)) = 19 when n ≡ 7 (mod 19); otherwise, (P(n),
+P(n + 4)) = 1.
+(P(n),P(n + 4)) = (n2
++ n + 1,8n + 20)
+= (n2
++ n + 1,2n + 5)
+= (4n2
++ 4n + 4,2n + 5)
+= (19,2n + 5).
+$$
+Only when 19|2n+5, i.e., n ≡ 7 (mod 19), we have (P(n),P(n +4)) = 19;
+otherwise,
+$$
+(P(n),P(n + 4)) = 1.
+$$
+Now we prove that there are no required fragrant sets for b $\le$  5.
+When $b = 2$, we see that P(a + 1) and P(a + 2) are coprime for any a.
+When $b = 3$, it holds that P(a + 2) is coprime to both P(a + 1) and
+P(a + 3).
+When $b = 4$, suppose such a fragrant set exists. Then P(a + 2) and
+P(a + 4) are not coprime, and so are P(a + 1) and P(a + 3). This implies
+a + 1 ≡ a + 2 ≡ 2 (mod 7), which is impossible.
+When $b = 5$, and suppose such a fragrant set exists. Then P(a + 3) is
+not coprime to at least one of P(a+1) and P(a+5). It follows that $a+1 ≡ 2$
+(mod 7) or $a+3 ≡ 2$ (mod 7). Now P(a+2) and P(a+4) are coprime, so
+we must have P(P(a + 1),P(a + 4)) > 1 and P(P(a + 2),P(a + 5)) > 1.
+Hence a + 1 ≡ a + 2 ≡ 1 (mod 3), which is impossible.
+Finally we show that there is a required fragrant set when $b = 6.$ By
+the Chinese remainder theorem, there is an integer a such that
+a + 1 ≡ 1 (mod 3), a + 2 ≡ 7 (mod 19), and a + 3 ≡ 2 (mod 7).
+Then P(P(a + 1),P(a + 4)) = 3, P(P(a + 4),P(a + 6)) = 19 and
+P(P(a + 3),P(a + 5)) = 7. Therefore, \{P(a + 1),P(a + 2),…,P(a + 6)\}
+is fragrant.
+Remark. It is suﬃcient to prove such a exists by the Chinese remainder
+theorem, but in fact we can easily solve these congruence equations and get
+one solution $a = 195.$ After testing, it does indeed meet the requirements
+of the problem.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 347 contestants scored 7 points, 24 contestants scored 6 points, 15 contestants
+scored 5 points, 26 contestants scored 4 points, 10 contestants scored 3 points, 26 contestants
+scored 2 points, 22 contestants scored 1 point, and 132 contestants scored 0 point. The
+average score of this problem is 4.744, indicating that it was simple.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The United States team scored 42 points (with a total team score of 214 points), the South
+Korea team scored 42 points (with a total team score of 207 points), the China team scored
+42 points (with a total team score of 204 points), the Singapore team scored 39 points (with
+a total team score of 196 points), and the Chinese Taiwan team scored 38 points (with a
+total team score of 175 points).
+The gold medal cutoﬀ for this IMO was set at 29 points (with 44 contestants earning gold
+medals), the silver medal cutoﬀ was 22 points (with 101 contestants earning silver medals),
+and the bronze medal cutoﬀ was 16 points (with 135 contestants earning bronze medals).
+In this IMO, a total of six contestants achieved a perfect score of 42 points.

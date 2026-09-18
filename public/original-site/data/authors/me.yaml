@@ -1,0 +1,112 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Marc Fares
+  given: Marc
+  family: Fares
+  alternate: 'مارك فارس'  # Example: 王伟
+  pronunciation: ''  # Example: Wáng Wěi
+# postnominals:
+#   - PhD
+#   - MIEEE
+status:
+  icon: "🧉"
+role: PhD Student in Mathematics
+bio: |
+  Marc Fares is a PhD in mathematics student at Université de Neuchâtel.
+
+affiliations:
+  - name: Université de Neuchâtel
+    url: https://www.unine.ch/math
+
+links:
+  - icon: at-symbol
+    url: mailto:me@mjfares.com
+    label: E-mail Me
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/example/
+  - icon: academicons/orcid
+    url: https://orcid.org/0009-0006-3976-4747
+
+interests:
+  - Symplectic Geometry
+  - Lagrangian Almost Toric Fibrations
+  - Floer Theory
+  - Contact Geometry
+  - Ehrhart Theory
+  - Differential Topology
+
+education:
+  - degree: PhD in Mathematics
+    institution: Université de Neuchâtel
+    start: September 2025 -
+    end: present
+    summary: |
+      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
+    button:
+      text: Download dissertation
+      url: /resume.pdf
+      icon: hero/arrow-down-tray
+  - degree: MS in Mathematics
+    institution: Rheinische Friedrich-Wilhelms-Universität Bonn
+    start: October 2023 -
+    end: August 2025
+  - degree: BS in Mathematics
+    institution: Notre Dame University - Louaize
+    start: September 2020 -
+    end: May 2023
+
+experience:
+  - role: PhD Candidate
+    org: Université de Neuchâtel
+    start: 2025-09-01
+  - role: Mathematics Tutor
+    org: The University of Bonn
+    start: 2025-04-01
+    end: 2025-09-01
+    summary: |
+      Giving tutoring sessions for the undergraduate course Analysis II.
+  - role: Mathematics Tutor
+    org: GoStudent
+    start: 2025-03-01
+    end: 2025-09-01
+  - role: Mathematics Instructor for the SAT Preparation Course
+    org: Amideast/Lebanon
+    start: 2022-07-01
+    end: 2023-09-01
+
+skills:
+  - name: Technical Skills
+    items:
+      - label: LaTeX
+        level: 5
+      - label: Geogebra
+        level: 5
+      - label: Mathematica
+        level: 3.5
+      - label: Python
+        level: 2.5
+      - label: C++
+        level: 1.5
+
+languages:
+  - name: Arabic
+    level: 5
+    label: Native
+  - name: French
+    level: 5
+    label: Native
+  - name: English
+    level: 4
+    label: Fluent
+  - name: German
+    level: 3.5
+    label: Fluent
+
+awards:
+  - title: General Khalil Kanaan Award
+    awarder: Mrs. Mona Kanaan
+    date: "2023-06-01"
+    summary: Awarded for academic excellence as the highest-ranked student in the graduating class of 2023.
+    icon: hero/trophy

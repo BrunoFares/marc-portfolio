@@ -1,0 +1,600 @@
+---
+title: "3.2.2 Proving properties satisfied by indeterminate equations"
+source_page: 171
+source: "IMO Problems, Theorems, and Methods: Number Theory"
+---
+
+# 3.2.2 Proving properties satisfied by indeterminate equations
+Problem 3.11 (IMO 23-4, proposed by the United Kingdom).
+Prove that if n is a positive integer such that the equation
+$$
+x3
+- 3xy2
++ y3
+= n
+$$
+has a solution in integers (x,y), then it has at least three such solutions.
+Show that the equation has no solutions in integers when $n = 2891.$
+Proof. (a) If the equation has a solution in integers (x,y), then by
+(y − x)3
+$$
+= y3
+- 3xy2
++ 3x2
+y - x3
+= y3
+- 3xy2
++ x3
++ 3x2
+(y - x) + x3
+,
+$$
+we get
+(y − x)3
+$$
+- 3(y - x)x2
++ (-x)3
+= y3
+- 3xy2
++ x3
+= n.
+$$
+This implies that except (x,y), the pair (y − x,−x) is a solution of the
+original equation; moreover, (−x − (y − x),−(y − x)) = (−y,x − y) is also
+a solution.
+If any two of these solutions are the same, then $x = y$ = 0 and $n = 0$,
+a contradiction. Therefore these three solutions are diﬀerent from each
+other, and the proposition is proved.
+(b) When $n = 2891$, if equation x3
+$$
+- 3xy2
++ y3
+$$
+= 2891 has an integer
+solution (x,y), then
+$$
+x3
+- 3xy2
++ y3
+≡ 2(mod9),
+$$
+so x and y cannot be simultaneously divisible by 3.
+If one of x, y is divisible by 3, then consider the other two solutions
+(y − x,−x) and (−y,x − y) in (a). At least one of these solutions has a pair
+of numbers both not divisible by 3. Then take this solution, and without
+loss of generality, assume that neither x nor y is divisible by 3. For this
+(x,y), we have x3
+$$
+≡ ±1(mod9), y3
+$$
+≡ ±1(mod9), and −3xy2
+$$
+≡ ±3(mod9).
+Hence
+x3
+- 3xy2
++ y3
+≡ 1,3,4,5,6,8(mod9),
+$$
+which is a contradiction. So the equation has no solutions in integers when
+$$
+n = 2891.
+$$
+Remark. Based on the form of the original equation, it is not diﬃcult to
+think of the expansion of (x + y)3
+, and then construct the other two solu-
+tions in (a). For (b), we discussed congruence properties. In fact, in addi-
+tion to congruence modulo 9, contradictions can also be derived through
+congruence modulo 7 (note that 2891 can be divided by 7 but not by 73
+,
+so x and y cannot be divided by 7).
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 44 contestants scored 7 points, 5 contestants scored 6 points, 6 contestants
+scored 5 points, 8 contestants scored 4 points, 14 contestants scored 3 points, 2 contestants
+scored 2 points, 4 contestants scored 1 point, and 36 contestants scored 0 point. The average
+score of this problem is 3.782, indicating that it was relatively straightforward.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Germany team scored 21 points (with a total team score of 145 points), the Soviet Union
+team scored 21 points (with a total team score of 137 points), the United States team scored
+24 points (with a total team score of 136 points), the German Democratic Republic team
+scored 21 points (with a total team score of 136 points), and the Vietnam team scored 24
+points (with a total team score of 133 points).
+The gold medal cutoﬀ for this IMO was set at 37 points (with 10 contes-
+tants earning gold medals), the silver medal cutoﬀ was 30 points (with 20 con-
+testants earning silver medals), and the bronze medal cutoﬀ was 21 points (with
+31 contestants earning bronze medals).
+In this IMO, only three contestants achieved a perfect score of 42 points, namely Bruno
+Haible from Germany, Grigori Perelman from the Soviet Union and Lê Tu Quoc Thang from
+Vietnam.
+Problem 3.12 (IMO 27-1, proposed by Germany). Let d be any
+positive integer not equal to 2, 5, or 13. Show that one can find distinct a
+and b in the set \{2,5,13,d\} such that ab − 1 is not a perfect square.
+Proof. We need only to show that at least one of 2d−1, 5d−1, and 13d−1
+is not a perfect square. Assume for contrary that
+$$
+2d - 1 = x2
+, (1)
+5d - 1 = y2
+, (2)
+13d - 1 = z2
+, (3)
+$$
+where x, y, and z are positive integers.
+By (1), x must be odd. Then $x2
+≡ 1(mod4)$, so 2d ≡ 2(mod4), and
+thus d is odd.
+For odd d, by (2) and (3) we know y and z are even. Let $y = 2u$ and
+$z = 2v.$ Then
+$$
+8d = z2
+- y2
+= 4(v2
+- u2
+),
+i.e., 2d = v2
+- u2
+$$
+. Hence u and v are of the same parity, which leads to
+$$
+u2
+≡ v2
+$$
+(mod4), and consequently 2d ≡ 0(mod4), so d is even. This gives
+the desired contradiction.
+Remark. For indeterminate equation problems with specific numbers, we
+usually start by a simple congruence analysis on some small prime numbers.
+Fortunately, by directly discussing properties modulo 2, we can deduce the
+contradiction in this proof. Of course, modulo 2 here also includes modulo
+powers of 2, such as the use of the classic conclusions: even perfect square
+numbers are congruent to 0 modulo 4 and odd perfect square numbers are
+congruent to 1 modulo 4 (and modulo 8).
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 68 contestants scored 7 points, 4 contestants scored 6 points, 11 contestants
+scored 5 points, 10 contestants scored 4 points, 33 contestants scored 3 points, 43 contestants
+scored 2 points, 25 contestants scored 1 point, and 16 contestants scored 0 point. The
+average score of this problem is 3.833, indicating that it was relatively straightforward.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The United States team scored 33 points (with a total team score of 203 points), the Soviet
+Union team scored 24 points (with a total team score of 203 points), the Germany team
+scored 32 points (with a total team score of 196 points), the China team scored 30 points
+(with a total team score of 177 points), and the German Democratic Republic team scored
+28 points (with a total team score of 172 points).
+The gold medal cutoﬀ for this IMO was set at 34 points (with 18 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 26 points (with 41 contestants earning silver
+medals), and the bronze medal cutoﬀ was 17 points (with 48 contestants earning bronze
+medals).
+In this IMO, only three contestants achieved a perfect score of 42 points, namely Vladimir
+Roganov and Stanislav Smirnov from the Soviet Union, and Géza Kós from Hungary.
+Problem 3.13 (IMO 29-6, proposed by Germany). Let a and b be
+positive integers such that ab + 1 divides a2
+$$
++ b2
+$$
+. Show that a2
+$$
++b2
+$$
+ab+1 is the
+square of an integer.
+Proof. Suppose a2
+$$
++b2
+$$
+$ab+1 = k$ with k a positive integer. Then we shall show
+that k is a perfect square.
+Assume, by the way of contradiction, that k is not a square of an integer.
+Consider integer solutions (x,y) of the equation
+$$
+x2
+- kxy + y2
+- k = 0.
+$$
+It has an integer solution (x,y) = (a,b).
+If any one of x and y is 0, then $k = x2$
+or $k = y2$
+is a perfect square, a
+contradiction. Hence we can assume xy (= 0. If xy $\le$  −1, then x2
+$$
++ y2
+=
+$$
+k(xy + 1) $\le$  0, a contradiction. So $xy > 0.$
+There exists a solution satisfying $x > 0$,y > 0, like (x,y) = (a,b).
+Among these solutions we take the one whose x+y is the least, and denote
+it by (x,y).
+Without loss of generality, assume x $\ge$  y. Now we consider the original
+equation as a quadratic equation of x. One root of this quadratic equation
+is x, and we denote the other root by x$\nmid$ 
+. By Vieta’s formulas,
+$$
+x + x\nmid
+= ky, (1)
+xx\nmid
+= y2
+- k. (2)
+$$
+From (1) we know that x$\nmid$ 
+is an integer. Thus (x$\nmid$ 
+,y) is also a solution of
+the original equation. As $y > 0$, it holds x$\nmid$ 
+> 0. From (2),
+$$
+x\nmid
+=
+y2
+- k
+x
+\le
+x2
+- k
+x
+< x,
+so x\nmid
+$$
++ y < x + y, which is a contradiction to that x + y is the least. As a
+$$
+conclusion, a2
++b2
+$$
+ab+1 is a perfect square.
+Remark. In the previous problems, we have mentioned Vieta’s formula
+for several times. And this proof is another standard application of Vieta’s
+formula for indeterminate equations. The process that first pick a least
+solution and then use Vieta’s formula to find a smaller solution for contra-
+diction can be used in many indeterminate equations with quadratic terms
+and multiple variables.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 11 contestants scored 7 points, 1 contestant scored 6 points, 1 contestant
+scored 5 points, 1 contestant scored 4 points, 5 contestants scored 3 points, 3 contestants
+scored 2 points, 57 contestants scored 1 point, and 189 contestants scored 0 point. The
+average score of this problem is 0.634, indicating that it was extremely diﬃcult.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Soviet Union team scored 17 points (with a total team score of 217 points) , the Romania
+team scored 18 points (with a total team score of 201 points), the China team scored 17
+points (with a total team score of 201 points), the Germany team scored 2 points (with a
+total team score of 174 points), and the Vietnam team scored 7 points (with a total team
+score of 166 points).
+The gold medal cutoﬀ for this IMO was set at 32 points (with 17 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 23 points (with 48 contestants earning silver
+medals), and the bronze medal cutoﬀ was 14 points (with 65 contestants earning bronze
+medals).
+In this IMO, a total of five contestants achieved a perfect score of 42 points.
+Problem 3.14 (IMO 54-1, proposed by Japan). Prove that for
+any pair of positive integers k and n, there exist k positive integers
+m1,m2,…,mk (not necessarily diﬀerent) such that
+1 +
+$$
+2k
+- 1
+n
+=
+\rceil
+1 +
+1
+m1
+\rceil
+1 +
+1
+m2
+\cdots
+\rceil
+1 +
+1
+mk
+. (1)
+$$
+Proof 1. By induction on k, the case of $k = 1$ is trivial. Suppose that the
+proposition is true for $k = j - 1.$ We show that the case of $k = j$ is also
+true.
+Suppose n is odd, that is, n = 2t − 1 for some positive integer t. Note
+that
+1 +
+$$
+2j
+- 1
+2t - 1
+=
+2(t + 2j-1
+- 1)
+2t
+\cdot
+2t
+2t - 1
+=
+\rceil
+1 +
+2j-1
+- 1
+t
+\rceil
+1 +
+1
+2t - 1
+,
+$$
+and by the hypothesis of induction, we can find m1,…,mj−1 such that
+1 +
+$$
+2j-1
+- 1
+t
+=
+\rceil
+1 +
+1
+m1
+\rceil
+1 +
+1
+m2
+\cdots
+\rceil
+1 +
+1
+mj-1
+.
+$$
+Thus, we need only to take $mj = 2t - 1.$
+Suppose n is even, that is, n = 2t for some positive integer t. Note that
+1 +
+$$
+2j
+- 1
+2t
+=
+2t + 2j
+- 1
+2t + 2j - 2
+\cdot
+2t + 2j
+- 2
+2t
+=
+\rceil
+1 +
+1
+2t + 2j - 2
+\rceil
+1 +
+2j-1
+- 1
+t
+$$
+and 2t + 2j
+− 2 > 0. By the hypothesis of induction, we can find
+m1,…,mj−1 such that
+1 +
+$$
+2j-1
+- 1
+t
+=
+\rceil
+1 +
+1
+m1
+\rceil
+1 +
+1
+m2
+\cdots
+\rceil
+1 +
+1
+mj-1
+.
+$$
+Thus, we need only to take mj−1 = 2t + 2j
+− 2.
+Proof 2. Consider the binary expansion of the remainders of n − 1 and
+$$
+-n mod 2k
+:
+n - 1 ≡ 2a1
++ 2a2
++ \cdots  + 2ar
+(mod2k
+),
+$$
+where 0 $\le$  $a1 < a2$ < ··· < ar $\le$  k − 1, and
+$$
+-n ≡ 2b1
++ 2b2
++ \cdots  + 2bs
+(mod2k
+),
+$$
+where 0 $\le$  $b1 < b2$ < ··· < bs $\le$  k − 1. Since −1 ≡ 20
++ 21
++ ··· +
+$$
+2k-1
+(mod2k
+$$
+), we have
+\{a1,a2,…,ar\} $\cup$  \{b1,b2,…,bs\} = \{0,1,…,k − 1\}, and r + s = k.
+For 1 $\le$  p $\le$  r, 1 $\le$  q $\le$  s, we denote
+$$
+Sp = 2ap
++ 2ap+1
++ \cdots  + 2ar
+, Tq = 2b1
++ 2b2
++ \cdots  + 2bq
+.
+$$
+And define $Sr+1 = T0$ = 0. Note that S1 + Ts = 2k
+− 1 and n + Ts ≡
+$$
+0(mod2k
+$$
+). We have
+1 +
+$$
+2k
+- 1
+n
+=
+n + S1 + Ts
+n
+=
+n + S1 + Ts
+n + Ts
+\cdot
+n + Ts
+n
+=
+r )
+p=1
+n + Sp + Ts
+n + Sp+1 + Ts
+\cdot
+s )
+q=1
+n + Tq
+n + Tq-1
+=
+r )
+p=1
+\rceil
+1 +
+2ap
+n + Sp+1 + Ts
+\cdot
+s )
+q=1
+\rceil
+1 +
+2bq
+n + Tq-1
+.
+$$
+Thus, if for 1 $\le$  p $\le$  r, 1 $\le$  q $\le$  s, defining $mp =
+n+Sp+1+Ts$
+$$
+2ap , mr+q =
+n+Tq-1
+2bq
+$$
+, then we get the required equality.
+We need only to prove that all mi are integers. For 1 $\le$  p $\le$  r. we know
+that
+$$
+n + Sp+1 + Ts ≡ n + Ts ≡ 0(mod2ap
+).
+$$
+And for 1 $\le$  q $\le$  s, we have
+$$
+n + Tq-1 ≡ n + Ts ≡ 0(mod2bq
+),
+$$
+which implies the conclusion.
+Proof 3. For any $a((= 0$,−1),
+$$
+\rceil
+1 +
+1
+$$
+a
+$$
+\rceil
+1 +
+1
+$$
+a + 1
+$$
+=
+\rceil
+1 +
+1
+$$
+a
+2
+. (2)
+We rewrite the left-hand side of (1) in the form of the product of 2k
+− 1
+fractions:
+$$
+n + 2k
+- 1
+n
+=
+n + 1
+n
+\cdot
+n + 2
+n + 1
+\cdot
+n + 3
+n + 2
+\cdot  \cdots  \cdot
+n + 2k
+- 2
+n + 2k - 3
+\cdot
+n + 2k
+- 1
+n + 2k - 2
+. (3)
+$$
+For even n, grouping successively the right-hand side of (3) in pairs from
+the left to the right and by using (2), we get the form of product of 2k−1
+fractions:
+$$
+\rceil
+n/2 + 1
+n/2
+\cdot
+n/2 + 2
+n/2 + 1
+\cdot  \cdots  \cdot
+n/2 + 2k-1
+- 1
+n/2 + 2k-1 - 2
+n + 2k
+- 1
+n + 2k - 2
+. (4)
+$$
+For odd n, grouping the right-hand side of (3) in pairs from the
+right to the left and by using (2), we get the form of product of 2k−1
+fractions:
+n + 1
+n
+$$
+\rceil
+(n + 1)/2 + 1
+(n + 1)/2
+\cdot
+(n + 1)/2 + 2
+(n + 1)/2 + 1
+\cdot
+\cdots \cdot
+(n + 1)/2 + 2k-1
+- 2
+(n + 1)/2 + 2k-1 - 3
+\cdot
+(n + 1)/2 + 2k-1
+- 1
+(n + 1)/2 + 2k-1 - 2
+. (5)
+$$
+Repeating the above grouping process to the fractions in big parentheses
+of (4) and (5) k − 2 times, respectively, we get the form of the right hand
+side of (1).
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 276 contestants scored 7 points, 5 contestants scored 6 points, 3 contestants
+scored 5 points, 14 contestants scored 4 points, 6 contestants scored 3 points, 9 contestants
+scored 2 points, 96 contestants scored 1 point, and 118 contestants scored 0 point. The
+average score of this problem is 4.108, indicating that it was simple.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 42 points (with a total team score of 208 points), the South Korea
+team scored 42 points (with a total team score of 204 points), the United States team scored
+42 points (with a total team score of 190 points), the Russia team scored 42 points (with
+a total team score of 187 points), and the North Korea team scored 42 points (with a total
+team score of 184 points).
+The gold medal cutoﬀ for this IMO was set at 31 points (with 45 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 24 points (with 92 contestants earning silver
+medals), and the bronze medal cutoﬀ was 15 points (with 141 contestants earning bronze
+medals).
+In this IMO, no contestant achieved a perfect score of 42 points.

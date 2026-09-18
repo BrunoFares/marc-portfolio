@@ -1,0 +1,862 @@
+---
+title: "2.2.2 Finding numbers that satisfy given conditions"
+source_page: 116
+source: "IMO Problems, Theorems, and Methods: Number Theory"
+---
+
+# 2.2.2 Finding numbers that satisfy given conditions
+Problem 2.11 (IMO 17-4, proposed by the Soviet Union). When
+44444444
+is written in the decimal notation, the sum of its digits is A.
+Let B be the sum of the digits of A. Find the sum of the digits of B (A
+and B are written in decimal notations).
+Solution. Since
+44444444
+< (104
+)5000
+< 1020000
+,
+the number of digits of 44444444
+in the decimal notation is less than 20000.
+Hence A $\le$  9 × 20000 = 180000 and B $\le$  1 + 9 × 5 = 46. Suppose the sum
+of the digits of B is C. Then C $\le$  4 + 9 = 13.
+On the other hand,
+C ≡ B ≡ $A ≡ 44444444$
+≡ 74444
+≡ (73
+)1481
+· 7 ≡ 7(mod 9).
+Therefore, it must be $C = 7$, i.e., the sum of the digits of B is 7.
+Remark. This problem may be considered diﬃcult in 1975, but today it
+appears quite simple so that we can even see similar problems in elementary
+school mathematics competitions. Nevertheless, we should see that scaling
+and congruence are indeed two powerful tools for dealing with number
+theory problems.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 55 contestants scored 6 points, 9 contestants scored 5 points, 6 contestants
+scored 4 points, 11 contestants scored 3 points, 5 contestants scored 2 points, 5 contestants
+scored 1 point, and 37 contestants scored 0 point. The average score of this problem is 3.492,
+indicating that it was relatively straightforward.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Hungary team scored 36 points (with a total team score of 258 points), the German
+Democratic Republic team scored 35 points (with a total team score of 249 points), the United
+States team scored 42 points (with a total team score of 247 points), the Soviet Union team
+scored 37 points (with a total team score of 246 points), and the United Kingdom team
+scored 47 points (with a total team score of 241 points).
+The gold medal cutoﬀ for this IMO was set at 38 points (with 8 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 32 points (with 25 contestants earning silver
+medals), and the bronze medal cutoﬀ was 23 points (with 36 contestants earning bronze
+medals).
+In this IMO, a total of six contestants achieved a perfect score of 40 points.
+Problem 2.12 (IMO 31-3, proposed by Romania). Determine all
+integers $n > 1$ such that 2n
++1
+n2 is an integer.
+Solution. Obviously n is odd. Let p be the least prime factor of n.
+Then
+$$
+2n
+≡ -1(mod p). (1)
+$$
+Let a be the least positive integer satisfying 2a
+≡ −1(mod p), and
+suppose $n = ka + r$ with 0 $\le$  $r < a.$ Then
+$$
+2n
+≡ 2ka+r
+≡ (-1)k
+\cdot  2r
+(mod p). (2)
+$$
+If k is even, by (1) and (2), 2r
+≡ −1(mod p). Since a is the least
+positive integer satisfying this equation, r = 0. If k is odd, by (1) and
+$$
+(2), 2r
+≡ 1(mod p), so 2a-r
+$$
+≡ −1(mod p). With 0 < a − r $\le$  a and the
+definition of a, we also have $r = 0.$
+Therefore, it always holds that $n = ka.$ By Fermat’s little theorem,
+$$
+2p-1
+$$
+≡ 1(mod p). If a $\ge$  p, then 0 < a − (p − 1) < a and 2a−(p−1)
+≡
+−1(mod p), which is a contradiction to the definition of a. Hence a $\le$  p−1.
+Since p is the least prime factor of n and $a\mid n$, we have $a < p$, so $a = 1$,
+which implies 21
+≡ −1(mod p), and thus $p = 3.$
+$$
+Suppose n = 3k
+$$
+d, where k $\ge$  1, (d,3) = 1, and d is odd.
+Assume that k $\ge$  2. Then
+$$
+2n
++ 1 = (3 - 1)n
++ 1 = 3n -
+n
+j=2
+(-1)j
+Cj
+n3j
+. (3)
+$$
+Since the exponent of 3 in j! is
+)
+j
+3
+
++
+)
+j
+32
+
++ ··· <
+j
+3
++
+j
+32
+$$
++ \cdots  =
+j
+2
+,
+$$
+the exponent of 3 in Cj
+$$
+n = n(n-1)\cdots (n-j+1)
+$$
+j! must $be > k-j$
+2. Then for j $\ge$  2,
+the exponent of 3 in (−1)j
+Cj
+$$
+n3j
+$$
+is not less than k − j
+$$
+2 + j + 1 = k + j
+2 + 1.
+Hence
+n
+j=2(-1)j
+Cj
+n3j
+$$
+is divisible by 3k+2
+. Note that 3n is divisible by
+$$
+3k+1
+$$
+but not divisible by 3k+2
+$$
+, so 2n
+$$
++ 1 cannot be divisible by 3k+2
+.
+$$
+However n2
+= 32k
+d2
+$$
+and 2k $\ge$  k + 2, so n2
+$$
+\nmid 2n
+$$
++ 1, a contradiction.
+Therefore, n = 3d with (d,3) = 1.
+Assume that $d > 1$, and let q be the least prime factor of d. Then q $\ge$  5
+and
+$$
+2n
+≡ -1(mod q).
+$$
+Suppose b is the least positive integer such that 2b
+≡ −1(mod q). Similar
+to the previous discussion, we know that $j\mid n$ and j $\le$  q − 1. Hence $j = 1$
+or 3, and correspondingly, q|3 or q|9, both are contradictory to q $\ge$  5. Thus
+it must be $d = 1$ and $n = 3.$
+We can easily find that $n = 3$ satisfies the given condition, so the solution
+is $n = 3.$
+Remark. This is another problem analyzing least prime factors by Fer-
+mat’s little theorem.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 16 contestants scored 7 points, 6 contestants scored 6 points, 6 contestants
+scored 5 points, 16 contestants scored 4 points, 42 contestant scored 3 points, 79 contestants
+scored 2 points, 118 contestants scored 1 point, and 25 contestants scored 0 point. The
+average score of this problem is 2.091, indicating that it had a certain level of diﬃculty.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 35 points (with a total team score of 230 points), the Soviet Union
+team scored 26 points (with a total team score of 193 points), the United States team scored
+20 points (with a total team score of 174 points), the Romania team scored 26 points (with
+a total team score of 171 points), and the France team scored 22 points (with a total team
+score of 168 points).
+The gold medal cutoﬀ for this IMO was set at 34 points (with 23 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 23 points (with 56 contestants earning silver
+medals), and the bronze medal cutoﬀ was 16 points (with 76 contestants earning bronze
+medals).
+In this IMO, a total of four contestants achieved a perfect score of 42 points.
+Problem 2.13 (IMO 36-6, proposed by Poland). Let p be an odd
+prime number. How many p-element subsets A of \{1,2,…,2p\} are there,
+the sum of whose elements is divisible by p?
+Solution. Let $W = \{1,2,\ldots,2p\}$, U = \{1,2,…,p\}, and $V = \{p + 1,
+p + 2,\ldots,2p\}$. Then U and V are two subsets satisfying the given
+conditions.
+Evidently, the number of p-elements subsets of W is Cp
+2p. For any
+p-element subset A (except U and V) , the intersection of A and U, or
+A and V is not empty. Now we divide these subsets into several groups
+such that two p-element subsets (except U and V) S and T are in the
+same group if and only if both of these two conditions hold:
+(a) S
+
+$$
+V = T
+$$
+
+V ;
+(b) there exists a way to number the elements s1,s2,…,sm of S
+
+U
+and the elements t1,t2,…,tm of T
+
+U, such that for some k $\in$ 
+\{0,1,2,…,p − 1\}, the congruence equations si − ti ≡ k(mod p) with
+$$
+i = 1,2,\ldots,m hold.
+$$
+Then for distinct k1 and k2 in \{0,1,2,…,p − 1\}, suppose T1 and T2 are
+the corresponding sets getting from a same S by (b). Then calculating the
+sum of their elements, we have
+p
+$$
+i=1
+si -
+p
+i=1
+ti ≡ (k1 - k2)m(mod p),
+$$
+where m is the number of elements of S
+
+U. Since S
+
+U $\ne$  ∅, we have
+0 < $m < p$, and then (k1 − k2)m $\not\equiv$  0(mod p), which implies T1 $\ne$  T2. So
+there are precisely p subsets in every group, the sums of whose elements are
+not congruent to each other modulo p. Hence, there is precisely one subset
+in every group satisfying the original condition.
+As a result, we can divide all the Cp
+2p p-element subsets of W, excluding
+U and V, into several groups, such that each group contains p subsets and
+among these p subsets there is exactly one subset we want. Therefore, the
+number of such subsets is 1
+p(Cp
+$$
+2p - 2) + 2.
+$$
+Remark. The background of this problem is actually an application of the
+complete residue system although we did not actually mention it.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 34 contestants scored 7 points, 6 contestants scored 6 points, 5 contestants
+scored 5 points, 5 contestant scored 4 points, 12 contestant scored 3 points, 22 contestants
+scored 2 points, 37 contestants scored 1 point, and 291 contestants scored 0 point. The
+average score of this problem is 1.058, indicating that it was relatively challenging.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 34 points (with a total team score of 236 points), the Romania team
+scored 30 points (with a total team score of 230 points), the Russia team scored 17 points
+(with a total team score of 227 points), the Vietnam team scored 12 points (with a total
+team score of 220 points), and the Hungary team scored 27 points (with a total team score
+of 210 points).
+The gold medal cutoﬀ for this IMO was set at 37 points (with 30 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 29 points (with 71 contestants earning silver
+medals), and the bronze medal cutoﬀ was 19 points (with 100 contestants earning bronze
+medals).
+In this IMO, a total of 14 contestants achieved a perfect score of 42 points.
+Problem 2.14 (IMO 40-4, proposed by Chinese Taiwan). Determine
+all pairs (n, p) of positive integers such that p is a prime, n is not exceeded
+2p, and (p − 1)n
++ 1 is divisible by np−1
+.
+Solution. When $n = 1$, obviously p is divisible by 1 for any prime p.
+When $p = 2$, we want 2 to be divisible by n, which leads to
+$n = 1$ or 2.
+Next we consider the cases when n $\ge$  2 and p $\ge$  3. Now that (p−1)n
++1
+is odd, n is also odd and $n < 2p.$ Let q be the least prime divisor of n.
+Then q is odd, and (n,q−1) = 1. By Bézout’s theorem, there exist integers
+u and v such that
+$$
+un + v(q - 1) = 1.
+$$
+As q − 1 is even, u must be odd.
+By the given condition,
+(p − 1)n
+≡ −1(mod q);
+on the other hand, by Fermat’s little theorem,
+(p − 1)q−1
+≡ 1(mod q).
+Then by these two equalities,
+$$
+p - 1 = (p - 1)un+v(q-1)
+= (p - 1)un
+\cdot  (p - 1)v(q-1)
+≡ (-1)u
+\cdot  1v
+= -1(mod q).
+$$
+This is to say $q\mid p$, so $q = p.$ From the definition of q we have $p\mid n$, together
+with $n < 2p$ we know $n = p.$ Hence pp−1
+|((p − 1)p
++ 1).
+Since
+(p − 1)p
+$$
++ 1 = p2
+(pp-2
+- C1
+ppp-3
++ \cdots  - Cp-2
+p + 1),
+while
+pp-2
+- C1
+ppp-3
++ \cdots  - Cp-2
+p + 1 ≡ 1(mod p),
+$$
+we conclude that p−1 $\le$  2, which means $p = 3.$ By checking $n = p$ = 3 we
+can see this pair of (n, p) meets our requirements.
+Summarizing, we see that all wanted pairs (n, p) are (n,p) =
+(2,2),(3,3),(1,p), where p is any prime.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 75 contestants scored 7 points, 9 contestants scored 6 points, 15 contes-
+tants scored 5 points, 24 contestants scored 4 points, 59 contestants scored 3 points, 109
+contestants scored 2 points, 119 contestants scored 1 point, and 40 contestants scored
+0 point. The average score of this problem is 2.809, indicating that it had a certain level of
+diﬃculty.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 42 points (with a total team score of 182 points), the Russia team
+scored 34 points (with a total team score of 182 points), the Vietnam team scored 32 points
+(with a total team score of 177 points), the Romania team scored 31 points (with a total
+team score of 173 points), and the Bulgaria team scored 42 points (with a total team score
+of 170 points).
+The gold medal cutoﬀ for this IMO was set at 28 points (with 38 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 19 points (with 70 contestants earning silver
+medals), and the bronze medal cutoﬀ was 12 points (with 118 contestants earning bronze
+medals).
+In this IMO, no contestant achieved a perfect score of 42 points.
+Problem 2.15 (IMO 45-6, proposed by Iran). We call a positive
+integer alternating if every two consecutive digits in its decimal represen-
+tation are of diﬀerent parity.
+Find all positive integers n such that n has a multiple which is alter-
+nating.
+Solution First we prove two lemmas.
+Lemma 1. If k is a positive integer, then there exist 0 $\le$  a1,a2,…,
+a2k $\le$  9 such that a1,a3,…,a2k−1 are odd integers, a2,a4,…,a2k are even
+integers, and
+$$
+22k+1
+$$
+|a1a2 ···a2k (The decimal representation).
+Proof of Lemma 1. By mathematical induction.
+If $k = 1$, it follows from 8 | 16 that the proposition is true.
+Assume that for $k = n - 1$, the proposition is true.
+When $k = n$, let
+$$
+a1a2 \cdots a2n-2 = 22n-1
+t
+$$
+by the inductive hypothesis. The problem reduces to proving that there
+exist 1 $\le$  a,b $\le$  9 with a odd and b even such that 22n+1
+$$
+\midab \times 102n-2
++
+22n-1
+$$
+t, or 8|ab × 52n−2
++ 2t, or 8|ab + 2t in view of 52n−2
+≡ 1(mod 8).
+It follows from 8|12 + 4,8|14 + 2,8|16 + 0, and 8|50 + 6 that Lemma 1 is
+true.
+Lemma 2. If k is a positive integer, then there exists an alternative num-
+ber a1a2 ···a2k with an even number 2k of digits such that a2k is odd and
+$$
+52k
+$$
+|a1a2 ···a2k, where a1 can be 0, but a2 $\ne$  0.
+Proof of Lemma 2. By mathematical induction.
+If $k = 1$, it follows from 25 | 25 that the proposition is true.
+Assume that for $k = n - 1$, the proposition is true, or there exists an
+alternative multiple of a1a2 ···a2k satisfying 52k
+$$
+\mida1a2 \cdots a2k.
+$$
+$Whenk = n$, let
+$$
+a1a2 \cdots a2n-2 = 52n-1
+t.
+$$
+The problem reduces to proving that there exist 0 $\le$  a,b $\le$  9 with a even
+and b odd such that 52n
+$$
+\midab \times 102n-2
++ 52n-2
+$$
+t or 25|ab × 22n−2
++ t.
+$$
+Since 22n-2
+$$
+is coprime to 25, there exist a and b such that 0 < ab $\le$  25
+and 25|ab × 22n−2
++ t. If b is odd, then between ab and ab + 50, at least
+one satisfies that the highest-valued digit is even. If b is even, then between
+ab + 25 and ab + 75, at least one satisfies that the highest-valued digit is
+even. This completes the proof of Lemma 2.
+Back to the original problem. Let n = 2$\alpha$ 
+$$
+5\beta
+$$
+t, where t is coprime to 10
+and $\alpha$ ,$\beta$  $\in$  N. Assume that $\alpha$  $\ge$  2,$\beta$  $\ge$  1. Let l be an arbitrary multiple of
+n. The last decimal digit is 0, and the digit in tens is even. Hence these n
+do not satisfy the required condition.
+$$
+(1) When \alpha = \beta = 0, consider 21,2121,212121,\ldots, 2121\cdots 21
+$$
+numberk of 21
+,….
+There must exist two of them congruent modulo n. Without loss of gener-
+ality, we may assume that $t1 > t2$, and
+2121···21   
+number t1 of 21
+≡ 2121···21   
+number t2 of 21
+(mod n).
+Then
+2121···21   
+number t1−t2 of 21
+00···0   
+number 2t2 of 0
+≡ 0(mod n).
+Hence
+n| 2121···21   
+number t1−t2 of 21
+,
+because n is coprime to 10.
+Now these positive integers n satisfy the required condition.
+(2) When $\beta$  = 0 and $\alpha$  $\ge$  1, it follows from Lemma 1 that there exists
+an alternative number a1a2 ···a2k that is a multiple of 2$\alpha$ 
+. Consider
+$$
+a1a2 \cdots a2k,a1a2 \cdots a2ka1a2 \cdots a2k,\ldots,
+a1a2 \cdots a2ka1a2 \cdots a2k \cdots a1a2 \cdots a2k
+$$
+  
+number l of sections
+,…,
+there must exist two of them congruent modulo t. Without loss of gener-
+ality, we may assume that $t1 > t2$ , and
+$$
+a1a2 \cdots a2ka1a2 \cdots a2k \cdots a1a2 \cdots a2k
+$$
+  
+number t1 of sections
+$$
+≡ a1a2 \cdots a2ka1a2 \cdots a2k \cdots a1a2 \cdots a2k
+$$
+  
+number t2 of sections
+(mod t).
+Then
+$$
+a1a2 \cdots a2ka1a2 \cdots a2k \cdots a1a2 \cdots a2k
+$$
+  
+number t1−t2 of sections
+00···0   
+number 2kt2 of 0
+≡ 0(mod t).
+Since t is coprime to 10, t|a1a2 ···a2ka1a2 ···a2k ···a1a2 ···a2k
+  
+number t1−t2 of sections
+. Moreover,
+since t is coprime to 2,
+$$
+n = 2\alpha
+t\mida1a2 \cdots a2ka1a2 \cdots a2k \cdots a1a2 \cdots a2k
+$$
+  
+number t1−t2 of sections
+,
+which is alternating.
+(3) When $\alpha$  = 0,$\beta$  $\ge$  1, it follows from Lemma 2 that there exists an
+alternative multiple that a1a2 ···a2k is a multiple of 5$\beta$ 
+with a2k odd.
+Using the same argument as in (2), we obtain that there
+$$
+exist t1 > t2 satisfying t\mida1a2 \cdots a2ka1a2 \cdots a2k \cdots a1a2 \cdots a2k
+$$
+  
+number t1−t2 of sections
+. Since t
+is coprime to 5, 5$\beta$ 
+$$
+t\mida1a2 \cdots a2ka1a2 \cdots a2k \cdots a1a2 \cdots a2k
+$$
+  
+number t1−t2 of sections
+. In addition,
+$$
+a1a2 \cdots a2ka1a2 \cdots a2k \cdots a1a2 \cdots a2k
+$$
+  
+numbert1−t2 of sections
+is alternating, and the last decimal
+digit a2k is odd.
+(4) When $\alpha$  = 1,$\beta$  $\ge$  1, it follows from (3) that there exists an alterna-
+tive number a1a2 ···a2k ···a1a2 ···a2k satisfying that a2k is odd and
+$$
+5\beta
+t\mida1a2 \cdots a2k \cdots a1a2 \cdots a2k.
+Hence n = 2 \cdot  5\beta
+$$
+t|a1a2 ···a2k ···a1a2 ···a2k0, which is alternating.
+In conclusion, if n is not divisible by 20, then these positive integers n
+satisfy the required condition.
+Remark. When discussing problems related to decimal digits, an impor-
+tant point is to check the properties modulo 2 and 5. In this proof, both
+lemmas constructed the desired integer by mathematical induction. For
+the original problem, we repeated a section for suﬃciently many times to
+find two terms congruent modulo t, and then the diﬀerence between these
+two terms has the congruence properties we want. The background of this
+method is the pigeonhole principle. Similar methods are commonly used
+for problems related to complete residue systems.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 48 contestants scored 7 points, 4 contestants scored 6 points, 6 contes-
+tants scored 5 points, 7 contestants scored 4 points, 14 contestants scored 3 points, 33
+contestants scored 2 points, 85 contestants scored 1 point, and 289 contestants scored
+0 point. The average score of this problem is 1.257, indicating that it was relatively
+challenging.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 42 points (with a total team score of 220 points), the United States
+team scored 34 points (with a total team score of 212 points), the Russia team scored 27
+points (with a total team score of 205 points), the Vietnam team scored 37 points (with a
+total team score of 196 points), and the Bulgaria team scored 19 points (with a total team
+score of 194 points).
+The gold medal cutoﬀ for this IMO was set at 32 points (with 45 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 24 points (with 78 contestants earning silver
+medals), and the bronze medal cutoﬀ was 16 points (with 120 contestants earning bronze
+medals).
+In this IMO, a total of four contestants achieved a perfect score of 42 points.
+Problem 2.16 (IMO 46-4, proposed by Poland). Determine all pos-
+itive integers relatively prime to all the terms of the infinite sequence
+$an = 2n$
+$$
++ 3n
++ 6n
+- 1 (n = 1, 2, 3, \ldots).
+$$
+Solution. First, we prove the following result: for a fixed prime p(p $\ge$  5),
+$$
+2p-2
++ 3p-2
++ 6p-2
+- 1 ≡ 0 (mod p). (1)
+$$
+Since p is a prime not less than 5, we have (2,p) = (3,p) = (6,p) = 1. By
+Fermat’s little theorem,
+$$
+2p-1
+≡ 1 (modp), 3p-1
+≡ 1 (modp), 6p-1
+≡ 1 (modp).
+Therefore
+3 \cdot  2p-1
++ 2 \cdot  3p-1
++ 6p-1
+≡ 3 + 2 + 1 = 6 (modp),
+i.e.,
+6 \cdot  2p-2
++ 6 \cdot  3p-2
++ 6 \cdot  6p-2
+≡ 6 (modp).
+Simplifying gives
+2p-2
++ 3p-2
++ 6p-2
+- 1 ≡ 0 (modp).
+$$
+So (1) holds, and ap−2 = 2p−2
+$$
++ 3p-2
++ 6p-2
+- 1 ≡ 0 (modp).
+$$
+It is trivial that $a1 = 10$, a2 = 48.
+For any integer n greater than 1, it has a prime factor p. If p $\in$  \{2, 3\},
+then (n, a2) > 1. If p $\ge$  5, then (n, ap−2) > 1. Therefore we can claim
+that every integer greater than 1 does not match the condition.
+Since 1 is relatively prime to every other positive integer, 1 is the only
+number satisfying the condition.
+Remark. It is not diﬃcult to realize that whether a positive integer is
+coprime to every term in the sequence depends on whether its prime fac-
+tors satisfy this condition. The reason why we came up with the idea of
+using Fermat’s little theorem and taking the exponent as p−2 is the famil-
+iar equality 1
+2 + 1
+3 + 1
+6 = 1. In fact, if we know the concept of modular
+multiplicative inverse, then this equality also holds modulo p.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 238 contestants scored 7 points, 7 contestants scored 6 points, 3 contestants
+scored 5 points, no contestant scored 4 points, no contestant scored 3 points, 30 contestants
+scored 2 points, 145 contestants scored 1 point, and 90 contestants scored 0 point. The
+average score of this problem is 3.758, indicating that it was relatively straightforward.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The China team scored 42 points (with a total team score of 235 points), the United States
+team scored 42 points (with a total team score of 213 points), the Russia team scored 42
+points (with a total team score of 212 points), the Iran team scored 42 points (with a total
+team score of 201 points), and the South Korea team scored 42 points (with a total team
+score of 200 points).
+The gold medal cutoﬀ for this IMO was set at 35 points (with 42 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 23 points (with 79 contestants earning silver
+medals), and the bronze medal cutoﬀ was 12 points (with 128 contestants earning bronze
+medals).
+In this IMO, a total of 16 contestants achieved a perfect score of 42 points.
+Problem 2.17 (IMO 48-5, proposed by the United Kingdom). Let
+a and b be positive integers. Show that if 4ab − 1 divides (4a2
+− 1)2
+, then
+$a = b.$
+Proof. Call (a,b) a “bad pair” if it satisfies 4ab−1|(4a2
+−1)2
+while a $\ne$  b.
+We use the infinite descent method to prove that there is no such “bad
+pair.”
+Property (1). If (a,b) is a ‘bad pair’ and $a < b$, then there exists an
+integer c (c < a) such that (a,c) is also a “bad pair.”
+In fact, let $r = (4a2
+-1)$2
+4ab−1 . Then
+$$
+r = -r \cdot  (-1) ≡ -r(4ab - 1)
+= -(4a2
+- 1)2
+≡ -1(mod 4a).
+$$
+Therefore there exists an integer c such that $r = 4ac - 1.$ Since $a < b$, we
+$$
+have 4ac - 1 = (4a2
+-1)2
+4ab-1 < 4a2
+$$
+− 1. So $c < a$ and 4ac − 1|(4a2
+− 1)2
+. Thus
+(a,c) is a “bad pair” too.
+Property (2). If (a,b) is a “bad pair,” then so is (b,a).
+In fact, by 1 = 12
+$$
+≡ (4ab)2
+$$
+(mod (4ab − 1)), we get
+$$
+(4b2
+- 1) ≡ (4b2
+- (4ab)2
+) = 16b4
+(4a2
+- 1)
+≡ 0(mod (4ab - 1)).
+Thus, 4ab - 1\mid(4b2
+- 1).
+$$
+In the following we will show such “bad pair” does not exist. We prove
+it by contradiction.
+Suppose there is at least one “bad pair.” We choose such a pair for which
+2a + b is the least. If $a < b$, then by property (1), there is a “bad pair”
+(a,c) which satisfies $c < b$, and 2a + c < 2a + b, a contradiction. If $b < a$,
+then by property (2), (b,a) is also a “bad pair,” leads to 2b+a < 2a+b, a
+contradiction.
+All these show that such a “bad pair” does not exist. Therefore $a = b.$
+Remark. The main idea is similar to a previous problem using Vieta’s
+formula for constantly finding smaller solutions. In the latter half, we can
+also choose such a pair (a,b) for which a + b is the least instead of 2a + b.
+If $a < b$, then the contradiction can be obtained from property (1); or
+$a > b.$ Using property (2) and then property (1), we can also obtain the
+contradiction.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 94 contestants scored 7 points, 6 contestants scored 6 points, 4 contestants
+scored 5 points, 3 contestants scored 4 points, 10 contestants scored 3 points, 38 contestants
+scored 2 points, 155 contestants scored 1 point, and 210 contestants scored 0 point. The
+average score of this problem is 1.898, indicating that it was relatively challenging.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The Russia team scored 37 points (with a total team score of 184 points), the China team
+scored 42 points (with a total team score of 181 points) , the South Korea team scored 36
+points (with a total team score of 168 points), the Vietnam team scored 34 points (with a
+total team score of 168 points), and the United States team scored 26 points (with a total
+team score of 155 points).
+The gold medal cutoﬀ for this IMO was set at 29 points (with 39 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 21 points (with 83 contestants earning silver
+medals), and the bronze medal cutoﬀ was 14 points (with 131 contestants earning bronze
+medals).
+In this IMO, no contestant achieved a perfect score of 42 points.
+Problem 2.18 (IMO 53-6, proposed by Serbia). Find all positive
+integers n for which there exist non-negative integers a1,a2,…,an such
+that
+1
+$$
+2a1
++
+1
+2a2
++ \cdots  +
+1
+2an
+=
+1
+3a1
++
+2
+3a2
++ \cdots  +
+n
+3an
+= 1. (1)
+$$
+Solution. Suppose that n satisfies condition (1), that is, there exist
+non-negative integers a1 $\le$  a2 $\le$  ··· $\le$  an, such that
+n
+$$
+i=1 2-ai
+=
+n
+i=1 i \cdot  3-ai
+= 1.
+$$
+Multiplying both sides of the second equality by an, and then taking
+mod 2, we have
+n
+$$
+i=1
+i =
+1
+2
+n(n + 1) ≡ 1 (mod 2).
+$$
+Hence, n ≡ 1,2(mod 4). In the following, we show that this is also
+a suﬃcient condition. That is, the sought n are all integers such that
+$n ≡ 1$,2 (mod 4).
+We call a set of finite repeatable positive integers $B = \{b1,b2,\ldots,bn\}$
+as “feasible”, if the elements of B can correspond to non-negative integers
+a1,a2,…,an such that
+n
+$$
+i=1
+2-ai
+=
+n
+i=1
+bi3-ai
+= 1.
+$$
+Note an important fact that if B is “feasible”, then by replacing any element
+b of B by two positive integers u and v with $u+v = 3b$, then the resulting
+$$
+set B\nmid
+$$
+is also “feasible”. In fact, if b corresponds to non-negative integer
+a, then we take both u and v corresponding to a + 1, keeping others’
+correspondence unchanged. Since
+2−a−1
++ 2−a−1
+= 2−a
+,u · 3−a−1
++ v · 3−a−1
+= b · 3−a
+,
+the set B$\nmid$ 
+is “feasible”. If B$\nmid$ 
+can be obtained by such finite replacements
+from B, we denote them by B $\to$  B$\nmid$ 
+. Particularly, if b $\in$  B, then we can
+replace b by b and 2b, thus, B $\to$  B
+
+$$
+\{2b\}.
+$$
+We shall show that for each positive integer $n ≡ 1$,2 (mod 4), the set
+$Bn = \{1,2,\ldots,n\}$ is “feasible”. The set B1 is “feasible”, since we can take
+$a1 = 0.$ The set B2 is “feasible”, since B1 $\to$  B2. If Bn is “feasible” for
+$n ≡ 1(mod$ 4), then since Bn $\to$  Bn+1, we see that Bn+1 is also “feasible”.
+Thus, it suﬃces to show that Bn is “feasible” for $n ≡ 1(mod$ 4). The
+set B5 is “feasible”, since
+$$
+B2 \to \{1,3,3\} \to \{1,3,4,5\} \to B5.
+$$
+The set B9 is “feasible”, since
+$$
+B5 \to \{1,2,3,4,6,9\} \to \{1,2,3,4,5,6,7,9\} \to B9\{8\} \to B9.
+$$
+The set B13 is “feasible”, since
+$$
+B9 \to \{1,2,3,4,5,6,7,9,11,13\} \to B13.
+$$
+The last step is obtained by appending 2b several times. Appending 8,10,
+and 12 successively, we get that B17 is “feasible”, since
+$$
+B6 \to B5
+$$
+
+$$
+\{7,11\} \to B8
+$$
+
+$$
+\{11\} \to B7
+$$
+
+\{9,11,15\}
+$$
+\to B12
+$$
+
+$$
+\{15\} \to B17\{10,14,16\} \to B17.
+$$
+Lastly, we show that B4k+2 $\to$  B4k+13 for any integer k $\ge$  2, and complete
+the proof. By successively appending 4k + 4,4k + 6,…,4k + 12, we note
+that
+$$
+4k + 12
+2
+\le 4k + 2.
+$$
+In the remaining six odd numbers 4k + 3,4k + 5,…,4k + 13, denote the
+numbers that are multiples of 3 by u1,v1, the sum of two of which is a
+multiple of 3 by u2,v2 and u3,v3. Then substitute $bi = 1$
+3(ui +vi) by ui,vi
+for $i = 1$,2,3. Note that bi is even, so we append bi
+2 and get B4k+13.
+Score Situation This particular problem saw the following distribution of scores among
+contestants: 10 contestants scored 7 points, 1 contestant scored 6 points, no contestant
+scored 5 points, 9 contestants scored 4 points, 3 contestants scored 3 points, 12 contestants
+scored 2 points, 39 contestants scored 1 point, and 473 contestants scored 0 point. The
+average score of this problem is 0.336, indicating that it was extremely diﬃcult.
+Among the top five teams in the team scores, the scores of this problem are as follows:
+The South Korea team scored 23 points (with a total team score of 209 points), the China
+team scored 30 points (with a total team score of 195 points), the United States team scored
+18 points (with a total team score of 194 points), the Russia team scored 9 points (with
+a total team score of 177 points) , the Canada team scored 13 points (with a total team
+score of 159 points), and the Thailand team scored 2 points (with a total team score of 159
+points).
+The gold medal cutoﬀ for this IMO was set at 28 points (with 51 contestants earn-
+ing gold medals), the silver medal cutoﬀ was 21 points (with 88 contestants earning silver
+medals), and the bronze medal cutoﬀ was 14 points (with 137 contestants earning bronze
+medals).
+In this IMO, only one contestant achieved a perfect score of 42 points, namely Jeck Lim
+from Singapore.

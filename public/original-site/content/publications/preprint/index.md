@@ -1,0 +1,50 @@
+---
+title: "Period collapse of Markov triangles"
+authors:
+- me
+date: "2026-01-20T00:00:00Z"
+
+# Schedule page publish date (NOT publication's date).
+publishDate: "2026-01-24T00:00:00Z"
+
+publication_types: ["article"]
+
+build:
+  render: never
+  list: always
+
+peer_reviewed: false
+open_access: true
+license: CC-BY-NC-SA-4.0
+
+abstract: Cristofaro-Gardiner and Kleinman showed the complete period collapse of the Ehrhart quasipolynomial of Fibonacci triangles and their irrational limits, by studying the Fourier-Dedekind sums involved in the Ehrhart function of right-angled rational triangles. We generalize this result using integral affine geometrical methods to all Markov triangles, as defined by Vianna. In particular, we show new occurrences of strong period collapse, namely by constructing for each Markov number a two-sided sequence of rational triangles and two irrational limits with quasipolynomial Ehrhart function of period.
+
+summary: Cristofaro-Gardiner and Kleinman showed the complete period collapse of the Ehrhart quasipolynomial of Fibonacci triangles and their irrational limits, by studying the Fourier-Dedekind sums involved in the Ehrhart function of right-angled rational triangles. We generalize this result using integral affine geometrical methods to all Markov triangles, as defined by Vianna. In particular, we show new occurrences of strong period collapse, namely by constructing for each Markov number a two-sided sequence of rational triangles and two irrational limits with quasipolynomial Ehrhart function of period.
+
+tags:
+- Combinatorics
+- Symplectic Geometry
+- Ehrhart Theory
+- Markov Triangles
+
+featured: true
+
+hugoblox:
+  ids:
+    arxiv: 2601.14090v2
+    doi: 10.48550/arXiv.2601.14090
+
+links:
+- type: site
+  url: https://arxiv.org/abs/2601.14090
+- type: preprint
+  provider: arxiv
+  id: 2601.14090v2
+- type: pdf
+  url: https://arxiv.org/pdf/2601.14090
+
+projects: []
+slides: ""
+---
+
+Preprint available on [arXiv](https://arxiv.org/abs/2601.14090).
