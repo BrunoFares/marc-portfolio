@@ -345,7 +345,7 @@ main {
   align-items: center;
   gap: 7px;
 }
-.hero-bottom > a {
+.hero-bottom > a#orcid {
   border-left: 1px solid var(--line);
   padding-left: 22px;
 }

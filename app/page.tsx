@@ -56,6 +56,7 @@ export default function Home() {
               href="https://orcid.org/0009-0006-3976-4747"
               target="_blank"
               rel="noreferrer"
+              id="orcid"
             >
               <span className="orcid-icon">iD</span> ORCID{" "}
               <Icon name="arrow" size={12} />
