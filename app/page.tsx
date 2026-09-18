@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import profile from "@/data/profile.json";
 import { Icon, Torus } from "@/components/icons";
@@ -14,22 +15,15 @@ export default function Home() {
           <h1>
             Marc Fares<span>.</span>
           </h1>
-          <p className="hero-subtitle">
-            Exploring the world
-            <br />
-            through <em>geometry.</em>
-          </p>
           <p className="hero-description">
-            I’m a PhD student in mathematics at{" "}
+            I’m a PhD student in symplectic geometry at{" "}
             <a
               href="https://www.unine.ch/math"
               target="_blank"
               rel="noreferrer"
             >
               Université de Neuchâtel
-            </a>
-            , with interests spanning symplectic geometry, topology, and Ehrhart
-            theory.
+            </a>.
           </p>
           <div className="hero-buttons">
             <a className="button button-primary" href="#research">
@@ -44,9 +38,20 @@ export default function Home() {
             </a>
           </div>
           <div className="hero-bottom">
-            <span>
-              <Icon name="pin" size={15} /> Neuchâtel, Switzerland
-            </span>
+            <a
+              href="https://www.linkedin.com/in/marc-j-fares/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                src="/images/linkedin-logo.png"
+                alt=""
+                width={12}
+                height={12}
+              />
+              LinkedIn{" "}
+              <Icon name="arrow" size={12} />
+            </a>
             <a
               href="https://orcid.org/0009-0006-3976-4747"
               target="_blank"
