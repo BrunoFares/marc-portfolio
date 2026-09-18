@@ -72,24 +72,20 @@ export default function Home() {
               <span className="section-marker">01</span> RESEARCH INTERESTS
             </div>
             <h2>
-              The shape of
+              The mathematics
               <br />
-              <em>what’s possible.</em>
+              I like to
+              <em> explore.</em>
             </h2>
-            <p>
-              My mathematical interests lie at the intersection of geometry,
-              topology, and combinatorics.
-            </p>
             <Torus className="research-torus" />
-            <span className="figure-caption">A study in form · The torus</span>
           </div>
           <div className="interest-list">
             {profile.interests.map((interest, i) => (
               <div className="interest" key={interest}>
-                <span className="interest-number">0{i + 1}</span>
                 <h3>{interest}</h3>
                 <span className="interest-symbol" aria-hidden="true">
-                  {["ω", "𝕋", "∂", "ξ", "ℤ", "M"][i]}
+                  {/* TODO: fix the Z exponent n later */}
+                  {["ω", "Δ", "ξ", "∂", "ℤ"][i]}
                 </span>
               </div>
             ))}

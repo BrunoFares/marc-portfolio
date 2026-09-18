@@ -454,11 +454,14 @@ main {
 .research-inner {
   padding-block: 64px;
   display: grid;
-  grid-template-columns: 1fr 1.16fr;
-  gap: 120px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.16fr);
+  align-items: center;
+  gap: 48px;
 }
 .research-intro {
   position: relative;
+  width: fit-content;
+  max-width: 100%;
 }
 .research-intro .eyebrow {
   color: #b6c8b6;
@@ -485,10 +488,10 @@ main {
   color: #b7c5b9;
 }
 .research-torus {
-  position: absolute;
+  display: block;
   width: 195px;
-  right: -44px;
-  bottom: -42px;
+  max-width: 100%;
+  margin: 24px auto 0;
   transform: rotate(-16deg);
   color: #c6d9aa;
   opacity: 0.75;
@@ -509,6 +512,8 @@ main {
   display: flex;
   align-items: center;
   gap: 23px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-bottom: 1px solid #55715c70;
   min-height: 60px;
 }
@@ -531,6 +536,14 @@ main {
   font-style: italic;
   font-size: 21px;
   color: #b3cca1;
+}
+.interest-symbol sup {
+  position: relative;
+  top: -0.65em;
+  margin-left: 0.06em;
+  font-size: 0.6em;
+  line-height: 0;
+  vertical-align: baseline;
 }
 .section {
   padding-top: 83px;
@@ -1518,7 +1531,7 @@ body:has(dialog[open]) {
     padding: 12px 15px;
   }
   .research-inner {
-    gap: 75px;
+    gap: 32px;
   }
   .details-grid {
     gap: 35px;
@@ -1606,15 +1619,13 @@ body:has(dialog[open]) {
     padding-left: 12px;
   }
   .research-inner {
-    gap: 40px;
+    gap: 24px;
   }
   .research-intro h2 {
     font-size: 46px;
   }
   .research-torus {
     width: 150px;
-    right: -15px;
-    bottom: -45px;
   }
   .interest {
     gap: 15px;
@@ -1817,8 +1828,6 @@ body:has(dialog[open]) {
   }
   .research-torus {
     width: 150px;
-    right: -12px;
-    bottom: -20px;
     opacity: 0.38;
   }
   .figure-caption {
