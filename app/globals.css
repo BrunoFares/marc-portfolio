@@ -736,10 +736,10 @@ main {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   padding: 29px 3px;
+  padding-inline: 16px;
 }
 .talk-row:hover {
   background: var(--soft);
-  padding-inline: 16px;
 }
 .talk-date {
   width: 70px;

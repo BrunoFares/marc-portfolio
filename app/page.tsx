@@ -100,12 +100,12 @@ export default function Home() {
               <span className="section-marker">02</span> SELECTED WORK
             </div>
             <h2>
-              Publications<span className="count">01</span>
+              Publications
             </h2>
           </div>
           <a
             className="text-link"
-            href="https://arxiv.org/abs/2601.14090"
+            href="https://arxiv.org/search/math?query=Fares%2C+Marc&searchtype=author&abstracts=show&order=-announced_date_first&size=50"
             target="_blank"
             rel="noreferrer"
           >
@@ -121,7 +121,7 @@ export default function Home() {
             <div className="eyebrow">
               <span className="section-marker">03</span> SHARING IDEAS
             </div>
-            <h2>Talks & conversations</h2>
+            <h2>Talks</h2>
           </div>
         </div>
         <a

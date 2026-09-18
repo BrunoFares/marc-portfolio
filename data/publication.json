@@ -1,13 +1,9 @@
 {
   "title": "Period collapse of Markov triangles",
-  "authors": [
-    "me"
-  ],
+  "authors": ["me"],
   "date": "2026-01-20T00:00:00Z",
   "publishDate": "2026-01-24T00:00:00Z",
-  "publication_types": [
-    "article"
-  ],
+  "publication_types": ["article"],
   "build": {
     "render": "never",
     "list": "always"
@@ -15,14 +11,9 @@
   "peer_reviewed": false,
   "open_access": true,
   "license": "CC-BY-NC-SA-4.0",
-  "abstract": "Cristofaro-Gardiner and Kleinman showed the complete period collapse of the Ehrhart quasipolynomial of Fibonacci triangles and their irrational limits, by studying the Fourier-Dedekind sums involved in the Ehrhart function of right-angled rational triangles. We generalize this result using integral affine geometrical methods to all Markov triangles, as defined by Vianna. In particular, we show new occurrences of strong period collapse, namely by constructing for each Markov number a two-sided sequence of rational triangles and two irrational limits with quasipolynomial Ehrhart function of period.",
-  "summary": "Cristofaro-Gardiner and Kleinman showed the complete period collapse of the Ehrhart quasipolynomial of Fibonacci triangles and their irrational limits, by studying the Fourier-Dedekind sums involved in the Ehrhart function of right-angled rational triangles. We generalize this result using integral affine geometrical methods to all Markov triangles, as defined by Vianna. In particular, we show new occurrences of strong period collapse, namely by constructing for each Markov number a two-sided sequence of rational triangles and two irrational limits with quasipolynomial Ehrhart function of period.",
-  "tags": [
-    "Combinatorics",
-    "Symplectic Geometry",
-    "Ehrhart Theory",
-    "Markov Triangles"
-  ],
+  "abstract": "Cristofaro-Gardiner and Kleinman showed the complete period collapse of the Ehrhart quasipolynomial of Fibonacci triangles and their irrational limits, by studying the Fourier-Dedekind sums involved in the Ehrhart function of right-angled rational triangles. We generalize this result using integral affine geometrical methods to all Markov triangles, as defined by Vianna. In particular, we show new occurrences of strong period collapse, namely by constructing for each Markov number p, a two-sided sequence of rational triangles and two irrational limits with quasipolynomial Ehrhart function of period p.",
+  "summary": "Cristofaro-Gardiner and Kleinman showed the complete period collapse of the Ehrhart quasipolynomial of Fibonacci triangles and their irrational limits, by studying the Fourier-Dedekind sums involved in the Ehrhart function of right-angled rational triangles. We generalize this result using integral affine geometrical methods to all Markov triangles, as defined by Vianna. In particular, we show new occurrences of strong period collapse, namely by constructing for each Markov number p, a two-sided sequence of rational triangles and two irrational limits with quasipolynomial Ehrhart function of period p.",
+  "tags": ["Combinatorics", "Symplectic Geometry", "Ehrhart Theory"],
   "featured": true,
   "hugoblox": {
     "ids": {
