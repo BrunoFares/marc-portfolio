@@ -136,16 +136,34 @@ export default function Home() {
             <span>2026</span>
           </div>
           <div className="talk-copy">
-            <span className="eyebrow">CONFERENCE TALK</span>
+            <span className="eyebrow">SEMINAR TALK</span>
             <h3>Lebanese Math Day 2026</h3>
             <p>
-              I present the result of my paper on the period collapse of Markov
+              I presented the result of my paper on the period collapse of Markov
               triangles.
             </p>
           </div>
           <span className="circle-arrow">
             <Icon name="arrow" size={24} />
           </span>
+        </a>
+        <a
+          className="talk-row"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="talk-date">
+            <span>OCT</span>
+            <strong>29</strong>
+            <span>2024</span>
+          </div>
+          <div className="talk-copy">
+            <span className="eyebrow">SEMINAR TALK</span>
+            <h3>Oberseminar Symplectic Geometry</h3>
+            <p>
+              I gave an introduction to Hofer geometry and its application to the rigidity of the Poisson bracket.
+            </p>
+          </div>
         </a>
       </section>
 
