@@ -295,13 +295,12 @@ export default function Home() {
 
       <section id="contact" className="contact-section container">
         <div className="eyebrow">
-          <span className="status-dot" /> LET’S CONNECT
+          <span className="status-dot" /> CONTACT
         </div>
         <div className="contact-main">
           <h2>
-            Good mathematics starts
-            <br />
-            with a <em>conversation.</em>
+            Get in
+            <em> Touch!</em>
           </h2>
           <a
             className="contact-arrow"
@@ -311,9 +310,6 @@ export default function Home() {
             <Icon name="arrow" size={42} />
           </a>
         </div>
-        <a className="contact-email" href="mailto:me@mjfares.com">
-          me@mjfares.com
-        </a>
       </section>
     </main>
   );
