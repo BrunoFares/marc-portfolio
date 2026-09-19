@@ -224,7 +224,6 @@ export default function Home() {
       <section className="details-section">
         <div className="container details-grid">
           <div id="skills-hobbies">
-            <div className="eyebrow">THE TOOLKIT</div>
             <h2>Technical skills</h2>
             <div className="skill-list">
               {profile.skills[0].items.map((skill) => (
@@ -249,10 +248,8 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <p className="meter-caption">Proficiency on a five-point scale</p>
           </div>
           <div id="languages">
-            <div className="eyebrow">ACROSS BORDERS</div>
             <h2>Languages</h2>
             <div className="language-list">
               {profile.languages.map((language, i) => (
@@ -272,19 +269,12 @@ export default function Home() {
             </div>
           </div>
           <div id="awards" className="award-panel">
-            <span className="award-symbol" aria-hidden="true">
-              ✳
-            </span>
-            <div className="eyebrow">RECOGNITION · 2023</div>
             <h2>
               General Khalil
               <br />
               Kanaan Award
             </h2>
             <p>{profile.awards[0].summary}</p>
-            <span className="award-byline">
-              Awarded by {profile.awards[0].awarder}
-            </span>
           </div>
         </div>
       </section>
