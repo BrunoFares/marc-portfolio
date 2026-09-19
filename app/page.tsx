@@ -97,7 +97,7 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <div className="eyebrow">
-              <span className="section-marker">02</span> SELECTED WORK
+              <span className="section-marker">02</span> SELECTED WORKS
             </div>
             <h2>
               Publications
@@ -119,7 +119,7 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <div className="eyebrow">
-              <span className="section-marker">03</span> SHARING IDEAS
+              <span className="section-marker">03</span> ACADEMIC PRESENTATIONS
             </div>
             <h2>Talks</h2>
           </div>
@@ -171,15 +171,15 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <div className="eyebrow">
-              <span className="section-marker">04</span> THE JOURNEY SO FAR
+              <span className="section-marker">04</span> ACADEMIC JOURNEY
             </div>
-            <h2>Learning. Teaching. Growing.</h2>
+            <h2>Timeline</h2>
           </div>
         </div>
         <div className="background-grid">
           <div>
             <h3 className="column-heading">
-              Education <span>01 — 03</span>
+              Education
             </h3>
             <div className="timeline">
               {profile.education.map((education, i) => (
@@ -201,7 +201,7 @@ export default function Home() {
           </div>
           <div>
             <h3 className="column-heading">
-              Experience <span>01 — 04</span>
+              Experience
             </h3>
             <div className="experience-list">
               {profile.experience.map((experience) => (
@@ -214,9 +214,6 @@ export default function Home() {
                   </p>
                   <h4>{experience.role}</h4>
                   <p>{experience.org}</p>
-                  {experience.summary && (
-                    <p className="experience-summary">{experience.summary}</p>
-                  )}
                 </article>
               ))}
             </div>
