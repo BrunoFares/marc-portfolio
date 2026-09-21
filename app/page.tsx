@@ -3,6 +3,8 @@ import Link from "next/link";
 import profile from "@/data/profile.json";
 import { Icon, Torus } from "@/components/icons";
 import { Publication } from "@/components/publication";
+import { ArchiveBrowser } from "@/components/archive-browser";
+import { archiveIndex } from "@/lib/archive";
 
 export default function Home() {
   return (
@@ -280,18 +282,14 @@ export default function Home() {
       </section>
 
       <section className="archive-teaser container">
-        <div>
           <span className="eyebrow">NOTES & MORE</span>
           <h2>A place for everything else.</h2>
           <p>
             Explore the original blog, projects, number theory notes, and
             template collection.
           </p>
-        </div>
-        <Link className="button button-secondary" href="/archive">
-          Browse the archive <Icon name="arrow" size={17} />
-        </Link>
       </section>
+      <ArchiveBrowser entries={archiveIndex} />
 
       <section id="contact" className="contact-section container">
         <div className="eyebrow">

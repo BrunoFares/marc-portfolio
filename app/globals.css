@@ -1004,11 +1004,9 @@ main {
 }
 .archive-teaser {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding-block: 57px;
-  border-bottom: 1px solid var(--line);
+  flex-direction: column;
+  padding-top: 57px;
+  padding-bottom: 25px;
 }
 .archive-teaser h2 {
   font-family: var(--serif);
