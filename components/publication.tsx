@@ -30,13 +30,9 @@ export function Publication() {
             <span>JANUARY 2026</span>
           </div>
           <h3>
-            <a
-              href="https://arxiv.org/abs/2601.14090"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <p>
               {publication.title}
-            </a>
+            </p>
           </h3>
           <p className="publication-author">
             Marc Fares <span>·</span> arXiv:2601.14090

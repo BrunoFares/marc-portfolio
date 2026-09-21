@@ -127,73 +127,60 @@ export function Torus({ className = "" }: { className?: string }) {
   );
 }
 
-export function TriangleArt() {
+export function TriangleArt({
+  className = "triangle-art",
+}: {
+  className?: string;
+}) {
+  // A uniform scale preserves the TikZ geometry; SVG's y-axis points down.
+  const project = (x: number, y: number) => ({
+    x: 66 + x * 38,
+    y: 114 - y * 38,
+  });
+  const vertices = [
+    { ...project(0, 0), label: "2", labelOffset: 22 },
+    { ...project(7.5, 0), label: "1", labelOffset: 22 },
+    { ...project(2.7, 1.2), label: "5", labelOffset: -13 },
+  ];
+
   return (
-    <svg viewBox="0 0 360 290" className="triangle-art" aria-hidden="true">
-      <defs>
-        <pattern
-          id="lattice"
-          width="22"
-          height="22"
-          patternUnits="userSpaceOnUse"
-        >
-          <circle cx="11" cy="11" r="1.25" fill="currentColor" opacity=".23" />
-        </pattern>
-      </defs>
-      <rect width="360" height="290" fill="url(#lattice)" />
-      <path
-        d="M60 235 173 42 303 235Z"
+    <svg
+      viewBox="0 0 398 190"
+      className={className}
+      role="img"
+      aria-label="Triangle on a 10-column, 4-row integer lattice spanning x = -1 to 8 and y = -1 to 2, with vertices labeled 2 at (0, 0), 1 at (7.5, 0), and 5 at (2.7, 1.2)."
+    >
+      <g fill="currentColor" opacity=".23">
+        {Array.from({ length: 10 }, (_, i) =>
+          Array.from({ length: 4 }, (_, j) => {
+            const point = project(i - 1, j - 1);
+            return <circle key={`${i}-${j}`} cx={point.x} cy={point.y} r="1.25" />;
+          }),
+        )}
+      </g>
+      <polygon
+        points={vertices.map(({ x, y }) => `${x},${y}`).join(" ")}
         fill="currentColor"
-        fillOpacity=".055"
+        fillOpacity=".1"
         stroke="currentColor"
         strokeWidth="1.2"
+        strokeLinejoin="round"
       />
-      <path
-        d="m60 235 135-111 108 111M173 42l22 82-10 111M60 235l125-66 118 66"
-        stroke="currentColor"
-        strokeWidth=".9"
-        fill="none"
-        opacity=".5"
-      />
-      <path
-        d="M34 235h294M60 255V30"
-        stroke="currentColor"
-        opacity=".25"
-        strokeDasharray="3 4"
-      />
-      <circle cx="60" cy="235" r="4" fill="currentColor" />
-      <circle cx="173" cy="42" r="4" fill="currentColor" />
-      <circle cx="303" cy="235" r="4" fill="currentColor" />
-      <text
-        x="164"
-        y="25"
-        fill="currentColor"
-        fontFamily="Georgia"
-        fontStyle="italic"
-        fontSize="15"
-      >
-        c
-      </text>
-      <text
-        x="44"
-        y="255"
-        fill="currentColor"
-        fontFamily="Georgia"
-        fontStyle="italic"
-        fontSize="15"
-      >
-        a
-      </text>
-      <text
-        x="304"
-        y="255"
-        fill="currentColor"
-        fontFamily="Georgia"
-        fontStyle="italic"
-        fontSize="15"
-      >
-        b
-      </text>
+      {vertices.map(({ x, y, label, labelOffset }) => (
+        <g key={label} fill="currentColor">
+          <circle cx={x} cy={y} r="3" />
+          <text
+            x={x}
+            y={y + labelOffset}
+            textAnchor="middle"
+            fontFamily="var(--serif)"
+            fontStyle="italic"
+            fontSize="19"
+          >
+            {label}
+          </text>
+        </g>
+      ))}
     </svg>
   );
 }
