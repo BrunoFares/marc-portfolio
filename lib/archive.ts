@@ -2,20 +2,16 @@ import records from "@/data/archive.json";
 export type ArchiveEntry = (typeof records)[number];
 export const archive = records;
 export const archiveIndex = archive.map((entry) => ({
-  slug: entry.slug,
+  link: entry.link,
   title: entry.title,
   summary: entry.summary,
   category: entry.category,
+  role: entry.role,
   date: entry.date,
   tags: entry.tags,
-  authors: entry.authors,
   imageCaption: entry.imageCaption,
-  base: entry.base,
   image: entry.image,
-  original: entry.original,
-  links: entry.links,
-  attachments: entry.attachments,
 }));
 export function getEntry(slug: string) {
-  return archive.find((entry) => entry.slug === slug);
+  return archive.find((entry) => entry.link === slug);
 }

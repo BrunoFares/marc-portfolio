@@ -24,7 +24,7 @@ const items = [
   { title: "Technical skills", href: "/#skills-hobbies", category: "Background", keywords: "LaTeX Geogebra Mathematica Python C++" },
   { title: "General Khalil Kanaan Award", href: "/#awards", category: "Awards" },
   { title: "Languages", href: "/#languages", category: "Background", keywords: "Arabic French English German" },
-  ...archive.map(({ title, slug, category, tags }) => ({ title, href: `/archive/${slug}`, category, keywords: tags.join(" ") }))
+  ...archive.map(({ title, link, category, tags }) => ({ title, href: `${link}`, category, keywords: tags.join(" ") }))
 ];
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

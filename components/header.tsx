@@ -17,6 +17,7 @@ const nav = [
   ["Publications", "papers"],
   ["Talks", "talks"],
   ["Background", "background"],
+  ["Extracurriculars", "extracurriculars"]
 ];
 
 export function Header({ searchItems }: { searchItems: SearchItem[] }) {
@@ -122,13 +123,6 @@ export function Header({ searchItems }: { searchItems: SearchItem[] }) {
                 {label}
               </Link>
             ))}
-            <Link
-              href="/archive"
-              className={pathname.startsWith("/archive") ? "active" : ""}
-              onClick={() => setMenu(false)}
-            >
-              Extracurriculars
-            </Link>
           </nav>
           <div className="header-actions">
             <button

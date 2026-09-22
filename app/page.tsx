@@ -281,7 +281,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="archive-teaser container">
+      <section id="extracurriculars" className="archive-teaser container">
           <span className="eyebrow">NOTES & MORE</span>
           <h2>A place for everything else.</h2>
           <p>
