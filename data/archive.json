@@ -12,7 +12,7 @@
       "Markdown"
     ],
     "imageCaption": "Image credit: [**Unsplash**](https://unsplash.com)",
-    "image": "/original-site/content/blog/data-visualization/featured.png"
+    "image": "/images/laso.jpg"
   },
   {
     "link": "https://lebsci.org/",
@@ -27,6 +27,6 @@
       "Markdown"
     ],
     "imageCaption": "Image credit: Unsplash",
-    "image": "/original-site/content/blog/data-visualization/featured.jpg"
+    "image": "/images/lebsci-light.png"
   }
 ]
