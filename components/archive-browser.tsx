@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
 import type { ArchiveEntry } from "@/lib/archive";
 import { Icon } from "./icons";
 
@@ -11,8 +10,6 @@ export function ArchiveBrowser({
 }: {
   entries: Omit<ArchiveEntry, "body">[];
 }) {
-  const params = useSearchParams();
-  const requested = params.get("category") || "All";
   const [query, setQuery] = useState("");
   const filtered = entries.filter(
     (entry) =>

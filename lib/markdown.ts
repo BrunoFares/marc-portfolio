@@ -1,13 +1,20 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { ArchiveEntry } from "./archive";
+
+type MarkdownEntry = {
+  body?: string;
+  summary?: string;
+  base?: string;
+};
 
 const escape = (text: string) => text.replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 
 // Retain the authored Markdown; translate active Hugo embeds to portable equivalents.
-export function prepareMarkdown(entry: ArchiveEntry) {
+export function prepareMarkdown(entry: MarkdownEntry): string {
+  const source = entry.body ?? entry.summary ?? "";
+  const base = (entry.base ?? "").replace(/\/+$/, "");
   const preserved: string[] = [];
-  let body = entry.body.replace(/```[\s\S]*?```|`[^`\n]+`|\{\{<\/\*[\s\S]*?\*\/>\}\}/g, match => {
+  let body = source.replace(/```[\s\S]*?```|`[^`\n]+`|\{\{<\/\*[\s\S]*?\*\/>\}\}/g, match => {
     preserved.push(match);
     return `PRESERVEDTOKEN${preserved.length - 1}ENDTOKEN`;
   });
@@ -18,11 +25,11 @@ export function prepareMarkdown(entry: ArchiveEntry) {
     if (name === "icon") return "";
     if (name === "cite") return '[Marc Fares (2026). Period collapse of Markov triangles. arXiv:2601.14090.](https://arxiv.org/abs/2601.14090)';
     if (name === "youtube") return `[Watch this video on YouTube](https://www.youtube.com/watch?v=${encodeURIComponent(args.trim())})`;
-    if (name === "audio") return `<audio controls preload="none" src="${entry.base}/${escape(attrs.src)}"></audio>`;
+    if (name === "audio") return `<audio controls preload="none" src="${base}/${escape(attrs.src)}"></audio>`;
     if (name === "spoiler") return `<details><summary>${escape(attrs.text || "View the solution")}</summary>`;
     if (name === "/spoiler") return "</details>";
     if (name === "button") {
-      const url = attrs.url === "/data/results.csv" ? `${entry.base}/results.csv` : attrs.url === "#" ? "#article-resources" : attrs.url;
+      const url = attrs.url === "/data/results.csv" ? `${base}/results.csv` : attrs.url === "#" ? "#article-resources" : attrs.url;
       return `<a href="${escape(url || "/")}">`;
     }
     if (name === "/button") return "</a>";
@@ -32,13 +39,13 @@ export function prepareMarkdown(entry: ArchiveEntry) {
     }
     if (name === "chart") return '<div data-demo="chart"></div>';
     if (name === "table") {
-      const table = fs.readFileSync(path.join(process.cwd(), "public", entry.base, attrs.path), "utf8").trim().split("\n").map(row => row.split(",").map(cell => cell.trim()));
+      const table = fs.readFileSync(path.join(process.cwd(), "public", base, attrs.path), "utf8").trim().split("\n").map(row => row.split(",").map(cell => cell.trim()));
       return `\n\n${attrs.caption || ""}\n\n| ${table[0].join(" | ")} |\n| ${table[0].map(() => "---").join(" | ")} |\n${table.slice(1).map(row => `| ${row.join(" | ")} |`).join("\n")}\n\n`;
     }
     if (name === "notebook") {
-      const notebook = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", entry.base, attrs.src), "utf8"));
+      const notebook = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", base, attrs.src), "utf8"));
       type Cell = { cell_type: string; source: string[]; outputs?: { text?: string[]; data?: Record<string, string[]> }[] };
-      return `\n\n### ${attrs.title || "Notebook"}\n\n[Download notebook](${entry.base}/${attrs.src})\n\n` + notebook.cells.map((cell: Cell) => {
+      return `\n\n### ${attrs.title || "Notebook"}\n\n[Download notebook](${base}/${attrs.src})\n\n` + notebook.cells.map((cell: Cell) => {
         const source = cell.source.join("");
         if (cell.cell_type === "markdown") return source;
         const outputs = (cell.outputs || []).map(output => output.text?.join("") || output.data?.["text/html"]?.join("") || (output.data?.["text/plain"] ? `\n\n\`\`\`text\n${output.data["text/plain"].join("")}\n\`\`\`` : "")).join("\n\n");
