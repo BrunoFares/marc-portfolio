@@ -1,0 +1,235 @@
+/* Component styles, including responsive and print overrides. */
+.publication-card {
+  display: grid;
+  grid-template-columns: 0.85fr 1.55fr;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.publication-art {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--soft);
+  padding: 34px 27px;
+  color: var(--gold);
+  border-right: 1px solid var(--line);
+}
+.art-label {
+  font-size: 8px;
+  letter-spacing: 1.6px;
+  position: absolute;
+  top: 28px;
+  left: 28px;
+}
+.art-equation {
+  font-family: var(--math);
+  font-size: 25px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+.publication-copy {
+  padding: 34px 38px;
+}
+.publication-meta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 8px;
+  letter-spacing: 1.1px;
+  color: var(--muted);
+  font-weight: 500;
+}
+.badge {
+  display: inline-flex;
+  padding: 4px 7px;
+  background: var(--soft);
+  color: var(--gold);
+  border-radius: 2px;
+}
+.publication-copy h3 {
+  font-family: var(--serif);
+  font-size: 36px;
+  line-height: 1.13;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  margin: 20px 0 10px;
+}
+.publication-copy h3 a:hover {
+  color: var(--gold);
+}
+.publication-author {
+  font-size: 10px;
+  color: var(--muted);
+  display: flex;
+  gap: 9px;
+}
+.publication-summary {
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin: 17px 0 14px;
+  max-width: 520px;
+}
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.tags > span {
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 8px;
+  padding: 3px 7px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.abstract {
+  margin-top: 17px;
+}
+.abstract summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  cursor: pointer;
+  width: fit-content;
+  list-style: none;
+  color: var(--muted);
+}
+.abstract summary::-webkit-details-marker {
+  display: none;
+}
+.abstract[open] summary > svg {
+  transform: rotate(180deg);
+}
+.abstract p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-top: 10px;
+}
+.publication-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 22px;
+}
+.publication-actions .button {
+  padding: 10px 16px;
+  font-size: 11px;
+}
+.citation-dialog > p {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 12px;
+}
+.citation-dialog pre {
+  padding: 18px;
+  background: var(--soft);
+  overflow-x: auto;
+  font-size: 11px;
+  line-height: 1.8;
+  border-radius: 4px;
+}
+.citation-dialog .copy-status {
+  min-height: 18px;
+  font-size: 10px;
+}
+@media (max-width: 1150px) {
+  .publication-copy {
+    padding: 30px;
+  }
+  .publication-copy h3 {
+    font-size: 33px;
+  }
+}
+@media (max-width: 900px) {
+  .publication-card {
+    grid-template-columns: 0.75fr 1.4fr;
+  }
+  .publication-copy {
+    padding: 25px;
+  }
+  .publication-copy h3 {
+    font-size: 31px;
+  }
+  .publication-art {
+    padding: 30px 15px;
+  }
+  .art-label {
+    font-size: 6px;
+    left: 17px;
+  }
+  .publication-meta {
+    gap: 8px;
+    font-size: 7px;
+  }
+  .tags > span {
+    font-size: 7px;
+  }
+}
+@media (max-width: 700px) {
+  .publication-card {
+    grid-template-columns: 1fr;
+  }
+  .publication-art {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    height: 240px;
+    padding: 22px;
+  }
+  .art-label {
+    top: 18px;
+    left: 20px;
+    font-size: 7px;
+  }
+  .art-equation {
+    position: absolute;
+    bottom: 18px;
+    right: 20px;
+    font-size: 18px;
+  }
+  .publication-copy {
+    padding: 25px 23px 28px;
+  }
+  .publication-copy h3 {
+    font-size: 34px;
+  }
+  .publication-meta {
+    font-size: 8px;
+    gap: 13px;
+  }
+  .publication-summary {
+    font-size: 12px;
+  }
+  .tags > span {
+    font-size: 8px;
+  }
+  .citation-dialog pre {
+    font-size: 10px;
+    padding: 14px;
+  }
+  .citation-dialog .publication-actions {
+    gap: 18px;
+  }
+}
+@media print {
+  .publication-actions {
+    display: none;
+  }
+  .publication-card {
+    break-inside: avoid;
+  }
+}
+.publication-art,
+.publication-copy {
+  min-width: 0;
+}
+.publication-actions {
+  flex-wrap: wrap;
+  row-gap: 12px;
+}

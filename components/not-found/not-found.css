@@ -1,0 +1,14 @@
+/* Component styles, including responsive and print overrides. */
+.not-found {
+  text-align: center;
+  padding-block: 120px;
+}
+.not-found h1 {
+  font-family: var(--serif);
+  font-size: 65px;
+  font-weight: 400;
+}
+.not-found p {
+  color: var(--muted);
+  margin: 15px 0 30px;
+}

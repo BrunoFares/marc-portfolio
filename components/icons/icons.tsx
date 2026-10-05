@@ -1,3 +1,4 @@
+import "./icons.css";
 import type { CSSProperties } from "react";
 
 export function Icon({

@@ -1,0 +1,13 @@
+/* Component styles, including responsive and print overrides. */
+.skip-link {
+  position: fixed;
+  left: 20px;
+  top: -100px;
+  background: var(--gold);
+  color: var(--bg);
+  padding: 12px 20px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 12px;
+}

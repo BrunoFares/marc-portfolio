@@ -1,9 +1,11 @@
 "use client";
 
+import "./header.css";
+
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { Icon } from "./icons";
+import { Icon } from "@/components/icons/icons";
 
 type SearchItem = {
   title: string;
@@ -106,7 +108,7 @@ export function Header({ searchItems }: { searchItems: SearchItem[] }) {
             <span>Marc Fares</span>
           </Link>
           <nav
-            className={`main-nav ${menu ? "is-open" : ""}`}
+            className={["main-nav", (menu ? "is-open" : "")].join(" ")}
             aria-label="Main navigation"
             id="main-navigation"
           >

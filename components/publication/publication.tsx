@@ -1,7 +1,9 @@
 "use client";
+
+import "./publication.css";
 import { useRef, useState } from "react";
 import publication from "@/data/publication.json";
-import { Icon, TriangleArt } from "./icons";
+import { Icon, TriangleArt } from "@/components/icons/icons";
 
 export function Publication() {
   const dialog = useRef<HTMLDialogElement>(null);

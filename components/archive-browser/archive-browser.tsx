@@ -1,9 +1,11 @@
 "use client";
+
+import "./archive-browser.css";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { ArchiveEntry } from "@/lib/archive";
-import { Icon } from "./icons";
+import { Icon } from "@/components/icons/icons";
 
 export function ArchiveBrowser({
   entries,

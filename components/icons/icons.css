@@ -1,0 +1,17 @@
+/* Component styles, including responsive and print overrides. */
+.triangle-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 335px;
+  margin: 16px 0 10px;
+}
+@media (max-width: 700px) {
+  .triangle-art {
+    width: 260px;
+    margin: 15px 0 0;
+  }
+}
+.triangle-art {
+  max-width: 100%;
+}

@@ -31,11 +31,13 @@ The site can run on any host with Next.js support. No environment variables are 
 
 ## Editing
 
-- `app/page.tsx`: homepage layout and introductory text.
+- `components/home/home.tsx`: homepage layout and introductory text.
 - `data/profile.json`: education, experience, interests, languages, skills, and award.
 - `data/publication.json`: publication metadata, abstract, and citation.
 - `data/archive.json`: imported article bodies and metadata.
-- `app/globals.css`: colors, typography, responsive layouts.
+- `app/globals.css`: theme colors, base typography, and shared UI styles (containers, buttons, section headings, dialogs, and search fields).
+- `components/<name>/<name>.tsx` and `components/<name>/<name>.css`: each component and its stylesheet share a dedicated folder, including responsive and print rules. Import the stylesheet with `import "./<name>.css"` and use regular `className` strings. These are plain CSS stylesheets, so keep component-specific selectors distinct and use shared classes from `app/globals.css` where appropriate.
+- `app/page.tsx`, `app/layout.tsx`, and `app/not-found.tsx`: thin Next.js entry files that export the implementations from the `home`, `root-layout`, and `not-found` component folders. The root layout entry imports the global stylesheet before component styles.
 - `public/uploads/resume.pdf`: downloadable CV.
 
 The archival import can be repeated with `node scripts/import-content.mjs /absolute/path/to/marc-website`. It overwrites the imported JSON and original-content copies, so preserve any edits to those files first. It never changes the source site.
