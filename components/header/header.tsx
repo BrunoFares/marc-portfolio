@@ -94,8 +94,8 @@ export function Header({ searchItems }: { searchItems: SearchItem[] }) {
 
   return (
     <>
-      <header className="site-header">
-        <div className="header-inner container">
+      <header className="site-header container">
+        <div className="header-inner">
           <Link
             className="brand"
             href="/"
