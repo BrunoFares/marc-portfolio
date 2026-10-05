@@ -1,4 +1,4 @@
-# Marc Fares — personal academic website
+# Marc Fares: personal academic website
 
 A modern editorial redesign of `marc-website`, built in Next.js App Router, React 19, TypeScript, and custom CSS, matching the frontend stack of `anghami/adops-reporting`. The exact Next.js version is 16.3.0. This public content site does not require the reporting app’s PostgreSQL/Prisma database or Google sign-in.
 

@@ -9,7 +9,7 @@ import "@fontsource/instrument-serif/latin-400-italic.css";
 import "katex/dist/katex.min.css";
 
 export const metadata: Metadata = {
-  title: { default: "Marc Fares — Mathematics & Geometry", template: "%s · Marc Fares" },
+  title: { default: "Marc Fares, Mathematics & Geometry", template: "%s · Marc Fares" },
   description: "Marc Fares, PhD student in Mathematics at Université de Neuchâtel. Research in symplectic geometry, Lagrangian almost toric fibrations, and Ehrhart theory.",
   authors: [{ name: "Marc Fares" }],
   openGraph: { title: "Marc Fares — Mathematics & Geometry", description: "PhD student in Mathematics at Université de Neuchâtel. Research, publications, and teaching.", type: "website" },
