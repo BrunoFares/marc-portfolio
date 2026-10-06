@@ -1,0 +1,104 @@
+/* Component styles, including responsive and print overrides. */
+.talks-section {
+  padding-top: 61px;
+}
+.talk-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 29px 3px;
+  padding-inline: 16px;
+}
+.talk-row:hover {
+  background: var(--soft);
+}
+.talk-date {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  border-right: 1px solid var(--line);
+  padding-right: 24px;
+  line-height: 1.2;
+}
+.talk-date span {
+  font-size: 8px;
+  letter-spacing: 1.4px;
+  color: var(--muted);
+}
+.talk-date strong {
+  font-family: var(--serif);
+  font-size: 39px;
+  font-weight: 400;
+  margin: 1px 0 5px;
+}
+.talk-copy .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.2px;
+  color: var(--gold);
+}
+.talk-copy h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 28px;
+  margin: 6px 0;
+}
+.talk-copy p {
+  font-size: 11px;
+  color: var(--muted);
+}
+.circle-arrow {
+  margin-left: auto;
+  border: 1px solid var(--line);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.talk-row:hover .circle-arrow {
+  background: var(--gold);
+  color: var(--bg);
+  border-color: var(--gold);
+}
+@media (max-width: 700px) {
+  .talks-section {
+    padding-top: 30px;
+  }
+  .talk-row {
+    gap: 17px;
+    padding-block: 23px;
+  }
+  .talk-date {
+    width: 48px;
+    padding-right: 13px;
+  }
+  .talk-date strong {
+    font-size: 33px;
+  }
+  .talk-copy h3 {
+    font-size: 25px;
+  }
+  .talk-copy p {
+    font-size: 10px;
+  }
+  .circle-arrow {
+    width: 36px;
+    height: 36px;
+  }
+  .circle-arrow > svg {
+    width: 17px;
+  }
+}
+@media print {
+  .talks-section {
+    padding-top: 30px;
+  }
+  .talk-row {
+    break-inside: avoid;
+  }
+}

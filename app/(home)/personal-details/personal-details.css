@@ -1,0 +1,195 @@
+/* Component styles, including responsive and print overrides. */
+.details-section {
+  background: var(--soft);
+  padding-block: 56px;
+}
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.92fr 1.1fr;
+  gap: 60px;
+}
+.details-grid > .eyebrow {
+  color: var(--muted);
+}
+.details-grid h2 {
+  font-family: var(--serif);
+  font-size: 32px;
+  line-height: 1.12;
+  font-weight: 400;
+  margin-top: 15px;
+}
+.skill-list {
+  margin-top: 24px;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  padding-block: 7px;
+}
+.skill-meter {
+  display: flex;
+  gap: 5px;
+}
+.skill-meter i {
+  width: 16px;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    var(--gold) var(--fill),
+    color-mix(in srgb, var(--gold) 15%, transparent) var(--fill)
+  );
+  border-radius: 1px;
+}
+.language-list {
+  margin-top: 25px;
+}
+.language-list > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.language-native {
+  font-family: var(--serif);
+  color: var(--gold);
+  font-size: 18px;
+  line-height: 1;
+  width: 24px;
+}
+.language-list h3 {
+  font-weight: 400;
+  font-size: 11px;
+}
+.language-list > div > span:last-child {
+  font-size: 9px;
+  color: var(--muted);
+  margin-left: auto;
+}
+.award-panel {
+  border-left: 1px solid color-mix(in srgb, var(--gold) 18%, transparent);
+  padding-left: 40px;
+  position: relative;
+}
+.award-panel h2 {
+  font-size: 30px;
+  margin-top: 13px;
+}
+.award-panel p {
+  font-size: 11px;
+  line-height: 1.85;
+  color: var(--muted);
+  margin-top: 14px;
+  max-width: 250px;
+}
+@media (max-width: 1150px) {
+  .details-grid {
+    gap: 35px;
+  }
+  .award-panel {
+    padding-left: 28px;
+  }
+}
+@media (max-width: 900px) {
+  .details-grid {
+    gap: 28px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .award-panel {
+    grid-column: 1/-1;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: 28px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 28px;
+  }
+  .award-panel .eyebrow {
+    grid-column: 1;
+  }
+  .award-panel h2 {
+    grid-column: 1;
+  }
+  .award-panel p {
+    grid-column: 2;
+    grid-row: 1/3;
+    max-width: 100%;
+    margin-top: 0;
+  }
+}
+@media (max-width: 700px) {
+  .details-section {
+    padding-block: 36px;
+  }
+  .details-grid {
+    column-gap: 25px;
+    row-gap: 32px;
+  }
+  .details-grid .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.1px;
+  }
+  .details-grid h2 {
+    font-size: 29px;
+  }
+  .skill {
+    font-size: 10px;
+    gap: 10px;
+  }
+  .skill-meter {
+    gap: 3px;
+  }
+  .skill-meter i {
+    width: 11px;
+    height: 4px;
+  }
+  .language-list > div {
+    gap: 7px;
+  }
+  .language-list h3 {
+    font-size: 10px;
+  }
+  .language-list > div > span:last-child {
+    font-size: 8px;
+  }
+  .language-native {
+    font-size: 16px;
+    width: 20px;
+  }
+  .award-panel {
+    column-gap: 22px;
+  }
+  .award-panel p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 380px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+  .award-panel {
+    grid-column: auto;
+    display: block;
+  }
+  .award-panel p {
+    margin-top: 14px;
+  }
+  .skill-meter i {
+    width: 24px;
+  }
+  .language-list > div {
+    gap: 15px;
+  }
+  .language-list > div > span:last-child {
+    font-size: 10px;
+  }
+  .language-list h3 {
+    font-size: 12px;
+  }
+}
+@media print {
+  .details-section {
+    background: var(--print-soft);
+  }
+}

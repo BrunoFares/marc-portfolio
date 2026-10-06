@@ -1,0 +1,169 @@
+/* Component styles, including responsive and print overrides. */
+.hero {
+  padding-block: 88px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.hero-copy {
+  width: 100%;
+  max-width: 900px;
+}
+.hero-copy > .eyebrow {
+  justify-content: center;
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(80px, 8.3vw, 116px);
+  line-height: 1.05;
+  letter-spacing: -3px;
+  margin: 24px 0 18px;
+}
+.hero h1 > span {
+  color: var(--gold);
+}
+.hero-description {
+  font-size: 20px;
+  line-height: 1.9;
+  color: var(--muted);
+  max-width: 640px;
+  margin: 24px auto 0;
+}
+.hero-description a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 4px;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.hero-bottom {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  margin-top: 33px;
+  font-size: 10px;
+  letter-spacing: 0.2px;
+  color: var(--muted);
+}
+.hero-bottom > span,
+.hero-bottom > a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.hero-bottom > a#orcid {
+  border-left: 1px solid var(--line);
+  padding-left: 22px;
+}
+.orcid-icon {
+  font-size: 10px;
+  font-weight: bold;
+  border: 1px solid var(--muted);
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  line-height: 14px;
+}
+@media (min-width: 1500px) {
+  .hero {
+    padding-block: 100px;
+  }
+}
+@media (max-width: 1150px) {
+  .hero h1 {
+    font-size: 98px;
+  }
+  .hero-buttons {
+    gap: 8px;
+  }
+  .hero-buttons .button {
+    gap: 12px;
+    padding: 12px 15px;
+  }
+}
+@media (max-width: 900px) {
+  .hero {
+    padding-block: 60px;
+  }
+  .hero h1 {
+    font-size: 80px;
+  }
+  .hero-description {
+    font-size: 12px;
+  }
+  .hero-buttons {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .hero-bottom {
+    font-size: 8px;
+    gap: 12px;
+  }
+  .hero-bottom > a {
+    padding-left: 12px;
+  }
+}
+@media (max-width: 700px) {
+  .hero {
+    padding-block: 48px;
+  }
+  .hero h1 {
+    font-size: 94px;
+    margin-top: 23px;
+    margin-bottom: 13px;
+    letter-spacing: -2px;
+  }
+  .hero-description {
+    font-size: 13px;
+    max-width: 430px;
+  }
+  .hero-buttons {
+    margin-top: 24px;
+    gap: 12px;
+  }
+  .hero-buttons .button {
+    padding: 13px 17px;
+    gap: 19px;
+  }
+  .hero-bottom {
+    font-size: 9px;
+    margin-top: 26px;
+    gap: 17px;
+  }
+  .hero-bottom > a {
+    padding-left: 17px;
+  }
+}
+@media (max-width: 380px) {
+  .hero h1 {
+    font-size: 83px;
+  }
+  .hero-buttons .button {
+    padding: 12px 13px;
+    font-size: 11px;
+    gap: 13px;
+  }
+}
+@media print {
+  .hero-buttons,
+  .hero-bottom {
+    display: none;
+  }
+  .hero {
+    padding: 20px 0;
+    gap: 30px;
+  }
+  .hero h1 {
+    font-size: 65px;
+  }
+}

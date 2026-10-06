@@ -1,0 +1,108 @@
+/* Component styles, including responsive and print overrides. */
+.archive-teaser {
+  display: flex;
+  flex-direction: column;
+  padding-top: 57px;
+  padding-bottom: 25px;
+}
+.archive-teaser h2 {
+  font-family: var(--serif);
+  font-size: 31px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.archive-teaser p {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.contact-section {
+  padding-block: 78px 85px;
+}
+.contact-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.contact-main h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(40px, 4.5vw, 64px);
+  line-height: 1.06;
+  letter-spacing: -0.8px;
+  margin: 24px 0;
+}
+.contact-main h2 em {
+  color: var(--gold);
+}
+.contact-arrow {
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--gold);
+  height: 92px;
+  width: 92px;
+  border-radius: 50%;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+.contact-arrow:hover {
+  background: var(--gold);
+  color: var(--bg);
+  transform: rotate(5deg);
+}
+@media (max-width: 900px) {
+  .contact-main h2 {
+    font-size: 49px;
+  }
+}
+@media (max-width: 700px) {
+  .archive-teaser {
+    align-items: start;
+    flex-direction: column;
+    padding-block: 39px;
+    gap: 20px;
+  }
+  .archive-teaser h2 {
+    font-size: 30px;
+  }
+  .archive-teaser p {
+    font-size: 11px;
+    max-width: 300px;
+  }
+  .contact-section {
+    padding-block: 49px;
+  }
+  .contact-main {
+    gap: 15px;
+  }
+  .contact-main h2 {
+    font-size: 38px;
+    letter-spacing: -0.4px;
+  }
+  .contact-arrow {
+    width: 56px;
+    height: 56px;
+  }
+  .contact-arrow svg {
+    width: 25px;
+  }
+}
+@media (max-width: 380px) {
+  .contact-main h2 {
+    font-size: 33px;
+  }
+  .contact-arrow {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media print {
+  .contact-arrow,
+  .archive-teaser {
+    display: none;
+  }
+  .contact-section {
+    padding-block: 30px;
+  }
+}

@@ -31,14 +31,20 @@ The site can run on any host with Next.js support. No environment variables are 
 
 ## Editing
 
-- `components/home/home.tsx`: homepage layout and introductory text.
+- `app/(home)/page.tsx`: homepage composition, publication section, archive, and contact details. The `(home)` route group keeps these files together while serving the homepage at `/`.
+- `app/(home)/<section>/`: larger homepage sections (biography, research, talks, background, and personal details), each with its own component and stylesheet, including responsive and print rules. These folders have no `page.tsx` and do not create routes.
+- `app/layout.tsx`: document structure, metadata, font imports, theme initialization, and shared header/footer composition. `app/layout.css` styles the skip link.
+- `app/not-found.tsx` and `app/not-found.css`: the 404 page and its styles.
 - `data/profile.json`: education, experience, interests, languages, skills, and award.
 - `data/publication.json`: publication metadata, abstract, and citation.
 - `data/archive.json`: imported article bodies and metadata.
 - `app/globals.css`: theme colors, base typography, and shared UI styles (containers, buttons, section headings, dialogs, and search fields).
-- `components/<name>/<name>.tsx` and `components/<name>/<name>.css`: each component and its stylesheet share a dedicated folder, including responsive and print rules. Import the stylesheet with `import "./<name>.css"` and use regular `className` strings. These are plain CSS stylesheets, so keep component-specific selectors distinct and use shared classes from `app/globals.css` where appropriate.
-- `app/page.tsx`, `app/layout.tsx`, and `app/not-found.tsx`: thin Next.js entry files that export the implementations from the `home`, `root-layout`, and `not-found` component folders. The root layout entry imports the global stylesheet before component styles.
+- `app/(home)/home.css`: styles for the smaller sections composed directly in the homepage.
+- `components/<name>/<name>.tsx` and `components/<name>/<name>.css`: shared UI and independent widgets such as the header, footer, icons, publication, and archive browser. Each component and its stylesheet share a dedicated folder. Import the stylesheet with `import "./<name>.css"` and use regular `className` strings. These are plain CSS stylesheets, so keep component-specific selectors distinct and use shared classes from `app/globals.css` where appropriate.
+- `lib/`: non-UI archive transformations and Markdown preparation. Keep Next.js route exports in `app/`, and add `"use client"` only to components that require interactivity or browser APIs.
 - `public/uploads/resume.pdf`: downloadable CV.
+
+Next.js recognizes route entry files by their exact names and locations. Keep the root `layout.tsx` and `not-found.tsx` directly in `app/`, and use `page.tsx` to expose a page. A normal folder adds a URL segment; a folder in parentheses organizes routes without adding a URL segment.
 
 The archival import can be repeated with `node scripts/import-content.mjs /absolute/path/to/marc-website`. It overwrites the imported JSON and original-content copies, so preserve any edits to those files first. It never changes the source site.
 
