@@ -1,6 +1,6 @@
 # Marc Fares: personal academic website
 
-A modern editorial redesign of `marc-website`, built in Next.js App Router, React 19, TypeScript, and custom CSS, matching the frontend stack of `anghami/adops-reporting`. The exact Next.js version is 16.3.0. This public content site does not require the reporting app’s PostgreSQL/Prisma database or Google sign-in.
+A personal portfolio website for my brother Marc Fares, built in Next.js App Router, React 19, TypeScript, and custom CSS. The exact Next.js version is 16.3.0. This public content site does not require the reporting app’s PostgreSQL/Prisma database or Google sign-in.
 
 ## Run
 
@@ -26,7 +26,6 @@ The site can run on any host with Next.js support. No environment variables are 
 - Archive: 27 pages preserving all six blog posts, three example projects, sixteen number theory transcriptions, the example slide deck as an article, and the original template research statement, education summary, social links, and HugoBlox promotion.
 - The existing portrait, CV, BibTeX, audio, notebook, CSV, chart JSON, and original source documents remain downloadable. Original source files are copied without changes under `public/original-site/`.
 - Native light/dark themes, system preference and persistence, mobile navigation, section tracking, searchable archive, site search (⌘K / Ctrl+K), accessible citation dialog, copy/download BibTeX, and expandable abstract.
-- The old blog, project, publication, and event URLs redirect to their new destinations. Homepage anchors `papers`, `talks`, `skills-hobbies`, `awards`, and `languages` still work.
 - Markdown supports tables, task lists, raw HTML sanitized before rendering, LaTeX math, audio, expandable answers, notebook code/output, and the original chart data. Hugo shortcodes are converted to portable equivalents. Mermaid/Markmap diagrams are retained as readable source examples; the sample slide deck is presented as a scrollable article. Original source is available on every archive page.
 
 ## Editing
